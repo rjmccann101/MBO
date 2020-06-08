@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+<pcToLineNum>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="3" lineNum="5" pc="268435456" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="3" lineNum="6" pc="268435460" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="4" lineNum="10" pc="268435479" symbol="onStart"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="5" lineNum="14" pc="268435484" symbol="onStop"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="6" lineNum="18" pc="268435489" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="6" lineNum="19" pc="268435493" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="8" lineNum="10" pc="268435531" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="8" lineNum="11" pc="268435535" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="8" lineNum="12" pc="268435553" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="9" lineNum="19" pc="268435567" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="9" lineNum="21" pc="268435571" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="9" lineNum="22" pc="268435613" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="9" lineNum="23" pc="268435634" symbol="compute"/>
+</pcToLineNum>
+<symbolTable>
+<entry id="9" object="true" symbol="MBOCountdownApp"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8389342" symbol="hours"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="11" symbol="eventDuration"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="15" symbol="AppName"/>
+<entry field="true" id="14" symbol="LauncherIcon"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry id="8389137" method="true" symbol="compute"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="12" module="true" symbol="Layouts"/>
+<entry id="10" object="true" symbol="MBOCountdownView"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry id="13" module="true" symbol="Menus"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388635" module="true" symbol="Application"/>
+</symbolTable>
+<localVars>
+<entry endPc="268435484" name="state" stackId="1" startPc="268435479"/>
+<entry endPc="268435489" name="state" stackId="1" startPc="268435484"/>
+<entry endPc="268435637" name="timeUsed" stackId="2" startPc="268435571"/>
+<entry endPc="268435637" name="timeLeft" stackId="3" startPc="268435571"/>
+<entry endPc="268435638" name="info" stackId="1" startPc="268435567"/>
+</localVars>
+<annotations/>
+<dataEntryOffsetMappings>
+<dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
+<dataEntry offset="150" parentId="globals" symbolId="MBOCountdownView" type="class"/>
+<dataEntry offset="213" parentId="globals" symbolId="MBOCountdownApp" type="class"/>
+<dataEntry offset="284" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="363" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="402" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="433" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="464" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="495" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="526" parentId="Rez" symbolId="Strings" type="module"/>
+</dataEntryOffsetMappings>
+<functions>
+<functionEntry accessMode="public" name="initialize" parent="MBOCountdownApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStart" parent="MBOCountdownApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="onStop" parent="MBOCountdownApp">
+<param id="state"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="getInitialView" parent="MBOCountdownApp">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="initialize" parent="MBOCountdownView">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="compute" parent="MBOCountdownView">
+<param id="info"/>
+<documentation/>
+</functionEntry>
+</functions>
+</debugInfo>
