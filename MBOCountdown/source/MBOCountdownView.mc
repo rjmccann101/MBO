@@ -86,13 +86,16 @@ class MBOTimedEvent {
 class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// The duration of the event, 3 hours
-	const eventDuration = Gregorian.duration({:seconds => 30});
+	const eventDuration = Gregorian.duration({:seconds => 40});
 
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
 	var events = [] ;
 					
     var nextEvtIdx = 0 ;
+    
+    // Penalty points, after 30 minutes you lose the lot!
+    const penaltyPoints = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190 ] ;
     
     const thirtyMinTimes = [150,120,90,60,30] ;
     const fiveMinTimes  = [25,20,15,10,5] ;
@@ -125,8 +128,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-        label = "Time Left";
+        label = "Mountain Bike Orienteering";
         buildEvents() ;
+        System.println("Constructing MBOCountdownView") ;
     }
 
     // The given info object contains all the current workout
@@ -137,18 +141,13 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
         // See Activity.Info in the documentation for available information.
         var result ;
         
-        System.println(info.timerState) ;
-        
         var timeUsed = new Time.Duration(info.elapsedTime/1000) ;
-        System.println(timeUsed.value()) ;
         var timeLeft = eventDuration.subtract(timeUsed) ;
         result = timeLeft ;
-        System.println(timeLeft.value()) ;
          
         // Has the activity started?
         if (info.timerState == 3) {
         	// If there are any more events to consume then
-        	System.println(nextEvtIdx + " " + events.size()) ;
 	        if (nextEvtIdx < events.size() - 1) {
 	        	// Test to see if the next event has happened
 		        if (events[nextEvtIdx].checkEvent(timeLeft) == true) {
@@ -158,8 +157,14 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	        } else {
 	        	// The last event has fired, your out of time and losing 
 	        	// points.
-	        	System.println("No more events") ;
-	        	result = -1 ;
+	        	var pointIdx = timeLeft.value().abs() ;
+	        	System.println("timeLeft " + pointIdx) ;
+	        	if (pointIdx < penaltyPoints.size()) {
+	        		return penaltyPoints[pointIdx] ;
+	        	}
+	        	else {
+	        		return "Out of Time!" ;
+	        	}
 	        }
         }
         

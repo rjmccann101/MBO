@@ -29,87 +29,88 @@
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="76" pc="268435801" symbol="checkEvent"/>
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="77" pc="268435815" symbol="checkEvent"/>
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="80" pc="268435825" symbol="checkEvent"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="105" pc="268435829" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="106" pc="268435833" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="107" pc="268435859" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="108" pc="268435894" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="109" pc="268435924" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="112" pc="268436030" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="113" pc="268436060" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="116" pc="268436166" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="117" pc="268436196" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="120" pc="268436302" symbol="buildEvents"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="126" pc="268436393" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="127" pc="268436397" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="128" pc="268436415" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="129" pc="268436428" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="136" pc="268436441" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="138" pc="268436445" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="140" pc="268436445" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="142" pc="268436471" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="143" pc="268436513" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="144" pc="268436542" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="145" pc="268436563" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="146" pc="268436567" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="149" pc="268436596" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="151" pc="268436613" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="152" pc="268436663" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="154" pc="268436698" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="156" pc="268436732" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="161" pc="268436757" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="162" pc="268436780" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="166" pc="268436790" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="168" pc="268436816" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="108" pc="268435829" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="109" pc="268435833" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="110" pc="268435859" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="111" pc="268435894" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="112" pc="268435924" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="115" pc="268436030" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="116" pc="268436060" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="119" pc="268436166" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="120" pc="268436196" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="13" lineNum="123" pc="268436302" symbol="buildEvents"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="129" pc="268436393" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="130" pc="268436397" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="131" pc="268436415" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="132" pc="268436428" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="14" lineNum="133" pc="268436440" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="140" pc="268436464" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="142" pc="268436468" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="144" pc="268436468" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="145" pc="268436510" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="146" pc="268436531" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="149" pc="268436535" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="151" pc="268436552" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="153" pc="268436587" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="155" pc="268436621" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="160" pc="268436646" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="161" pc="268436668" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="162" pc="268436694" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="163" pc="268436717" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="166" pc="268436732" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="171" pc="268436741" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="15" lineNum="173" pc="268436767" symbol="compute"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="9" object="true" symbol="MBOCountdownApp"/>
 <entry id="8391336" symbol="repeatCount"/>
 <entry field="true" id="17" symbol="AlertTones"/>
-<entry field="true" id="33" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventType&gt;"/>
+<entry field="true" id="34" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventType&gt;"/>
 <entry field="true" id="14" symbol="TimesUp"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="18" object="true" symbol="MBOTimedEvent"/>
 <entry field="true" id="21" symbol="events"/>
-<entry id="36" method="true" symbol="timeForEvent"/>
+<entry id="37" method="true" symbol="timeForEvent"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="24" symbol="fiveMinTimes"/>
-<entry field="true" id="32" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventWhen&gt;"/>
+<entry field="true" id="25" symbol="fiveMinTimes"/>
+<entry field="true" id="33" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventWhen&gt;"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
-<entry field="true" id="35" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventHappened&gt;"/>
-<entry field="true" id="23" symbol="thirtyMinTimes"/>
+<entry field="true" id="36" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventHappened&gt;"/>
+<entry field="true" id="24" symbol="thirtyMinTimes"/>
+<entry field="true" id="23" symbol="penaltyPoints"/>
 <entry field="true" id="15" symbol="PointLost"/>
 <entry id="8388636" module="true" symbol="Attention"/>
 <entry field="true" id="10" symbol="Pause"/>
 <entry field="true" id="20" symbol="eventDuration"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="31" symbol="AppName"/>
-<entry field="true" id="25" symbol="oneMinTimes"/>
-<entry field="true" id="34" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_repeats&gt;"/>
-<entry field="true" id="30" symbol="LauncherIcon"/>
+<entry field="true" id="32" symbol="AppName"/>
+<entry field="true" id="26" symbol="oneMinTimes"/>
+<entry field="true" id="35" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_repeats&gt;"/>
+<entry field="true" id="31" symbol="LauncherIcon"/>
 <entry id="8391338" symbol="toneProfile"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry field="true" id="11" symbol="ThirtyMin"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="8389137" method="true" symbol="compute"/>
-<entry field="true" id="26" symbol="timeType"/>
+<entry field="true" id="27" symbol="timeType"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry field="true" id="16" symbol="TimedOut"/>
 <entry field="true" id="13" symbol="OneMin"/>
 <entry id="8388985" method="true" symbol="playTone"/>
 <entry id="8389344" symbol="seconds"/>
-<entry id="38" method="true" symbol="checkEvent"/>
-<entry id="27" method="true" symbol="buildEvents"/>
+<entry id="39" method="true" symbol="checkEvent"/>
+<entry id="28" method="true" symbol="buildEvents"/>
 <entry field="true" id="12" symbol="FiveMin"/>
 <entry field="true" id="22" symbol="nextEvtIdx"/>
-<entry id="28" module="true" symbol="Layouts"/>
-<entry id="37" method="true" symbol="playAlert"/>
+<entry id="29" module="true" symbol="Layouts"/>
+<entry id="38" method="true" symbol="playAlert"/>
 <entry id="19" object="true" symbol="MBOCountdownView"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="29" module="true" symbol="Menus"/>
+<entry id="30" module="true" symbol="Menus"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry id="8388635" module="true" symbol="Application"/>
 </symbolTable>
@@ -126,24 +127,25 @@
 <entry endPc="268436030" name="i" stackId="1" startPc="268435924"/>
 <entry endPc="268436166" name="i" stackId="2" startPc="268436060"/>
 <entry endPc="268436302" name="i" stackId="3" startPc="268436196"/>
-<entry endPc="268436819" name="result" stackId="2" startPc="268436445"/>
-<entry endPc="268436819" name="timeUsed" stackId="3" startPc="268436445"/>
-<entry endPc="268436819" name="timeLeft" stackId="4" startPc="268436445"/>
-<entry endPc="268436820" name="info" stackId="1" startPc="268436441"/>
+<entry endPc="268436738" name="pointIdx" stackId="5" startPc="268436646"/>
+<entry endPc="268436770" name="result" stackId="2" startPc="268436468"/>
+<entry endPc="268436770" name="timeUsed" stackId="3" startPc="268436468"/>
+<entry endPc="268436770" name="timeLeft" stackId="4" startPc="268436468"/>
+<entry endPc="268436771" name="info" stackId="1" startPc="268436464"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
 <dataEntry offset="87" parentId="" symbolId="globals" type="module"/>
 <dataEntry offset="222" parentId="globals" symbolId="MBOCountdownView" type="class"/>
-<dataEntry offset="341" parentId="globals" symbolId="MBOCountdownApp" type="class"/>
-<dataEntry offset="412" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="491" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="530" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="561" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="592" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="623" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="654" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="693" parentId="globals" symbolId="MBOTimedEvent" type="class"/>
+<dataEntry offset="349" parentId="globals" symbolId="MBOCountdownApp" type="class"/>
+<dataEntry offset="420" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="499" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="538" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="569" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="600" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="631" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="662" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="701" parentId="globals" symbolId="MBOTimedEvent" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="MBOCountdownApp">
