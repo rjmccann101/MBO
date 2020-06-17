@@ -61,7 +61,6 @@ class MBOTimedEvent {
 		if (Attention has :playTone) {
 		    AlertTones[me.m_eventType].put(:repeatCount,me.m_repeats) ;
 		    Attention.playTone(AlertTones[me.m_eventType]) ;
-		    System.println("Played event") ;
 		}
 	}
 	
@@ -72,7 +71,6 @@ class MBOTimedEvent {
 		if (me.m_eventHappened == false) {
 			if (me.timeForEvent(timeLeft) == true) {
 				me.m_eventHappened = true ;
-				System.println("Event has happened") ;
 				me.playAlert(timeLeft) ;
 				result = true ;
 			}
@@ -86,7 +84,7 @@ class MBOTimedEvent {
 class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// The duration of the event, 3 hours
-	const eventDuration = Gregorian.duration({:seconds => 40});
+	const eventDuration = Gregorian.duration({:minutes => 2});
 
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
@@ -101,13 +99,11 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     const fiveMinTimes  = [25,20,15,10,5] ;
     const oneMinTimes   = [5,4,3,2,1] ;
     
-    const timeType = :seconds ;  // For testing puposes
-    // const timeType = :minutes ;
+    //const timeType = :seconds ;  // For testing puposes
+    const timeType = :minutes ;
         
     // Populate the events array with the events that we want to alert the user to
     function buildEvents() {
-    	System.println(thirtyMinTimes) ;
-    	System.println(thirtyMinTimes.size()) ;
       	for (var i = 0; i < thirtyMinTimes.size(); i++) {
     		events.add(new MBOTimedEvent(Gregorian.duration({timeType => thirtyMinTimes[i]}),ThirtyMin, i));
     	}
@@ -128,9 +124,8 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-        label = "Mountain Bike Orienteering";
+        label = "M B O";
         buildEvents() ;
-        System.println("Constructing MBOCountdownView") ;
     }
 
     // The given info object contains all the current workout
@@ -148,7 +143,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
         // Has the activity started?
         if (info.timerState == 3) {
         	// If there are any more events to consume then
-	        if (nextEvtIdx < events.size() - 1) {
+	        if (nextEvtIdx < events.size()) {
 	        	// Test to see if the next event has happened
 		        if (events[nextEvtIdx].checkEvent(timeLeft) == true) {
 		        	// and when it does happen move onto the next event.
@@ -157,8 +152,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	        } else {
 	        	// The last event has fired, your out of time and losing 
 	        	// points.
-	        	var pointIdx = timeLeft.value().abs() ;
-	        	System.println("timeLeft " + pointIdx) ;
+	        	var pointIdx = timeLeft.value().abs()/60 ;
 	        	if (pointIdx < penaltyPoints.size()) {
 	        		return penaltyPoints[pointIdx] ;
 	        	}
@@ -167,8 +161,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	        	}
 	        }
         }
-        
-        System.println("result = " + result) ;
         
         return result ; 
     }
