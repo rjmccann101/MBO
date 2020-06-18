@@ -29,18 +29,12 @@ const AlertTones = {
         						   new Attention.ToneProfile( 5000, 250)]},
     OneMin    => {:toneProfile => [new Attention.ToneProfile( 5000, 250),
         						   new Attention.ToneProfile( 7500, 250)]},
-    TimesUp   => {:toneProfile => [new Attention.ToneProfile( 2500, 500),
-        						   new Attention.ToneProfile( 2000, 500),
-        						   new Attention.ToneProfile( 7500, 500)]},
-    PointLost => {:toneProfile => [new Attention.ToneProfile( 2500, 250),
-        						   new Attention.ToneProfile( 2000, 250)]},
-    TimedOut => {:toneProfile =>  [new Attention.ToneProfile( 2500, 500),
-        						   new Attention.ToneProfile( 2000, 500)]}
-   } ;
-   
+    TimesUp   => Attention.TONE_CANARY,
+    PointLost => Attention.TONE_LOUD_BEEP,
+    TimedOut  => Attention.TONE_ALERT_LO	 } ;
+ 
 // Single vibrate profile - used for all events
-const AlertVibe = [new Attention.VibeProfile(50, 500)];  // 0.5 Second Vibrate
-
+const AlertVibe = [new Attention.VibeProfile(100, 500)];  // 0.5 Second Vibrate
 
 // A class to hold an time event that we need to notify the user about.
 class MBOTimedEvent {
@@ -68,7 +62,9 @@ class MBOTimedEvent {
 	// Play the alert for this event
 	function playAlert(timeLeft) {
 		if (Attention has :playTone) {
-		    AlertTones[me.m_eventType].put(:repeatCount,me.m_repeats) ;
+			if (me.m_repeats > 0) {
+		    	AlertTones[me.m_eventType].put(:repeatCount,me.m_repeats) ;
+		    }
 		    Attention.playTone(AlertTones[me.m_eventType]) ;
 		}
 		if (Attention has :vibrate) {
@@ -96,7 +92,7 @@ class MBOTimedEvent {
 class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// The duration of the event, 3 hours
-	const eventDuration = Gregorian.duration({:minutes => 180});
+	const eventDuration = Gregorian.duration({:seconds => 180});
 	
 	// Seconds per minute	
 	const secondsPerMinute = 60 ;
@@ -216,7 +212,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
         var timeLeft = eventDuration.subtract(timeUsed) ;
         var secondsLeft = eventDuration.compare(timeUsed) ;
         var result = "Error!" ;
-        
+               
 		// Decide what to do based on the timer state
         switch (info.timerState) {
         case 0: 
