@@ -64,21 +64,28 @@ class MBOTurnDistanceView extends WatchUi.DataField {
             }
         }
     }
+    
+    private function drawTurn(turnName, type, distance) {
+    	var value = View.findDrawableById(turnName);
+    	System.println(value) ;
+        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
+            value.setColor(Graphics.COLOR_WHITE);
+        } else {
+            value.setColor(Graphics.COLOR_BLACK);
+        }
+        value.setText(type + " " + distance.format("%.2f"));
+    }
+    
 
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
     function onUpdate(dc) {
         // Set the background color
         View.findDrawableById("Background").setColor(getBackgroundColor());
-
-        // Set the foreground color and value
-        var value = View.findDrawableById("value");
-        if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-            value.setColor(Graphics.COLOR_WHITE);
-        } else {
-            value.setColor(Graphics.COLOR_BLACK);
-        }
-        value.setText(mValue.format("%.2f"));
+        
+        drawTurn("turn1", "L", 100.0) ;
+        drawTurn("turn2", "R", 120.0) ;
+        drawTurn("turn3", "U", 130.0) ;
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
