@@ -4,10 +4,13 @@ using Toybox.Graphics;
 class MBOTurnDistanceView extends WatchUi.DataField {
 
     hidden var mValue;
+    
+    private var mHistory ;
 
     function initialize() {
         DataField.initialize();
         mValue = 0.0f;
+        mHistory = new CircularArray(5) ;
     }
 
     // Set your layout here. Anytime the size of obscurity of

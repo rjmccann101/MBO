@@ -92,7 +92,7 @@ class MBOTimedEvent {
 class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// The duration of the event, 3 hours
-	const eventDuration = Gregorian.duration({:seconds => 180});
+	const eventDuration = Gregorian.duration({:minutes => 180});
 	
 	// Seconds per minute	
 	const secondsPerMinute = 60 ;

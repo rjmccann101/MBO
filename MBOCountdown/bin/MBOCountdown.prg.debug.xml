@@ -96,7 +96,6 @@
 <entry field="true" id="15" symbol="TimedOut"/>
 <entry field="true" id="12" symbol="OneMin"/>
 <entry id="8388985" method="true" symbol="playTone"/>
-<entry id="8389344" symbol="seconds"/>
 <entry id="44" method="true" symbol="checkEvent"/>
 <entry field="true" id="11" symbol="FiveMin"/>
 <entry field="true" id="23" symbol="nextEvtIdx"/>
