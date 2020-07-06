@@ -17,13 +17,15 @@ class CircularArray {
 	// Add a new element into the circular array
 	function add(val) {
 		lst++ ;
-		if (lst == mSize) {
+		if (lst >= mSize) {
 			lst = 0 ;
 		}
 		
+		mData[lst] = val ;
+		
 		if (lst == fst) {
 			fst++ ;
-			if (fst == mSize) {
+			if (fst >= mSize) {
 				fst = 0 ;
 			}
 		}

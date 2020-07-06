@@ -2,15 +2,22 @@ using Toybox.WatchUi;
 using Toybox.Graphics;
 
 class MBOTurnDistanceView extends WatchUi.DataField {
-
-    hidden var mValue;
-    
-    private var mHistory ;
+       
+    private var mHistory ;			// The last 5 bearings and and distances
+    private var mTurnDistances ;	// The current set of turn distances
 
     function initialize() {
         DataField.initialize();
-        mValue = 0.0f;
         mHistory = new CircularArray(5) ;
+        mTurnDistances = new CircularArray(3) ;
+
+        for (var i = 0; i < 5; i++) {
+        	mHistory.add(new DistanceBearing(0.0, 0.0)) ;
+        }
+        
+        for (var i = 0; i < 3; i++) {
+        	mTurnDistances.add(new TurnDistance(" ", 0.0)) ;
+        }
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -37,13 +44,7 @@ class MBOTurnDistanceView extends WatchUi.DataField {
         // Use the generic, centered layout
         } else {
             View.setLayout(Rez.Layouts.MainLayout(dc));
-            var labelView = View.findDrawableById("label");
-            labelView.locY = labelView.locY - 16;
-            var valueView = View.findDrawableById("value");
-            valueView.locY = valueView.locY + 7;
         }
-
-        View.findDrawableById("label").setText(Rez.Strings.label);
         return true;
     }
 
@@ -53,21 +54,33 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
     
-    	System.println(info.elapsedDistance + "," + info.currentHeading) ;
-    
-        // See Activity.Info in the documentation for available information.
-        if(info has :currentHeartRate){
-            if(info.currentHeartRate != null){
-                mValue = info.currentHeartRate;
-            } else {
-                mValue = 0.0f;
-            }
-        }
+    	if (info.timerState == 3) {
+	    	System.println(info.elapsedDistance + "," + info.currentHeading) ;
+	    	mHistory.add(new DistanceBearing(info.elapsedDistance, info.currentHeading)) ;
+	    	
+	    	var absChange = 0.0 ;
+	    	var totalChange  = 0.0 ;
+	    	var maxChange  = 0.0 ;
+	    	
+	    	var aPos = mHistory.first() ;
+	    	System.println(aPos) ;
+	    	//System.println(aPos + ","+ aPos.mDistance + "," + aPos.mBearing) ;
+	    	do {
+	    		absChange = absChange + aPos.mBearing ;
+	    		aPos = mHistory.next() ;
+	    	}
+	    	while (!mHistory.isLast()) ; 
+	    	
+	    	System.println(absChange) ;
+    	}
+    	else {
+    		System.println("Paused or Stopped") ;
+    	}
+    	
     }
     
     private function drawTurn(turnName, type, distance) {
     	var value = View.findDrawableById(turnName);
-    	System.println(value) ;
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
             value.setColor(Graphics.COLOR_WHITE);
         } else {

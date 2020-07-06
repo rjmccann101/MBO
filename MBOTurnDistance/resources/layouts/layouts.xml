@@ -2,9 +2,9 @@
     <!-- A generic, centered layout. -->
     <layout id="MainLayout">
         <drawable class="Background" />
-        <label id="turn1" x="center" y="top" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" />
-        <label id="turn2" x="center" y="center" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" />
-        <label id="turn3" x="center" y="bottom" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_MEDIUM" />
+        <label id="turn1" x="center" y="top" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL" />
+        <label id="turn2" x="center" y="center" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL" />
+        <label id="turn3" x="center" y="bottom" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" font="Graphics.FONT_SMALL" />
     </layout>
 
     <!-- Layouts used for the for the four quadrants. -->
