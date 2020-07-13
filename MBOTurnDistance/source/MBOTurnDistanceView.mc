@@ -11,12 +11,15 @@ class MBOTurnDistanceView extends WatchUi.DataField {
         mHistory = new CircularArray(5) ;
         mTurnDistances = new CircularArray(3) ;
 
-        for (var i = 0; i < 5; i++) {
-        	mHistory.add(new DistanceBearing(0.0, 0.0)) ;
-        }
-        
+		clearHistory() ;        
         for (var i = 0; i < 3; i++) {
         	mTurnDistances.add(new TurnDistance(" ", 0.0)) ;
+        }
+    }
+    
+    function clearHistory() {
+        for (var i = 0; i < 5; i++) {
+        	mHistory.add(new DistanceBearing(0.0, 0.0)) ;
         }
     }
 
@@ -47,6 +50,15 @@ class MBOTurnDistanceView extends WatchUi.DataField {
         }
         return true;
     }
+    
+    function abs(val) {
+    	if (val < 0.0) {
+    		return val * (-1.0) ;
+    	}
+    	else {
+    		return val ;
+    	}
+    }
 
     // The given info object contains all the current workout information.
     // Calculate a value and save it locally in this method.
@@ -55,23 +67,48 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     function compute(info) {
     
     	if (info.timerState == 3) {
-	    	System.println(info.elapsedDistance + "," + info.currentHeading) ;
-	    	mHistory.add(new DistanceBearing(info.elapsedDistance, info.currentHeading)) ;
+	    	System.println("Distance = " + info.elapsedDistance + ", heading = " + info.currentHeading) ;
+	    	var aLast = mHistory.last() ;
 	    	
-	    	var absChange = 0.0 ;
-	    	var totalChange  = 0.0 ;
-	    	var maxChange  = 0.0 ;
+	    	if (aLast.mDistance != info.elapsedDistance) {
+	    		mHistory.add(new DistanceBearing(info.elapsedDistance, info.currentHeading)) ;
 	    	
-	    	var aPos = mHistory.first() ;
-	    	System.println(aPos) ;
-	    	//System.println(aPos + ","+ aPos.mDistance + "," + aPos.mBearing) ;
-	    	do {
-	    		absChange = absChange + aPos.mBearing ;
-	    		aPos = mHistory.next() ;
-	    	}
-	    	while (!mHistory.isLast()) ; 
-	    	
-	    	System.println(absChange) ;
+		    	var absChange = 0.0 ;
+		    	var totalChange  = 0.0 ;
+		    	
+		    	var aPos = mHistory.first() ;
+		    	var bPos = mHistory.next() ;
+		    	do {
+		    		totalChange = totalChange +  bPos.mBearing - aPos.mBearing ;
+		    		absChange = absChange + abs(bPos.mBearing - aPos.mBearing) ;
+		    		
+		    		aPos = bPos ;
+		    		bPos = mHistory.next() ;
+		    	}
+		    	while (!mHistory.isLast()) ; 
+		    	totalChange = totalChange +  bPos.mBearing - aPos.mBearing ;
+		    	absChange = absChange + abs(bPos.mBearing - aPos.mBearing) ;
+		    	
+		    	var totalChangeDeg = totalChange * 180.0 * 7.0 /22.0 ;
+		    	var absChangeDeg = absChange * 180.0 * 7.0 /22.0 ;
+		    	System.println("Total change = " + totalChange + " rad, " + totalChangeDeg + " deg") ;
+		    	System.println("Abs change = " + absChange + " rad, " + absChangeDeg + " deg") ;
+		    	
+		    	if (totalChangeDeg > 60.0) {
+		    		System.println("New right turn") ;
+		    		clearHistory() ;
+		    	}
+		    	else if (totalChangeDeg < -60.0) {
+		    		System.println("New left turn") ;
+		    		clearHistory() ;
+		    	}
+		    	else if (absChange > 90) {
+		    		System.println("New S bend") ;
+		    		clearHistory() ;
+		    	}
+		    	
+		    	
+		    }
     	}
     	else {
     		System.println("Paused or Stopped") ;

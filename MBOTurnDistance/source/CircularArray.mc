@@ -53,6 +53,21 @@ class CircularArray {
 		return mData[pos] ;
 	}
 	
+	// Return the previous item from the array
+	function previous() {
+		pos-- ;
+		if (pos < 0) {
+			pos = mSize - 1 ;
+		}
+		return mData[pos] ;
+	}
+	
+	// Return the last item from the array
+	function last() {
+		pos = lst ;
+		return mData[pos] ;
+	}
+	
 	// Return true if now at the end of the circular array
 	function isLast() {
 		return pos == lst ;

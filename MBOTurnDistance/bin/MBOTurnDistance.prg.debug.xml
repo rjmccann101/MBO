@@ -23,101 +23,132 @@
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="7" lineNum="50" pc="268435730" symbol="next"/>
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="7" lineNum="51" pc="268435750" symbol="next"/>
 <entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="7" lineNum="53" pc="268435766" symbol="next"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="57" pc="268435785" symbol="isLast"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="58" pc="268435789" symbol="isLast"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="10" lineNum="7" pc="268435808" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="10" lineNum="8" pc="268435812" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="10" lineNum="9" pc="268435822" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="12" lineNum="7" pc="268435833" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="12" lineNum="8" pc="268435837" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="12" lineNum="9" pc="268435847" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="13" lineNum="12" pc="268435858" symbol="setDistance"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="13" lineNum="13" pc="268435862" symbol="setDistance"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="9" pc="268435873" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="10" pc="268435877" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="11" pc="268435895" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="12" pc="268435930" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="14" pc="268435965" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="15" pc="268435983" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="18" pc="268436046" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="15" lineNum="19" pc="268436064" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="25" pc="268436128" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="26" pc="268436132" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="29" pc="268436151" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="30" pc="268436174" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="33" pc="268436220" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="34" pc="268436243" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="37" pc="268436289" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="38" pc="268436312" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="41" pc="268436358" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="42" pc="268436381" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="46" pc="268436427" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="16" lineNum="48" pc="268436470" symbol="onLayout"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="55" pc="268436474" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="57" pc="268436478" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="58" pc="268436495" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="59" pc="268436536" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="61" pc="268436592" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="62" pc="268436599" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="63" pc="268436606" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="65" pc="268436613" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="66" pc="268436632" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="68" pc="268436652" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="69" pc="268436652" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="70" pc="268436665" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="74" pc="268436705" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="77" pc="268436728" symbol="compute"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="95" pc="268436893" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="97" pc="268436897" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="99" pc="268436940" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="100" pc="268436967" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="101" pc="268436994" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="104" pc="268437021" symbol="onUpdate"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="21" lineNum="5" pc="268437042" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="21" lineNum="6" pc="268437046" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="22" lineNum="10" pc="268437065" symbol="onStart"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="23" lineNum="14" pc="268437070" symbol="onStop"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="24" lineNum="18" pc="268437075" symbol="getInitialView"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="24" lineNum="19" pc="268437079" symbol="getInitialView"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="26" lineNum="9" pc="268437117" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="26" lineNum="10" pc="268437121" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="26" lineNum="14" pc="268437142" symbol="initialize"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="27" lineNum="17" pc="268437163" symbol="setColor"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="27" lineNum="18" pc="268437167" symbol="setColor"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="28" lineNum="21" pc="268437178" symbol="draw"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="28" lineNum="22" pc="268437182" symbol="draw"/>
-<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="28" lineNum="23" pc="268437214" symbol="draw"/>
-<entry filename="Rez" id="34" lineNum="15" pc="268437227" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="17" pc="268437239" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="19" pc="268437252" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="20" pc="268437276" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="21" pc="268437419" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="22" pc="268437591" symbol="MainLayout"/>
-<entry filename="Rez" id="34" lineNum="24" pc="268437734" symbol="MainLayout"/>
-<entry filename="Rez" id="35" lineNum="33" pc="268437782" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="35" lineNum="36" pc="268437794" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="35" lineNum="37" pc="268437818" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="35" lineNum="38" pc="268437958" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="35" lineNum="39" pc="268438127" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="35" lineNum="41" pc="268438267" symbol="TopLeftLayout"/>
-<entry filename="Rez" id="36" lineNum="50" pc="268438315" symbol="TopRightLayout"/>
-<entry filename="Rez" id="36" lineNum="53" pc="268438327" symbol="TopRightLayout"/>
-<entry filename="Rez" id="36" lineNum="54" pc="268438351" symbol="TopRightLayout"/>
-<entry filename="Rez" id="36" lineNum="55" pc="268438491" symbol="TopRightLayout"/>
-<entry filename="Rez" id="36" lineNum="56" pc="268438660" symbol="TopRightLayout"/>
-<entry filename="Rez" id="36" lineNum="58" pc="268438800" symbol="TopRightLayout"/>
-<entry filename="Rez" id="37" lineNum="67" pc="268438848" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="37" lineNum="70" pc="268438860" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="37" lineNum="71" pc="268438884" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="37" lineNum="72" pc="268439024" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="37" lineNum="73" pc="268439193" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="37" lineNum="75" pc="268439333" symbol="BottomLeftLayout"/>
-<entry filename="Rez" id="38" lineNum="84" pc="268439381" symbol="BottomRightLayout"/>
-<entry filename="Rez" id="38" lineNum="87" pc="268439393" symbol="BottomRightLayout"/>
-<entry filename="Rez" id="38" lineNum="88" pc="268439417" symbol="BottomRightLayout"/>
-<entry filename="Rez" id="38" lineNum="89" pc="268439557" symbol="BottomRightLayout"/>
-<entry filename="Rez" id="38" lineNum="90" pc="268439726" symbol="BottomRightLayout"/>
-<entry filename="Rez" id="38" lineNum="92" pc="268439866" symbol="BottomRightLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="57" pc="268435785" symbol="previous"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="58" pc="268435789" symbol="previous"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="59" pc="268435808" symbol="previous"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="60" pc="268435825" symbol="previous"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="8" lineNum="62" pc="268435850" symbol="previous"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="9" lineNum="66" pc="268435869" symbol="last"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="9" lineNum="67" pc="268435873" symbol="last"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="9" lineNum="68" pc="268435889" symbol="last"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="10" lineNum="72" pc="268435908" symbol="isLast"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\CircularArray.mc" id="10" lineNum="73" pc="268435912" symbol="isLast"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="12" lineNum="7" pc="268435931" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="12" lineNum="8" pc="268435935" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\DistanceBearing.mc" id="12" lineNum="9" pc="268435945" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="14" lineNum="7" pc="268435956" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="14" lineNum="8" pc="268435960" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="14" lineNum="9" pc="268435970" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="15" lineNum="12" pc="268435981" symbol="setDistance"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\TurnDistance.mc" id="15" lineNum="13" pc="268435985" symbol="setDistance"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="9" pc="268435996" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="10" pc="268436000" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="11" pc="268436018" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="12" pc="268436053" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="14" pc="268436088" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="15" pc="268436100" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="17" lineNum="16" pc="268436118" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="18" lineNum="20" pc="268436182" symbol="clearHistory"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="18" lineNum="21" pc="268436186" symbol="clearHistory"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="18" lineNum="22" pc="268436204" symbol="clearHistory"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="28" pc="268436268" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="29" pc="268436272" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="32" pc="268436291" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="33" pc="268436314" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="36" pc="268436360" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="37" pc="268436383" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="40" pc="268436429" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="41" pc="268436452" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="44" pc="268436498" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="45" pc="268436521" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="49" pc="268436567" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="19" lineNum="51" pc="268436610" symbol="onLayout"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="20" lineNum="54" pc="268436614" symbol="abs"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="20" lineNum="55" pc="268436618" symbol="abs"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="20" lineNum="56" pc="268436629" symbol="abs"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="20" lineNum="59" pc="268436641" symbol="abs"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="67" pc="268436645" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="69" pc="268436649" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="70" pc="268436666" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="71" pc="268436713" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="73" pc="268436732" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="74" pc="268436752" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="76" pc="268436808" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="77" pc="268436815" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="79" pc="268436822" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="80" pc="268436841" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="81" pc="268436860" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="82" pc="268436860" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="83" pc="268436882" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="85" pc="268436915" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="86" pc="268436919" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="89" pc="268436959" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="90" pc="268436981" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="92" pc="268437014" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="93" pc="268437036" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="94" pc="268437058" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="95" pc="268437099" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="97" pc="268437140" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="98" pc="268437151" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="99" pc="268437174" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="101" pc="268437189" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="102" pc="268437200" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="103" pc="268437223" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="105" pc="268437238" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="106" pc="268437249" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="107" pc="268437272" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="21" lineNum="114" pc="268437293" symbol="compute"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="132" pc="268437458" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="134" pc="268437462" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="136" pc="268437505" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="137" pc="268437532" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="138" pc="268437559" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceView.mc" id="23" lineNum="141" pc="268437586" symbol="onUpdate"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="25" lineNum="5" pc="268437607" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="25" lineNum="6" pc="268437611" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="26" lineNum="10" pc="268437630" symbol="onStart"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="27" lineNum="14" pc="268437635" symbol="onStop"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="28" lineNum="18" pc="268437640" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceApp.mc" id="28" lineNum="19" pc="268437644" symbol="getInitialView"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="30" lineNum="9" pc="268437682" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="30" lineNum="10" pc="268437686" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="30" lineNum="14" pc="268437707" symbol="initialize"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="31" lineNum="17" pc="268437728" symbol="setColor"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="31" lineNum="18" pc="268437732" symbol="setColor"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="32" lineNum="21" pc="268437743" symbol="draw"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="32" lineNum="22" pc="268437747" symbol="draw"/>
+<entry filename="C:\\Users\\rjmcc\\git\\MBO\\MBOTurnDistance\\source\\MBOTurnDistanceBackground.mc" id="32" lineNum="23" pc="268437779" symbol="draw"/>
+<entry filename="Rez" id="38" lineNum="15" pc="268437792" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="17" pc="268437804" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="19" pc="268437817" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="20" pc="268437841" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="21" pc="268437984" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="22" pc="268438156" symbol="MainLayout"/>
+<entry filename="Rez" id="38" lineNum="24" pc="268438299" symbol="MainLayout"/>
+<entry filename="Rez" id="39" lineNum="33" pc="268438347" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="39" lineNum="36" pc="268438359" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="39" lineNum="37" pc="268438383" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="39" lineNum="38" pc="268438523" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="39" lineNum="39" pc="268438692" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="39" lineNum="41" pc="268438832" symbol="TopLeftLayout"/>
+<entry filename="Rez" id="40" lineNum="50" pc="268438880" symbol="TopRightLayout"/>
+<entry filename="Rez" id="40" lineNum="53" pc="268438892" symbol="TopRightLayout"/>
+<entry filename="Rez" id="40" lineNum="54" pc="268438916" symbol="TopRightLayout"/>
+<entry filename="Rez" id="40" lineNum="55" pc="268439056" symbol="TopRightLayout"/>
+<entry filename="Rez" id="40" lineNum="56" pc="268439225" symbol="TopRightLayout"/>
+<entry filename="Rez" id="40" lineNum="58" pc="268439365" symbol="TopRightLayout"/>
+<entry filename="Rez" id="41" lineNum="67" pc="268439413" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="41" lineNum="70" pc="268439425" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="41" lineNum="71" pc="268439449" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="41" lineNum="72" pc="268439589" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="41" lineNum="73" pc="268439758" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="41" lineNum="75" pc="268439898" symbol="BottomLeftLayout"/>
+<entry filename="Rez" id="42" lineNum="84" pc="268439946" symbol="BottomRightLayout"/>
+<entry filename="Rez" id="42" lineNum="87" pc="268439958" symbol="BottomRightLayout"/>
+<entry filename="Rez" id="42" lineNum="88" pc="268439982" symbol="BottomRightLayout"/>
+<entry filename="Rez" id="42" lineNum="89" pc="268440122" symbol="BottomRightLayout"/>
+<entry filename="Rez" id="42" lineNum="90" pc="268440291" symbol="BottomRightLayout"/>
+<entry filename="Rez" id="42" lineNum="92" pc="268440431" symbol="BottomRightLayout"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8389124" method="true" symbol="onUpdate"/>
@@ -125,6 +156,7 @@
 <entry id="8389349" symbol="justification"/>
 <entry field="true" id="28" symbol="&lt;globals/CircularArray/&lt;&gt;lst&gt;"/>
 <entry id="20" method="true" symbol="TopLeftLayout"/>
+<entry id="8390370" method="true" symbol="previous"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry id="11" object="true" symbol="TurnDistance"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
@@ -132,13 +164,13 @@
 <entry id="22" method="true" symbol="BottomLeftLayout"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389068" method="true" symbol="draw"/>
-<entry id="31" method="true" symbol="isLast"/>
-<entry field="true" id="32" symbol="mTurnType"/>
+<entry id="32" method="true" symbol="isLast"/>
+<entry field="true" id="33" symbol="mTurnType"/>
 <entry id="8388639" module="true" symbol="Graphics"/>
 <entry id="19" method="true" symbol="MainLayout"/>
 <entry field="true" id="25" symbol="&lt;globals/CircularArray/&lt;&gt;mSize&gt;"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry id="37" method="true" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;drawTurn&gt;"/>
+<entry id="39" method="true" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;drawTurn&gt;"/>
 <entry field="true" id="27" symbol="&lt;globals/CircularArray/&lt;&gt;fst&gt;"/>
 <entry field="true" id="8389130" symbol="mColor"/>
 <entry id="8389131" method="true" symbol="setColor"/>
@@ -147,10 +179,10 @@
 <entry field="true" id="24" symbol="AppName"/>
 <entry field="true" id="15" symbol="mBearing"/>
 <entry id="8390146" module="true" object="true" symbol="Background"/>
-<entry field="true" id="36" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;mTurnDistances&gt;"/>
+<entry field="true" id="37" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;mTurnDistances&gt;"/>
 <entry id="10" object="true" symbol="DistanceBearing"/>
 <entry field="true" id="18" symbol="LauncherIcon"/>
-<entry field="true" id="35" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;mHistory&gt;"/>
+<entry field="true" id="36" symbol="&lt;globals/MBOTurnDistanceView/&lt;&gt;mHistory&gt;"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="8389281" method="true" symbol="onStop"/>
 <entry field="true" id="8389065" symbol="locY"/>
@@ -162,6 +194,7 @@
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="8388942" method="true" symbol="add"/>
 <entry id="21" method="true" symbol="TopRightLayout"/>
+<entry id="8388774" method="true" symbol="abs"/>
 <entry field="true" id="26" symbol="&lt;globals/CircularArray/&lt;&gt;mData&gt;"/>
 <entry id="8389348" symbol="font"/>
 <entry id="13" object="true" symbol="MBOTurnDistanceApp"/>
@@ -169,70 +202,76 @@
 <entry id="8389347" symbol="color"/>
 <entry field="true" id="14" symbol="mDistance"/>
 <entry id="16" module="true" symbol="Layouts"/>
+<entry id="31" method="true" symbol="last"/>
 <entry id="30" method="true" symbol="first"/>
 <entry id="23" method="true" symbol="BottomRightLayout"/>
+<entry id="38" method="true" symbol="clearHistory"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="8389063" symbol="identifier"/>
 <entry id="17" module="true" symbol="Menus"/>
-<entry field="true" id="33" symbol="mTurnDistance"/>
+<entry field="true" id="34" symbol="mTurnDistance"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
-<entry id="34" method="true" symbol="setDistance"/>
+<entry id="35" method="true" symbol="setDistance"/>
 <entry id="8388635" module="true" symbol="Application"/>
 <entry id="8388792" method="true" symbol="isEmpty"/>
 </symbolTable>
 <localVars>
 <entry endPc="268435488" name="size" stackId="1" startPc="268435456"/>
 <entry endPc="268435645" name="val" stackId="1" startPc="268435488"/>
-<entry endPc="268435833" name="bearing" stackId="2" startPc="268435808"/>
-<entry endPc="268435833" name="distance" stackId="1" startPc="268435808"/>
-<entry endPc="268435858" name="turnType" stackId="1" startPc="268435833"/>
-<entry endPc="268435858" name="distance" stackId="2" startPc="268435833"/>
-<entry endPc="268435873" name="distance" stackId="1" startPc="268435858"/>
-<entry endPc="268436046" name="i" stackId="1" startPc="268435983"/>
-<entry endPc="268436127" name="i" stackId="2" startPc="268436064"/>
-<entry endPc="268436473" name="obscurityFlags" stackId="2" startPc="268436132"/>
-<entry endPc="268436474" name="dc" stackId="1" startPc="268436128"/>
-<entry endPc="268436725" name="aPos" stackId="5" startPc="268436495"/>
-<entry endPc="268436725" name="totalChange" stackId="3" startPc="268436495"/>
-<entry endPc="268436725" name="maxChange" stackId="4" startPc="268436495"/>
-<entry endPc="268436725" name="absChange" stackId="2" startPc="268436495"/>
-<entry endPc="268436752" name="info" stackId="1" startPc="268436474"/>
-<entry endPc="268436892" name="value" stackId="4" startPc="268436756"/>
-<entry endPc="268436893" name="turnName" stackId="1" startPc="268436752"/>
-<entry endPc="268436893" name="type" stackId="2" startPc="268436752"/>
-<entry endPc="268436893" name="distance" stackId="3" startPc="268436752"/>
-<entry endPc="268437042" name="dc" stackId="1" startPc="268436893"/>
-<entry endPc="268437070" name="state" stackId="1" startPc="268437065"/>
-<entry endPc="268437075" name="state" stackId="1" startPc="268437070"/>
-<entry endPc="268437162" name="dictionary" stackId="1" startPc="268437121"/>
-<entry endPc="268437178" name="color" stackId="1" startPc="268437163"/>
-<entry endPc="268437227" name="dc" stackId="1" startPc="268437178"/>
-<entry endPc="268437781" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268437239"/>
-<entry endPc="268437781" name="rez_cmp_local_custom_drawable_12779134463865917751" stackId="3" startPc="268437239"/>
-<entry endPc="268437781" name="rez_cmp_local_text_turn3" stackId="6" startPc="268437239"/>
-<entry endPc="268437781" name="rez_cmp_local_text_turn2" stackId="5" startPc="268437239"/>
-<entry endPc="268437781" name="rez_cmp_local_text_turn1" stackId="4" startPc="268437239"/>
-<entry endPc="268437782" name="dc" stackId="1" startPc="268437227"/>
-<entry endPc="268438314" name="rez_cmp_local_text_turn3" stackId="5" startPc="268437794"/>
-<entry endPc="268438314" name="rez_cmp_local_custom_drawable_15202574921370981799" stackId="2" startPc="268437794"/>
-<entry endPc="268438314" name="rez_cmp_local_text_turn2" stackId="4" startPc="268437794"/>
-<entry endPc="268438314" name="rez_cmp_local_text_turn1" stackId="3" startPc="268437794"/>
-<entry endPc="268438315" name="dc" stackId="1" startPc="268437782"/>
-<entry endPc="268438847" name="rez_cmp_local_custom_drawable_14249605031452853485" stackId="2" startPc="268438327"/>
-<entry endPc="268438847" name="rez_cmp_local_text_turn3" stackId="5" startPc="268438327"/>
-<entry endPc="268438847" name="rez_cmp_local_text_turn2" stackId="4" startPc="268438327"/>
-<entry endPc="268438847" name="rez_cmp_local_text_turn1" stackId="3" startPc="268438327"/>
-<entry endPc="268438848" name="dc" stackId="1" startPc="268438315"/>
-<entry endPc="268439380" name="rez_cmp_local_custom_drawable_20559010811216388296" stackId="2" startPc="268438860"/>
-<entry endPc="268439380" name="rez_cmp_local_text_turn3" stackId="5" startPc="268438860"/>
-<entry endPc="268439380" name="rez_cmp_local_text_turn2" stackId="4" startPc="268438860"/>
-<entry endPc="268439380" name="rez_cmp_local_text_turn1" stackId="3" startPc="268438860"/>
-<entry endPc="268439381" name="dc" stackId="1" startPc="268438848"/>
-<entry endPc="268439913" name="rez_cmp_local_text_turn3" stackId="5" startPc="268439393"/>
-<entry endPc="268439913" name="rez_cmp_local_text_turn2" stackId="4" startPc="268439393"/>
-<entry endPc="268439913" name="rez_cmp_local_text_turn1" stackId="3" startPc="268439393"/>
-<entry endPc="268439913" name="rez_cmp_local_custom_drawable_16789706176448789031" stackId="2" startPc="268439393"/>
-<entry endPc="268439914" name="dc" stackId="1" startPc="268439381"/>
+<entry endPc="268435956" name="bearing" stackId="2" startPc="268435931"/>
+<entry endPc="268435956" name="distance" stackId="1" startPc="268435931"/>
+<entry endPc="268435981" name="turnType" stackId="1" startPc="268435956"/>
+<entry endPc="268435981" name="distance" stackId="2" startPc="268435956"/>
+<entry endPc="268435996" name="distance" stackId="1" startPc="268435981"/>
+<entry endPc="268436181" name="i" stackId="1" startPc="268436118"/>
+<entry endPc="268436267" name="i" stackId="1" startPc="268436204"/>
+<entry endPc="268436613" name="obscurityFlags" stackId="2" startPc="268436272"/>
+<entry endPc="268436614" name="dc" stackId="1" startPc="268436268"/>
+<entry endPc="268436645" name="val" stackId="1" startPc="268436614"/>
+<entry endPc="268437287" name="totalChangeDeg" stackId="7" startPc="268436752"/>
+<entry endPc="268437287" name="aPos" stackId="5" startPc="268436752"/>
+<entry endPc="268437287" name="totalChange" stackId="4" startPc="268436752"/>
+<entry endPc="268437287" name="absChangeDeg" stackId="8" startPc="268436752"/>
+<entry endPc="268437287" name="bPos" stackId="6" startPc="268436752"/>
+<entry endPc="268437287" name="absChange" stackId="3" startPc="268436752"/>
+<entry endPc="268437290" name="aLast" stackId="2" startPc="268436666"/>
+<entry endPc="268437317" name="info" stackId="1" startPc="268436645"/>
+<entry endPc="268437457" name="value" stackId="4" startPc="268437321"/>
+<entry endPc="268437458" name="turnName" stackId="1" startPc="268437317"/>
+<entry endPc="268437458" name="type" stackId="2" startPc="268437317"/>
+<entry endPc="268437458" name="distance" stackId="3" startPc="268437317"/>
+<entry endPc="268437607" name="dc" stackId="1" startPc="268437458"/>
+<entry endPc="268437635" name="state" stackId="1" startPc="268437630"/>
+<entry endPc="268437640" name="state" stackId="1" startPc="268437635"/>
+<entry endPc="268437727" name="dictionary" stackId="1" startPc="268437686"/>
+<entry endPc="268437743" name="color" stackId="1" startPc="268437728"/>
+<entry endPc="268437792" name="dc" stackId="1" startPc="268437743"/>
+<entry endPc="268438346" name="rez_cmp_local_var_dc_getWidth" stackId="2" startPc="268437804"/>
+<entry endPc="268438346" name="rez_cmp_local_text_turn3" stackId="6" startPc="268437804"/>
+<entry endPc="268438346" name="rez_cmp_local_text_turn2" stackId="5" startPc="268437804"/>
+<entry endPc="268438346" name="rez_cmp_local_text_turn1" stackId="4" startPc="268437804"/>
+<entry endPc="268438346" name="rez_cmp_local_custom_drawable_15974415072103133607" stackId="3" startPc="268437804"/>
+<entry endPc="268438347" name="dc" stackId="1" startPc="268437792"/>
+<entry endPc="268438879" name="rez_cmp_local_custom_drawable_17978380761835444229" stackId="2" startPc="268438359"/>
+<entry endPc="268438879" name="rez_cmp_local_text_turn3" stackId="5" startPc="268438359"/>
+<entry endPc="268438879" name="rez_cmp_local_text_turn2" stackId="4" startPc="268438359"/>
+<entry endPc="268438879" name="rez_cmp_local_text_turn1" stackId="3" startPc="268438359"/>
+<entry endPc="268438880" name="dc" stackId="1" startPc="268438347"/>
+<entry endPc="268439412" name="rez_cmp_local_custom_drawable_34002333419186476011" stackId="2" startPc="268438892"/>
+<entry endPc="268439412" name="rez_cmp_local_text_turn3" stackId="5" startPc="268438892"/>
+<entry endPc="268439412" name="rez_cmp_local_text_turn2" stackId="4" startPc="268438892"/>
+<entry endPc="268439412" name="rez_cmp_local_text_turn1" stackId="3" startPc="268438892"/>
+<entry endPc="268439413" name="dc" stackId="1" startPc="268438880"/>
+<entry endPc="268439945" name="rez_cmp_local_custom_drawable_12767403641109114226" stackId="2" startPc="268439425"/>
+<entry endPc="268439945" name="rez_cmp_local_text_turn3" stackId="5" startPc="268439425"/>
+<entry endPc="268439945" name="rez_cmp_local_text_turn2" stackId="4" startPc="268439425"/>
+<entry endPc="268439945" name="rez_cmp_local_text_turn1" stackId="3" startPc="268439425"/>
+<entry endPc="268439946" name="dc" stackId="1" startPc="268439413"/>
+<entry endPc="268440478" name="rez_cmp_local_text_turn3" stackId="5" startPc="268439958"/>
+<entry endPc="268440478" name="rez_cmp_local_text_turn2" stackId="4" startPc="268439958"/>
+<entry endPc="268440478" name="rez_cmp_local_custom_drawable_10669261812015853768" stackId="2" startPc="268439958"/>
+<entry endPc="268440478" name="rez_cmp_local_text_turn1" stackId="3" startPc="268439958"/>
+<entry endPc="268440479" name="dc" stackId="1" startPc="268439946"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
@@ -248,8 +287,8 @@
 <dataEntry offset="638" parentId="Rez" symbolId="JsonData" type="module"/>
 <dataEntry offset="669" parentId="Rez" symbolId="Strings" type="module"/>
 <dataEntry offset="716" parentId="globals" symbolId="CircularArray" type="class"/>
-<dataEntry offset="843" parentId="globals" symbolId="TurnDistance" type="class"/>
-<dataEntry offset="914" parentId="globals" symbolId="MBOTurnDistanceView" type="class"/>
+<dataEntry offset="859" parentId="globals" symbolId="TurnDistance" type="class"/>
+<dataEntry offset="930" parentId="globals" symbolId="MBOTurnDistanceView" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="CircularArray">
@@ -267,6 +306,12 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="next" parent="CircularArray">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="previous" parent="CircularArray">
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="last" parent="CircularArray">
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="isLast" parent="CircularArray">
@@ -289,8 +334,15 @@
 <functionEntry accessMode="public" name="initialize" parent="MBOTurnDistanceView">
 <documentation/>
 </functionEntry>
+<functionEntry accessMode="public" name="clearHistory" parent="MBOTurnDistanceView">
+<documentation/>
+</functionEntry>
 <functionEntry accessMode="public" name="onLayout" parent="MBOTurnDistanceView">
 <param id="dc"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="abs" parent="MBOTurnDistanceView">
+<param id="val"/>
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="compute" parent="MBOTurnDistanceView">
