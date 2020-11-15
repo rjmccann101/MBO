@@ -11,7 +11,7 @@ class MBOTurnDistanceView extends WatchUi.DataField {
         mHistory = new CircularArray(5) ;
         mTurnDistances = new CircularArray(3) ;
 
-		clearHistory() ;        
+		clearHistory() ;
         for (var i = 0; i < 3; i++) {
         	mTurnDistances.add(new TurnDistance(" ", 0.0)) ;
         }
