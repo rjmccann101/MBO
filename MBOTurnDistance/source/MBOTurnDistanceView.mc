@@ -6,17 +6,19 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     private var mHeadHist = new [5] ;			// The last 5 headings
     private var mDistHist = new [5] ;			// The last 5 distances
     private var mTurn = new [4] ;				// The turns associated with the last 5 headings
-    private var mTurnDistances ;	// The current set of turn distances
+    private var mTurnDistances = new [3] ;	// The current set of turn distances
+    private var mTurnDirection = new [3] ;    // The current set of turn directions (left/Right)
+    private var mElapsedDistance = 0.0 ;
     
     private var PI = 355.0/133.0 ;  // An aproximation for PI
     private var SIXTY_DEG = PI/3.0 ;  // 60 degrees in radians
 
     function initialize() {
         DataField.initialize();
-        mTurnDistances = new CircularArray(3) ;
-
+ 
         for (var i = 0; i < 3; i++) {
-        	mTurnDistances.add(new TurnDistance(" ", 0.0)) ;
+        	mTurnDistances[i] = 0.0 ;
+        	mTurnDirection[i] = " " ;
         }
         
         for (var i = 0; i < mHeadHist.size() ; i++) {
@@ -94,6 +96,17 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     	return T ;
     } 
     
+    // Return true if v1 and v2 have the same sign
+    function sameSign(v1, v2) {
+    	var result = false ;
+    	
+    	if ((v1 >= 0.0 and v2 >= 0.0) or (v1 <= 0.0 and v2 <= 0.0)) {
+    		result = true ;
+    	}
+    	
+    	return result ;
+    }
+    
 
     // The given info object contains all the current workout information.
     // Calculate a value and save it locally in this method.
@@ -103,6 +116,8 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     
     	if (info.timerState == 3) {
 	    	System.println("Distance = " + info.elapsedDistance + ", heading = " + info.currentHeading) ;
+	    	
+	    	mElapsedDistance = info.elapsedDistance ;
 
 			if (mDistHist[4] != info.elapsedDistance) { 	    	
 	    		
@@ -118,9 +133,42 @@ class MBOTurnDistanceView extends WatchUi.DataField {
 	    		mTurn[2] = mTurn[3] ;
 	    		mTurn[3] = amountOfTurn(mHeadHist[3], mHeadHist[4]) ;
 	    	
+	    		// Consolidate positive and negative turns
+	    		var turnCount = 0 ;
+	    		var turns = new [5] ;
+	    		turns[0] = 0.0 ;
 	    		for (var i = 0 ; i < mTurn.size(); i++) {
-	    			System.println("Turn of " + mTurn[i]) ;
-    			}
+	    			// System.println("Turn of " + mTurn[i]) ;
+	    			if (sameSign(turns[turnCount], mTurn[i])) {
+	    				turns[turnCount] = turns[turnCount] + mTurn[i] ;
+	    			} else {
+	    				turnCount++;
+	    				turns[turnCount] = mTurn[i] ;
+	    			}
+	    		}
+	    		
+	    		// Are any of the sumarised turns greater than 60 degrees
+	    		// If so update the heading data
+	    		for (var i = 0; i <= turnCount; i++) {
+	    			System.println("Summerised turn of " + turns[i]) ;
+	    			if (abs(turns[i]) > SIXTY_DEG) {
+   			        	mTurnDistances[2] = mTurnDistances[1] ;
+    			    	mTurnDirection[2] = mTurnDirection[1] ;
+   			        	mTurnDistances[1] = mTurnDistances[0] ;
+    			    	mTurnDirection[1] = mTurnDirection[0] ;
+			        	mTurnDistances[0] = info.elapsedDistance ;
+			        	if (turns[i] > 0.0) {
+    			    		mTurnDirection[0] = "R" ;
+    			    	} else {
+    			    		mTurnDirection[0] = "L" ;
+    			    	}
+    			    	// Remove the data used to generate the turn, prevents double
+    			    	// counting.
+    			    	for(var j = 0 ; j < mTurn.size(); j++) {
+    			    		mTurn[j] = 0.0 ;
+    			    	}
+	    			}
+	    		}
 	    	}
 		    	
     	}
@@ -147,9 +195,9 @@ class MBOTurnDistanceView extends WatchUi.DataField {
         // Set the background color
         View.findDrawableById("Background").setColor(getBackgroundColor());
         
-        drawTurn("turn1", "L", 100.0) ;
-        drawTurn("turn2", "R", 120.0) ;
-        drawTurn("turn3", "U", 130.0) ;
+        drawTurn("turn1", mTurnDirection[0], mElapsedDistance - mTurnDistances[0]) ;
+        drawTurn("turn2", mTurnDirection[1], mElapsedDistance - mTurnDistances[1]) ;
+        drawTurn("turn3", mTurnDirection[2], mElapsedDistance - mTurnDistances[2]) ;
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
