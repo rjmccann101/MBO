@@ -6,17 +6,22 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     private var mHeadHist = new [5] ;			// The last 5 headings
     private var mDistHist = new [5] ;			// The last 5 distances
     private var mTurn = new [4] ;				// The turns associated with the last 5 headings
-    private var mTurnDistances = new [3] ;	// The current set of turn distances
-    private var mTurnDirection = new [3] ;    // The current set of turn directions (left/Right)
-    private var mElapsedDistance = 0.0 ;
+    private var mTurnDistances = new [3] ;	    // The current set of turn distances
+    private var mTurnDirection = new [3] ;    	// The current set of turn directions (left/Right)
+    private var mElapsedDistance = 0.0 ;		// A copy of info.elapsedDistance 
+    private var mTurnCount = 0 ;				// The number of turns in the current data
+	private var mConsolidatedTurns = new [4] ;	// The consolidated turns
     
-    private var PI = 355.0/133.0 ;  // An aproximation for PI
-    private var SIXTY_DEG = PI/3.0 ;  // 60 degrees in radians
+    const PI = 355.0/133.0 ;  // An aproximation for PI
+    const SIXTY_DEG = PI/3.0 ;  // 60 degrees in radians
+    const S_BEND_DIST = 10.0 ;  // Distance between turns to qualify as an S bend
 
+	// Called once when the class is created 
     function initialize() {
         DataField.initialize();
  
-        for (var i = 0; i < 3; i++) {
+ 		// Initialise the various arrays that hold the heading, distance, turn and direction data
+        for (var i = 0; i < mTurnDirection.size(); i++) {
         	mTurnDistances[i] = 0.0 ;
         	mTurnDirection[i] = " " ;
         }
@@ -99,11 +104,9 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     // Return true if v1 and v2 have the same sign
     function sameSign(v1, v2) {
     	var result = false ;
-    	
     	if ((v1 >= 0.0 and v2 >= 0.0) or (v1 <= 0.0 and v2 <= 0.0)) {
     		result = true ;
     	}
-    	
     	return result ;
     }
     
@@ -114,13 +117,17 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
     
+    	// Only do something if the timer state is 3, the activity is underway
     	if (info.timerState == 3) {
 	    	System.println("Distance = " + info.elapsedDistance + ", heading = " + info.currentHeading) ;
 	    	
 	    	mElapsedDistance = info.elapsedDistance ;
 
+			// Have we moved since the last time compute() was called, if not then do nothing
 			if (mDistHist[4] != info.elapsedDistance) { 	    	
 	    		
+	    		// Update the distance and heading data, discard the oldest values and
+	    		// add the current distance and heading
 	    		for (var i = 1; i < mDistHist.size(); i++) {
 	    			mDistHist[i-1] = mDistHist[i] ;
 	    			mHeadHist[i-1] = mHeadHist[i] ;
@@ -128,40 +135,47 @@ class MBOTurnDistanceView extends WatchUi.DataField {
 	    		mDistHist[4] = info.elapsedDistance ;
 	    		mHeadHist[4] = info.currentHeading ;
 	    		
+	    		// Update the turn information, discard the oldest values and
+	    		// add the latest turn
 	    		mTurn[0] = mTurn[1] ;
 	    		mTurn[1] = mTurn[2] ;
 	    		mTurn[2] = mTurn[3] ;
 	    		mTurn[3] = amountOfTurn(mHeadHist[3], mHeadHist[4]) ;
 	    	
 	    		// Consolidate positive and negative turns
-	    		var turnCount = 0 ;
-	    		var turns = new [5] ;
-	    		turns[0] = 0.0 ;
+	    		mConsolidatedTurns[0] = 0.0 ;
 	    		for (var i = 0 ; i < mTurn.size(); i++) {
 	    			// System.println("Turn of " + mTurn[i]) ;
-	    			if (sameSign(turns[turnCount], mTurn[i])) {
-	    				turns[turnCount] = turns[turnCount] + mTurn[i] ;
+	    			if (sameSign(mConsolidatedTurns[mTurnCount], mTurn[i])) {
+	    				mConsolidatedTurns[mTurnCount] = mConsolidatedTurns[mTurnCount] + mTurn[i] ;
 	    			} else {
-	    				turnCount++;
-	    				turns[turnCount] = mTurn[i] ;
+	    				mTurnCount++;
+	    				mConsolidatedTurns[mTurnCount] = mTurn[i] ;
 	    			}
 	    		}
 	    		
 	    		// Are any of the sumarised turns greater than 60 degrees
 	    		// If so update the heading data
-	    		for (var i = 0; i <= turnCount; i++) {
-	    			System.println("Summerised turn of " + turns[i]) ;
-	    			if (abs(turns[i]) > SIXTY_DEG) {
+	    		for (var i = 0; i <= mTurnCount; i++) {
+	    			System.println("Summerised turn of " + mConsolidatedTurns[i]) ;
+	    			if (abs(mConsolidatedTurns[i]) > SIXTY_DEG) {
    			        	mTurnDistances[2] = mTurnDistances[1] ;
     			    	mTurnDirection[2] = mTurnDirection[1] ;
    			        	mTurnDistances[1] = mTurnDistances[0] ;
     			    	mTurnDirection[1] = mTurnDirection[0] ;
 			        	mTurnDistances[0] = info.elapsedDistance ;
-			        	if (turns[i] > 0.0) {
+			        	if (mConsolidatedTurns[i] > 0.0) {
     			    		mTurnDirection[0] = "R" ;
     			    	} else {
     			    		mTurnDirection[0] = "L" ;
     			    	}
+    			    	
+    			    	// Was this an S turn? L/R or R/L within 10 meters
+    			    	if (mTurnDirection[0][0] != mTurnDirection[1][0] and
+    			    		info.elapsedDistance - mTurnDistances[1] <= S_BEND_DIST) {
+    			    		mTurnDirection[0] = "s" ;
+    			    	}
+    			    	
     			    	// Remove the data used to generate the turn, prevents double
     			    	// counting.
     			    	for(var j = 0 ; j < mTurn.size(); j++) {
@@ -178,6 +192,7 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     	
     }
     
+    // Display the details of a turn
     private function drawTurn(turnName, type, distance) {
     	var value = View.findDrawableById(turnName);
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
@@ -194,10 +209,15 @@ class MBOTurnDistanceView extends WatchUi.DataField {
     function onUpdate(dc) {
         // Set the background color
         View.findDrawableById("Background").setColor(getBackgroundColor());
-        
-        drawTurn("turn1", mTurnDirection[0], mElapsedDistance - mTurnDistances[0]) ;
-        drawTurn("turn2", mTurnDirection[1], mElapsedDistance - mTurnDistances[1]) ;
-        drawTurn("turn3", mTurnDirection[2], mElapsedDistance - mTurnDistances[2]) ;
+        if (mTurnDistances[0] > 0.0 ) {
+        	drawTurn("turn1", mTurnDirection[0], mElapsedDistance - mTurnDistances[0]) ;
+        }
+        if (mTurnDistances[1] > 0.0 ) {
+        	drawTurn("turn2", mTurnDirection[1], mElapsedDistance - mTurnDistances[1]) ;
+        }
+        if (mTurnDistances[2] > 0.0 ) {
+        	drawTurn("turn3", mTurnDirection[2], mElapsedDistance - mTurnDistances[2]) ;
+        }
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
