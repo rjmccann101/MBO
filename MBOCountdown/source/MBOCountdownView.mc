@@ -6,15 +6,15 @@
 // hour Mountain Bike Orienteering events.
 //
 
-using Toybox.WatchUi;
-using Toybox.Time ;
-using Toybox.Time.Gregorian ;
-using Toybox.Attention;
-using Toybox.System;
+import Toybox.WatchUi;
+import Toybox.Time ;
+import Toybox.Time.Gregorian ;
+import Toybox.Attention;
+import Toybox.System;
 
 // The different alerts that will be used by the app
 enum {
-	ThirtyMin, // Played N times to indictae the number of 30 minute durations left
+	ThirtyMin, // Played N times to indicate the number of 30 minute durations left
 	FiveMin,   // Played N times to indicate the number of 5 minute durations left
 	OneMin,    // Played N times to indicate the number of 1 minute durations left
 	TimesUp,   // Played when time is up

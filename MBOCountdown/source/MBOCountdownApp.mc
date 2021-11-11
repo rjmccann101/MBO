@@ -1,4 +1,6 @@
-using Toybox.Application;
+import Toybox.Application;
+import Toybox.Lang;
+import Toybox.WatchUi;
 
 class MBOCountdownApp extends Application.AppBase {
 
@@ -19,4 +21,8 @@ class MBOCountdownApp extends Application.AppBase {
         return [ new MBOCountdownView() ];
     }
 
+}
+
+function getApp() as MBOCountdownApp {
+    return Application.getApp() as MBOCountdownApp;
 }
