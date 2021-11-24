@@ -42,37 +42,37 @@ enum {
 }
     
 const CountTones = {
-    NoCount  => {:toneProfile => [new Attention.ToneProfile( 0, 100)]},
-	OneCount => {:toneProfile => [new Attention.ToneProfile( 5000, 100),
-        						 new Attention.ToneProfile( 0, 100)]},
-	TwoCount => {:toneProfile => [new Attention.ToneProfile( 5000, 100),
-        						 new Attention.ToneProfile( 0, 100),
-        						 new Attention.ToneProfile( 5000, 100),
-        						 new Attention.ToneProfile( 0, 100)]}, 
-	ThreeCount => {:toneProfile => [new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100)]},  
-	FourCount => {:toneProfile =>  [new Attention.ToneProfile( 5000, 100),
-         						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100)]}, 
-	FiveCount => {:toneProfile =>  [new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100),
-        						   new Attention.ToneProfile( 5000, 100),
-        						   new Attention.ToneProfile( 0, 100)]}       						          						 
+    NoCount  => {:toneProfile => [new Attention.ToneProfile( 0,150)]},
+	OneCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
+        						 new Attention.ToneProfile( 0,150)]},
+	TwoCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
+        						 new Attention.ToneProfile( 0,150),
+        						 new Attention.ToneProfile(5000,200),
+        						 new Attention.ToneProfile( 0,150)]}, 
+	ThreeCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150)]},  
+	FourCount => {:toneProfile =>  [new Attention.ToneProfile(5000,200),
+         						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150)]}, 
+	FiveCount => {:toneProfile =>  [new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150),
+        						   new Attention.ToneProfile(5000,200),
+        						   new Attention.ToneProfile( 0,150)]}       						          						 
 } ;    
    
 // Single vibrate profile - used for all events
@@ -94,7 +94,7 @@ class MBOTimedEvent {
 	}
 	
 	// Is it time for this event to be activated?
-	function timeForEvent(timeLeft) {
+	function timeForEvent(timeLeft) as Boolean {
 		if (me.m_eventWhen.compare(timeLeft) >= 0) {
 			return true ;
 		}
@@ -106,6 +106,10 @@ class MBOTimedEvent {
 		if (Attention has :playTone) {
 		    Attention.playTone(AlertTones[me.m_eventType]) ;
 		}
+	}
+
+	// Vibrate the watch to alert the user something has happened
+	function playVibrate() {
 		if (Attention has :vibrate) {
 			Attention.vibrate(AlertVibe);
 		}
@@ -158,6 +162,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     
     // Index of the last event that was played
     var lastPlayedEvtIdx = -1 ;
+
+	// Do we need to vibrate?
+	var needToVibrate = false ;
         
     // Penalty points, after 30 minutes you lose the lot!
     const penaltyPoints = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] ;
@@ -230,9 +237,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		if (Attention has :playTone) {
 			Attention.playTone(AlertTones[PointLost]) ;
 		}
-		if (Attention has :vibrate) {
-			Attention.vibrate(AlertVibe);
-		}
     }
     
     // The timer is running, determine what to show the client and what alerts to play
@@ -243,8 +247,13 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     	// If we just played an event then we need to play the repeat beeps for it
     	// in the next loop.
     	if (lastPlayedEvtIdx >= 0 ) {
-    		events[lastPlayedEvtIdx].playRepeatCount() ;
-    		lastPlayedEvtIdx = -1 ;
+			if (needToVibrate == false) {
+    			events[lastPlayedEvtIdx].playRepeatCount() ;
+    			lastPlayedEvtIdx = -1 ;
+			} else {
+				events[lastPlayedEvtIdx].playVibrate() ;
+				needToVibrate = false ;
+			}
     	} 
     	else { 
 	    	// If there are any more events to consume then see if they can be run
@@ -253,6 +262,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		        if (events[nextEvtIdx].checkEvent(timeLeft) == true) {
 		        	// and when it does happen move onto the next event.
 		        	lastPlayedEvtIdx = nextEvtIdx ;
+					needToVibrate = true ;
 		        	nextEvtIdx++ ;
 		        }
 		    } 

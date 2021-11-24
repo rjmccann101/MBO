@@ -1,0 +1,50 @@
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 5; ]
+class MBOCountdownApp extends Application.AppBase{
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 7; ]
+    function initialize() as Void {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc" 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv const %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 12; ]
+    function onStart(state) {
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 16; ]
+    function onStop(state) {
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 20; ]
+    function getInitialView() {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc" 21 ]
+        %tmp.1 = newa 1;
+        %tmp.5 = getv ? :MBOCountdownView;
+        %tmp.2 = newc %tmp.5;
+        %tmp.6 = dup %tmp.2;
+        %tmp.7 = getv const %tmp.6 :initialize;
+        %tmp.8 = dup %tmp.2;
+        invoke %tmp.8 %tmp.7();
+        %tmp.9 = dup %tmp.1;
+        %tmp.10 = aputv %tmp.9 0 %tmp.2;
+        ret %tmp.10;
+    }
+}
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 26; ]
+function getApp() as MBOCountdownApp {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc" 27 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv const %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 MBOCountdownApp;
+    ret %tmp.4;
+}
+<init> {
+}

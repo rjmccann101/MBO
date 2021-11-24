@@ -1,0 +1,52 @@
+[ @file = "Rez.mc"; @line = 1; ]
+module Rez {
+    [ @file = "Rez.mc"; @line = 1; ]
+    <init> {
+    }
+    [ @file = "Rez.mc"; @line = 2; ]
+    module Drawables {
+        [ @file = "Rez.mc"; @line = 2; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 3; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 4; initialized = true; ]
+        var LauncherIcon as Symbol;
+    }
+    [ @file = "Rez.mc"; @line = 6; ]
+    module Fonts {
+        [ @file = "Rez.mc"; @line = 6; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 8; ]
+    module JsonData {
+        [ @file = "Rez.mc"; @line = 8; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 10; ]
+    module Layouts {
+        [ @file = "Rez.mc"; @line = 10; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 12; ]
+    module Menus {
+        [ @file = "Rez.mc"; @line = 12; ]
+        <init> {
+        }
+    }
+    [ @file = "Rez.mc"; @line = 14; ]
+    module Strings {
+        [ @file = "Rez.mc"; @line = 14; ]
+        <init> {
+        }
+        [ @file = "Rez.mc"; @line = 15; ]
+        import Toybox.Lang;
+        [ @file = "Rez.mc"; @line = 16; initialized = true; ]
+        var AppName as Symbol;
+    }
+}
+<init> {
+}
