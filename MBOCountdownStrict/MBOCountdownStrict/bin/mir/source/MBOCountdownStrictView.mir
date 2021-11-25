@@ -1,0 +1,40 @@
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 4; ]
+import Toybox.Time;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 5; ]
+import Toybox.WatchUi;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 7; ]
+class MBOCountdownStrictView extends WatchUi.SimpleDataField{
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 10; ]
+    function initialize() as Void {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 11 ]
+        %tmp.2 = getv ? :SimpleDataField;
+        %tmp.3 = getv const %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 12 ]
+        %tmp.5 = getv ? :Application;
+        %tmp.6 = getv const %tmp.5 :loadResource;
+        %tmp.8 = getv ? :Rez;
+        %tmp.9 = getv %tmp.8 :Strings;
+        %tmp.10 = getv %tmp.9 :DataFieldLabel;
+        %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.10);
+        %tmp.12 = as %tmp.11 Lang.String;
+        putv self :label %tmp.12;
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 19; ]
+    function compute(info as Activity.Info) as Numeric or Duration or String or Null {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 21 ]
+        %tmp.1 = 0.0;
+        ret %tmp.1;
+    }
+}
+<init> {
+}
