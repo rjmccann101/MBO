@@ -6,6 +6,8 @@ import Toybox.WatchUi;
 
 class MBOCountdownStrictView extends WatchUi.SimpleDataField {
 
+    private var eventTimer as MBOTimedEvent = new MBOTimedEvent() ;
+
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
@@ -17,8 +19,30 @@ class MBOCountdownStrictView extends WatchUi.SimpleDataField {
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-        // See Activity.Info in the documentation for available information.
-        return 0.0;
+       	var result = "" ;
+
+        // Decide what to do based on the timer state
+        switch (info.timerState as Numeric) {
+        case 0: 
+        	// Activity not yet started
+        	result = Application.loadResource(Rez.Strings.TimerStateZeroMsg) as Lang.String ;
+        	break ;
+        case 1:
+            // Activity has been stopped by the user
+        	result = Application.loadResource(Rez.Strings.TimerStateOneMsg) as Lang.String ;
+        	break ;
+        case 2:
+            // Activity has been paused by the ruser
+        	result = Application.loadResource(Rez.Strings.TimerStateTwoMsg) as Lang.String ;
+        	break ;
+        case 3:
+            // Activity is running!
+        	result = eventTimer.timeLeft(info) ;
+        	break ;
+        }
+
+        return result ;
+
     }
 
 }

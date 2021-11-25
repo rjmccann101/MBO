@@ -47,6 +47,12 @@ module Rez {
         [ @file = "Rez.mc"; @line = 16; initialized = true; ]
         var DataFieldLabel as Symbol;
         [ @file = "Rez.mc"; @line = 17; initialized = true; ]
+        var TimerStateTwoMsg as Symbol;
+        [ @file = "Rez.mc"; @line = 18; initialized = true; ]
+        var TimerStateOneMsg as Symbol;
+        [ @file = "Rez.mc"; @line = 19; initialized = true; ]
+        var TimerStateZeroMsg as Symbol;
+        [ @file = "Rez.mc"; @line = 20; initialized = true; ]
         var AppName as Symbol;
     }
 }

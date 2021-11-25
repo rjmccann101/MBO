@@ -12,14 +12,25 @@ import Toybox.WatchUi;
 class MBOCountdownStrictView extends WatchUi.SimpleDataField{
     [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 7; ]
     <init> {
+        [ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 9 ]
+        %tmp.4 = getv ? :MBOTimedEvent;
+        %tmp.1 = newc %tmp.4;
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = getv const %tmp.5 :initialize;
+        %tmp.7 = dup %tmp.1;
+        invoke %tmp.7 %tmp.6();
+        putv self :eventTimer %tmp.1;
     }
-    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 10; ]
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 9; ]
+    private
+    var eventTimer as MBOTimedEvent;
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 12; ]
     function initialize() as Void {
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 11 ]
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 13 ]
         %tmp.2 = getv ? :SimpleDataField;
         %tmp.3 = getv const %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 12 ]
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 14 ]
         %tmp.5 = getv ? :Application;
         %tmp.6 = getv const %tmp.5 :loadResource;
         %tmp.8 = getv ? :Rez;
@@ -29,11 +40,89 @@ class MBOCountdownStrictView extends WatchUi.SimpleDataField{
         %tmp.12 = as %tmp.11 Lang.String;
         putv self :label %tmp.12;
     }
-    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 19; ]
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc"; @line = 21; ]
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 21 ]
-        %tmp.1 = 0.0;
-        ret %tmp.1;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 22 ]
+        %result.1 = local;
+        %tmp.1 = "";
+        lputv %result.1 %tmp.1;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 25 ]
+        %tmp.3 = lgetv %info;
+        %tmp.4 = getv %tmp.3 :timerState;
+        %tmp.5 = as %tmp.4 Numeric;
+        push %tmp.5;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseBegin:
+        %tmp.6 = dup %tmp.5;
+        %tmp.7 = 0;
+        %tmp.8 = getv %tmp.6 :equals;
+        %tmp.9 = invoke %tmp.6 %tmp.8 (%tmp.7);
+        bt %tmp.9 @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_26_8;
+        %tmp.10 = dup %tmp.5;
+        %tmp.11 = 1;
+        %tmp.12 = getv %tmp.10 :equals;
+        %tmp.13 = invoke %tmp.10 %tmp.12 (%tmp.11);
+        bt %tmp.13 @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_30_8;
+        %tmp.14 = dup %tmp.5;
+        %tmp.15 = 2;
+        %tmp.16 = getv %tmp.14 :equals;
+        %tmp.17 = invoke %tmp.14 %tmp.16 (%tmp.15);
+        bt %tmp.17 @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_34_8;
+        %tmp.18 = dup %tmp.5;
+        %tmp.19 = 3;
+        %tmp.20 = getv %tmp.18 :equals;
+        %tmp.21 = invoke %tmp.18 %tmp.20 (%tmp.19);
+        bt %tmp.21 @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_38_8;
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_defaultCodeBegin;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_26_8:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 28 ]
+        %tmp.23 = getv ? :Application;
+        %tmp.24 = getv const %tmp.23 :loadResource;
+        %tmp.26 = getv ? :Rez;
+        %tmp.27 = getv %tmp.26 :Strings;
+        %tmp.28 = getv %tmp.27 :TimerStateZeroMsg;
+        %tmp.29 = invoke %tmp.23 %tmp.24(%tmp.28);
+        %tmp.30 = as %tmp.29 Lang.String;
+        lputv %result.1 %tmp.30;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 29 ]
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseEnd;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_30_8:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 32 ]
+        %tmp.32 = getv ? :Application;
+        %tmp.33 = getv const %tmp.32 :loadResource;
+        %tmp.35 = getv ? :Rez;
+        %tmp.36 = getv %tmp.35 :Strings;
+        %tmp.37 = getv %tmp.36 :TimerStateOneMsg;
+        %tmp.38 = invoke %tmp.32 %tmp.33(%tmp.37);
+        %tmp.39 = as %tmp.38 Lang.String;
+        lputv %result.1 %tmp.39;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 33 ]
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseEnd;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_34_8:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 36 ]
+        %tmp.41 = getv ? :Application;
+        %tmp.42 = getv const %tmp.41 :loadResource;
+        %tmp.44 = getv ? :Rez;
+        %tmp.45 = getv %tmp.44 :Strings;
+        %tmp.46 = getv %tmp.45 :TimerStateTwoMsg;
+        %tmp.47 = invoke %tmp.41 %tmp.42(%tmp.46);
+        %tmp.48 = as %tmp.47 Lang.String;
+        lputv %result.1 %tmp.48;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 37 ]
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseEnd;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_38_8:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 40 ]
+        %tmp.50 = getv ? :eventTimer;
+        %tmp.51 = getv const %tmp.50 :timeLeft;
+        %tmp.53 = lgetv %info;
+        %tmp.54 = invoke %tmp.50 %tmp.51(%tmp.53);
+        lputv %result.1 %tmp.54;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 41 ]
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseEnd;
+C_GarminDevelopment_repos_MBO_MBOCountdownStrict_MBOCountdownStrict_source_MBOCountdownStrictView_mc_25_8_switchCaseEnd:
+        pop;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOCountdownStrictView.mc" 44 ]
+        %tmp.56 = lgetv %result.1;
+        ret %tmp.56;
     }
 }
 <init> {

@@ -1,0 +1,63 @@
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 1; ]
+import Toybox.Activity;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 4; ]
+import Toybox.Time;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 5; ]
+import Toybox.Time.Gregorian;
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 7; ]
+class MBOTimedEvent{
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 7; ]
+    <init> {
+        [ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc" 10 ]
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv const %tmp.1 :duration;
+        %tmp.3 = newd 1;
+        %tmp.4 = :minutes;
+        %tmp.5 = 180;
+        %tmp.6 = dup %tmp.3;
+        %tmp.7 = aputv %tmp.6 %tmp.4 %tmp.5;
+        %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.7);
+        putv self :eventDuration %tmp.8;
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 10; ]
+    const eventDuration;
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 13; ]
+    const microSecondsPerSecond as Number = 1000;
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 16; ]
+    function initialize() as Void {
+    }
+    [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc"; @line = 19; ]
+    function timeLeft(info as Activity.Info) as Time.Duration {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc" 20 ]
+        %timeUsed.1 = local;
+        %tmp.1 = getm $.Toybox.Time.Gregorian;
+        %tmp.2 = getv const %tmp.1 :duration;
+        %tmp.3 = newd 1;
+        %tmp.4 = :seconds;
+        %tmp.6 = lgetv %info;
+        %tmp.7 = getv %tmp.6 :elapsedTime;
+        %tmp.8 = as %tmp.7 Number;
+        %tmp.10 = getv ? :microSecondsPerSecond;
+        %tmp.11 = div %tmp.8 %tmp.10;
+        %tmp.12 = dup %tmp.3;
+        %tmp.13 = aputv %tmp.12 %tmp.4 %tmp.11;
+        %tmp.14 = invoke %tmp.1 %tmp.2(%tmp.13);
+        lputv %timeUsed.1 %tmp.14;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc" 21 ]
+        %timeLeft.2 = local;
+        %tmp.16 = getv ? :eventDuration;
+        %tmp.17 = getv const %tmp.16 :subtract;
+        %tmp.19 = lgetv %timeUsed.1;
+        %tmp.20 = invoke %tmp.16 %tmp.17(%tmp.19);
+        lputv %timeLeft.2 %tmp.20;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdownStrict\MBOCountdownStrict\source\MBOThreeHourTimer.mc" 22 ]
+        %tmp.22 = lgetv %timeLeft.2;
+        ret %tmp.22;
+    }
+}
+<init> {
+}

@@ -1,4 +1,13 @@
-# MBO
+# MBO Countdown Data Field
+
+## Strict
+
+With Version 4 of the Garmin SDK the Monkey C type system was added. This is a port of the original
+MBOCountdown project but re-written to have strict type checking. The opportunity was also taken to
+refactor the code and tidy up the logic without changing the functionality.  Details of the new type
+system can be found here: <https://developer.garmin.com/connect-iq/monkey-c/monkey-types/>
+
+## MBO
 
 This data field is intended for use during 3 hour long MBO events (see <https://www.bmbo.org.uk/>).
 Add it to a screen on the MTB activity and start the activity as you start the event.
