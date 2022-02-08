@@ -5,7 +5,7 @@
         Use "Monkey C: Edit Application" from the Visual Studio Code command palette
         to update the application attributes.
     -->
-    <iq:application id="00e907c6-decb-432c-be8c-3039190470c5" type="datafield" name="@Strings.AppName" entry="MBOCountdownStrictApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
+    <iq:application id="25766f79-5b36-4589-8738-7b03130b400e" type="datafield" name="@Strings.AppName" entry="MBOCountdownStrictApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.2.0">
         <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
@@ -14,9 +14,6 @@
             "Monkey C: Edit Products" - Lets you add or remove any product
         -->
         <iq:products>
-            <iq:product id="legacyherocaptainmarvel"/>
-            <iq:product id="d2air"/>
-            <iq:product id="legacysagadarthvader"/>
             <iq:product id="descentmk2"/>
             <iq:product id="descentmk2s"/>
             <iq:product id="enduro"/>
@@ -29,7 +26,6 @@
             <iq:product id="fenix6s"/>
             <iq:product id="fenix6spro"/>
             <iq:product id="fenix6xpro"/>
-            <iq:product id="legacyherofirstavenger"/>
             <iq:product id="fr55"/>
             <iq:product id="fr245"/>
             <iq:product id="fr245m"/>
@@ -45,17 +41,6 @@
             <iq:product id="marqdriver"/>
             <iq:product id="marqexpedition"/>
             <iq:product id="marqgolfer"/>
-            <iq:product id="legacysagarey"/>
-            <iq:product id="venu"/>
-            <iq:product id="venu2"/>
-            <iq:product id="venu2system5preview"/>
-            <iq:product id="venu2s"/>
-            <iq:product id="venud"/>
-            <iq:product id="venusq"/>
-            <iq:product id="venusqm"/>
-            <iq:product id="vivoactive3m"/>
-            <iq:product id="vivoactive4"/>
-            <iq:product id="vivoactive4s"/>
         </iq:products>
         <!--
             Use "Monkey C: Edit Permissions" from the Visual Studio Code command
@@ -66,9 +51,7 @@
             Use "Monkey C: Edit Languages" from the Visual Studio Code command
             palette to edit your compatible language list.
         -->
-        <iq:languages>
-            <iq:language>eng</iq:language>
-        </iq:languages>
+        <iq:languages/>
         <!--
             Use "Monkey C: Configure Monkey Barrel" from the Visual Studio Code
             command palette to edit the included barrels.

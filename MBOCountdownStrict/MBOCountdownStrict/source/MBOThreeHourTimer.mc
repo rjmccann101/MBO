@@ -34,7 +34,7 @@ class MBOTimedEvent {
     }
 
    	// Constructor for the class
-	function initialize() 
+	function initialize()
     { 
         playTimeUsedAlert(5) ;
     }
