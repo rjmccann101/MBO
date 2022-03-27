@@ -31,52 +31,15 @@ const AlertTones = {
     PointLost => Attention.TONE_LOUD_BEEP,
     TimedOut  => Attention.TONE_FAILURE	 
     } ;
-    
-enum {
-    NoCount,
-	OneCount,
-	TwoCount,
-	ThreeCount,
-	FourCount,
-	FiveCount
-}
-    
-const CountTones = {
-    NoCount  => {:toneProfile => [new Attention.ToneProfile( 0,150)]},
-	OneCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
-        						 new Attention.ToneProfile( 0,150)]},
-	TwoCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
-        						 new Attention.ToneProfile( 0,150),
-        						 new Attention.ToneProfile(5000,200),
-        						 new Attention.ToneProfile( 0,150)]}, 
-	ThreeCount => {:toneProfile => [new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150)]},  
-	FourCount => {:toneProfile =>  [new Attention.ToneProfile(5000,200),
-         						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150)]}, 
-	FiveCount => {:toneProfile =>  [new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150),
-        						   new Attention.ToneProfile(5000,200),
-        						   new Attention.ToneProfile( 0,150)]}       						          						 
-} ;    
    
 // Single vibrate profile - used for all events
 const AlertVibe = [new Attention.VibeProfile(100, 500)];  // 0.5 Second Vibrate
+
+// Tone profile used when indicating the number of periods used
+const toneProfile as Array<Attention.ToneProfile> = [
+		new Attention.ToneProfile(5000,250),
+		new Attention.ToneProfile(0,250)
+	] as Array<Attention.ToneProfile> ;
 
 // A class to hold an time event that we need to notify the user about.
 class MBOTimedEvent {
@@ -115,12 +78,13 @@ class MBOTimedEvent {
 		}
 	}
 	
-	// Play the repeat count beeps for this alert
-	function playRepeatCount() {
-		if (Attention has :playTone) {
-		    Attention.playTone(CountTones[me.m_repeatCount]) ;
-		}
-	}
+	// Play the alert for the number of periods used so far
+    function playTimeUsedAlert() as Void 
+    {
+        if (Attention has :playTone) {
+            Attention.playTone({:toneProfile=>toneProfile, :repeatCount=>m_repeatCount - 1}) ;
+        }
+    }
 	
 	// Event checking and processing, returns true if
 	// the event in question has happened.
@@ -140,93 +104,65 @@ class MBOTimedEvent {
 // A simple data field that provides a count down for a three hour Mountain
 // Bike Orienteering event.
 class MBOCountdownView extends WatchUi.SimpleDataField {
-
-	// The duration of the event, 3 hours
-	const eventDuration = Gregorian.duration({:minutes => 180});
 	
 	// Seconds per minute	
 	const secondsPerMinute = 60 ;
 
+	// The duration of the event in minutes
+	private var _eventDurationMins ;
+
+	// The setting that controls the event duration
+	private var _eventDurationHours ;
+
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
-	var events = [] ;
+	private var events = [] ;
 				
     // Index into events, points to next unrun event	
-    var nextEvtIdx = 0 ;
+    private var nextEvtIdx = 0 ;
     
     // The number of points that have been lost!
-    var pointsLost = 0 ;
+    private var pointsLost = 0 ;
     
     // Indicator that the Out of Time alert has been played
-    var outOfTimePlayed = false ;
+    private var outOfTimePlayed = false ;
     
     // Index of the last event that was played
-    var lastPlayedEvtIdx = -1 ;
+    private var lastPlayedEvtIdx = -1 ;
 
 	// Do we need to vibrate?
-	var needToVibrate = false ;
+	private var needToVibrate = false ;
         
-    // Penalty points, after 30 minutes you lose the lot!
-    const penaltyPoints = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] ;
-    
-    // The number of minutes at which the time events occur
-    const thirtyMinTimes = [150,120,90,60,30] ;
-    const fiveMinTimes  = [25,20,15,10] ;
-    const oneMinTimes   = [5,4,3,2,1] ;
+    // Holds an array of point values that tell how many points are lost for being late
+    private var _mboLostPoints as Array<Number>;
     
     // Working in seconds or minutes?
     const timeType = :minutes ;
-    
-    private function calcRepeatCount(n, max) {
-    	var result ;
-    	switch (max - (max - n) )
-    	{
-    		case 1 : {
-    			result = OneCount ;
-    			break ;
-    		}
-    		case 2 : {
-    			result = TwoCount ;
-    			break ;
-    		} 
-    		case 3 : {
-    			result = ThreeCount ;
-    			break ;
-    		} 
-    		case 4 : {
-    			result = FourCount ;
-    			break ;
-    		} 
-    		case 5 : {
-    			result = FiveCount ;
-    			break ;
-    		} 
-    		default: {
-    			result = NoCount ;
-    			break ;
-    		}
-    	} 
-		return result ;    	
-    }
         
     // Populate the events array with the events that we want to alert the user to
     private function buildEvents() {
-      	for (var i = 0; i < thirtyMinTimes.size(); i++) {
-      		var repeatCount = calcRepeatCount(i+1, thirtyMinTimes.size()) ;
-    		events.add(new MBOTimedEvent(Gregorian.duration({timeType => thirtyMinTimes[i]}),ThirtyMin, repeatCount));
-    	}
-    	
-       	for (var i = 0; i < fiveMinTimes.size(); i++) {
-       		var repeatCount = calcRepeatCount(i+1, fiveMinTimes.size()) ;
-    		events.add(new MBOTimedEvent(Gregorian.duration({timeType => fiveMinTimes[i]}),FiveMin,repeatCount)) ;
-    	}
-    	
-       	for (var i = 0; i < oneMinTimes.size(); i++) {
-       		var repeatCount = calcRepeatCount(i+1, oneMinTimes.size()) ;
-    		events.add(new MBOTimedEvent(Gregorian.duration({timeType => oneMinTimes[i]}),OneMin,repeatCount));
-    	}
-    	
-    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,NoCount)) ;
+
+		var mins = _eventDurationHours * secondsPerMinute ;
+		var numThirtyMins = mins - 1 / 30 ;
+		var eventCnt = 1 ;
+		for (var i = mins - 30; i >= 30; i=i-30) {
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, numThirtyMins - (numThirtyMins - eventCnt) ));
+			eventCnt++ ;
+		}
+
+		eventCnt = 1 ;
+		for (var i = 25; i >= 5; i=i-5) {
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, 5 - (5 - eventCnt) ));
+			eventCnt++ ;
+		}
+
+		eventCnt = 1 ;
+    	for (var i = 4; i >= 1; i--) {
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, 4 - (4 - eventCnt) ));
+			eventCnt++ ;
+		}
+
+    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,0)) ;
     	
     }
     
@@ -248,7 +184,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     	// in the next loop.
     	if (lastPlayedEvtIdx >= 0 ) {
 			if (needToVibrate == false) {
-    			events[lastPlayedEvtIdx].playRepeatCount() ;
+    			events[lastPlayedEvtIdx].playTimeUsedAlert() ;
     			lastPlayedEvtIdx = -1 ;
 			} else {
 				events[lastPlayedEvtIdx].playVibrate() ;
@@ -274,12 +210,12 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		{
 			// The last event has fired, your out of time and losing points.
 			var pointIdx = timeLeft.value().abs()/secondsPerMinute ;  // Number of whole minutes late
-			if (pointIdx < penaltyPoints.size()) {
+			if (pointIdx < _mboLostPoints.size()) {
 				// There are penalties associated with the current pointIdx so
 				// not completely out of time yet!
-				if (pointsLost < penaltyPoints[pointIdx])
+				if (pointsLost < _mboLostPoints[pointIdx])
 				{
-					pointsLost = penaltyPoints[pointIdx] ;
+					pointsLost = _mboLostPoints[pointIdx] ;
 					playLostPointsAlerts() ;
 				}
 				result = "-" + pointsLost ;
@@ -301,6 +237,10 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
+		_mboLostPoints = Application.loadResource(Rez.JsonData.mboLostPoints) as Array<Number> ;
+		_eventDurationHours = 3 ;
+        _eventDurationMins = Gregorian.duration({:minutes => _eventDurationHours * secondsPerMinute}) ;
+
         label = "M B O";
         buildEvents() ;
     }
@@ -312,8 +252,8 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // See Activity.Info in the documentation for available information.
     function compute(info) {
         var timeUsed = new Time.Duration(info.elapsedTime/1000) ;
-        var timeLeft = eventDuration.subtract(timeUsed) ;
-        var secondsLeft = eventDuration.compare(timeUsed) ;
+        var timeLeft = _eventDurationMins.subtract(timeUsed) ;
+        var secondsLeft = _eventDurationMins.compare(timeUsed) ;
         var result = "Error!" ;
                
 		// Decide what to do based on the timer state
