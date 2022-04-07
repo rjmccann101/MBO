@@ -6,6 +6,8 @@
 // hour Mountain Bike Orienteering events.
 //
 
+import Toybox.Application;
+import Toybox.Application.Properties;
 import Toybox.WatchUi;
 import Toybox.Time ;
 import Toybox.Time.Gregorian ;
@@ -143,26 +145,23 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     private function buildEvents() {
 
 		var mins = _eventDurationHours * secondsPerMinute ;
-		var numThirtyMins = mins - 1 / 30 ;
 		var eventCnt = 1 ;
 		for (var i = mins - 30; i >= 30; i=i-30) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, numThirtyMins - (numThirtyMins - eventCnt) ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt ));
 			eventCnt++ ;
 		}
-
 		eventCnt = 1 ;
 		for (var i = 25; i >= 5; i=i-5) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, 5 - (5 - eventCnt) ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, eventCnt ));
 			eventCnt++ ;
 		}
-
 		eventCnt = 1 ;
     	for (var i = 4; i >= 1; i--) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, 4 - (4 - eventCnt) ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, eventCnt ));
 			eventCnt++ ;
 		}
 
-    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,0)) ;
+    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,1)) ;
     	
     }
     
@@ -234,14 +233,22 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	    return result ;
     }
 
+	function getIntValueWithDefault(properyKey, defaultValue) {
+		var result = Properties.getValue("event_duration") ;
+		if (result == null) {
+            result = defaultValue ;
+        }
+		return result ;
+	}
+
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
 		_mboLostPoints = Application.loadResource(Rez.JsonData.mboLostPoints) as Array<Number> ;
-		_eventDurationHours = 3 ;
-        _eventDurationMins = Gregorian.duration({:minutes => _eventDurationHours * secondsPerMinute}) ;
+		_eventDurationHours = getIntValueWithDefault("event_duration",3) ;
+        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * secondsPerMinute)}) ;
 
-        label = "M B O";
+        label = _eventDurationHours + " Hour Event";
         buildEvents() ;
     }
 
