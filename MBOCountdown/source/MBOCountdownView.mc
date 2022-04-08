@@ -110,6 +110,12 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	// Seconds per minute	
 	const secondsPerMinute = 60 ;
 
+	// Seconds per minute	
+	const minsPerHour = 60 ;
+
+	// Penalty points, after 30 minutes you lose the lot!
+	const _mboLostPoints = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] ;
+
 	// The duration of the event in minutes
 	private var _eventDurationMins ;
 
@@ -134,9 +140,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// Do we need to vibrate?
 	private var needToVibrate = false ;
-        
-    // Holds an array of point values that tell how many points are lost for being late
-    private var _mboLostPoints as Array<Number>;
     
     // Working in seconds or minutes?
     const timeType = :minutes ;
@@ -144,7 +147,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Populate the events array with the events that we want to alert the user to
     private function buildEvents() {
 
-		var mins = _eventDurationHours * secondsPerMinute ;
+		var mins = _eventDurationHours * minsPerHour ;
 		var eventCnt = 1 ;
 		for (var i = mins - 30; i >= 30; i=i-30) {
 			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt ));
@@ -244,9 +247,8 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-		_mboLostPoints = Application.loadResource(Rez.JsonData.mboLostPoints) as Array<Number> ;
 		_eventDurationHours = getIntValueWithDefault("event_duration_prop",3) ;
-        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * secondsPerMinute)}) ;
+        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour)}) ;
 
         label = _eventDurationHours + " Hour Event";
         buildEvents() ;
