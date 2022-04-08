@@ -1,16 +1,38 @@
 <resources>
     <properties>
         <property id="event_duration_prop" type="number">3</property>
+        <property id="point_scoring_prop" type="number">0</property>
     </properties>
 
     <strings>
-       <string id="event_duration_title">Event Duration</string>
-       <string id="event_duration_error">Event duration must be between 1 and 5 hours</string>
+        <string id="event_duration_title">Event Duration</string>
+        <string id="event_duration_error">Event duration must be between 1 and 5 hours</string>
+
+        <string id="point_scoring_title">Overtime Point Scheme</string>
+        <string id="point_scoring_prompt">Select the overtime points scheme</string>
+
+        <string id="MBO_Score">MBO Scoring</string>
+        <string id="one_point">1 Point per minute</string>
+        <string id="two_point">2 Points per minute</string>
+        <string id="three_point">3 Points per minute</string>
+        <string id="four_point">4 Points per minute</string>
+        <string id="five_point">5 Points per minute</string>
     </strings>
 
     <settings>
         <setting propertyKey="@Properties.event_duration_prop" title="@Strings.event_duration_title">
             <settingConfig type="numeric" min="1" max="5" errorMessage="@Strings.event_duration_error"/>
+        </setting>
+
+        <setting propertyKey="@Properties.point_scoring_prop" title="@Strings.point_scoring_title" prompt="@Strings.point_scoring_prompt">
+            <settingConfig type="list">
+                <listEntry value="0">@Strings.MBO_Score</listEntry>
+                <listEntry value="1">@Strings.one_point</listEntry>
+                <listEntry value="2">@Strings.two_point</listEntry>
+                <listEntry value="3">@Strings.three_point</listEntry>
+                <listEntry value="4">@Strings.four_point</listEntry>
+                <listEntry value="5">@Strings.five_point</listEntry>
+            </settingConfig>
         </setting>
     </settings>
 </resources>

@@ -127,72 +127,80 @@
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry field="true" id="30" symbol="&lt;globals/MBOCountdownView/&lt;&gt;needToVibrate&gt;"/>
 <entry id="4" module="true" symbol="globals/Rez/Menus"/>
+<entry field="true" id="44" symbol="point_scoring_prompt"/>
 <entry field="true" id="16" symbol="AlertTones"/>
-<entry id="48" method="true" symbol="playVibrate"/>
+<entry id="56" method="true" symbol="playVibrate"/>
 <entry field="true" id="12" symbol="OneMin"/>
+<entry field="true" id="41" symbol="MBO_Score"/>
 <entry id="33" method="true" symbol="&lt;globals/MBOCountdownView/&lt;&gt;playLostPointsAlerts&gt;"/>
 <entry field="true" id="31" symbol="timeType"/>
+<entry field="true" id="47" symbol="five_point"/>
 <entry id="8391336" symbol="repeatCount"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
 <entry field="true" id="22" symbol="_mboLostPoints"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
 <entry field="true" id="25" symbol="&lt;globals/MBOCountdownView/&lt;&gt;events&gt;"/>
-<entry field="true" id="43" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventType&gt;"/>
+<entry field="true" id="51" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventType&gt;"/>
 <entry field="true" id="17" symbol="AlertVibe"/>
-<entry field="true" id="41" symbol="AppName"/>
+<entry field="true" id="49" symbol="AppName"/>
 <entry field="true" id="27" symbol="&lt;globals/MBOCountdownView/&lt;&gt;pointsLost&gt;"/>
 <entry id="8" module="true" symbol="globals/Rez/Strings"/>
 <entry id="8388772" module="true" object="true" symbol="Fonts"/>
 <entry field="true" id="10" symbol="ThirtyMin"/>
 <entry id="8388648" module="true" symbol="WatchUi"/>
-<entry id="47" method="true" symbol="playAlert"/>
+<entry id="55" method="true" symbol="playAlert"/>
 <entry field="true" id="29" symbol="&lt;globals/MBOCountdownView/&lt;&gt;lastPlayedEvtIdx&gt;"/>
 <entry field="true" id="14" symbol="PointLost"/>
 <entry id="8390425" module="true" symbol="Properties"/>
 <entry id="2" module="true" symbol="globals/Rez"/>
-<entry field="true" id="45" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventHappened&gt;"/>
-<entry id="49" method="true" symbol="playTimeUsedAlert"/>
+<entry field="true" id="53" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventHappened&gt;"/>
+<entry id="57" method="true" symbol="playTimeUsedAlert"/>
 <entry field="true" id="13" symbol="TimesUp"/>
-<entry field="true" id="42" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventWhen&gt;"/>
-<entry id="50" method="true" symbol="checkEvent"/>
+<entry field="true" id="50" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventWhen&gt;"/>
+<entry id="58" method="true" symbol="checkEvent"/>
 <entry field="true" id="8391338" symbol="toneProfile"/>
 <entry id="35" method="true" symbol="getIntValueWithDefault"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry id="37" module="true" symbol="Menus"/>
 <entry id="8389275" method="true" symbol="getApp"/>
 <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+<entry field="true" id="43" symbol="point_scoring_title"/>
+<entry field="true" id="46" symbol="one_point"/>
+<entry field="true" id="48" symbol="four_point"/>
 <entry id="8389137" method="true" symbol="compute"/>
 <entry id="8388987" method="true" symbol="vibrate"/>
 <entry id="19" object="true" symbol="MBOCountdownView"/>
 <entry id="7" module="true" symbol="globals/Rez/JsonData"/>
-<entry field="true" id="40" symbol="event_duration_error"/>
+<entry field="true" id="42" symbol="event_duration_error"/>
 <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
 <entry field="true" id="11" symbol="FiveMin"/>
 <entry id="9" object="true" symbol="MBOCountdownApp"/>
 <entry field="true" id="23" symbol="&lt;globals/MBOCountdownView/&lt;&gt;_eventDurationMins&gt;"/>
 <entry id="8388985" method="true" symbol="playTone"/>
 <entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="45" symbol="three_point"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry field="true" id="20" symbol="secondsPerMinute"/>
 <entry field="true" id="24" symbol="&lt;globals/MBOCountdownView/&lt;&gt;_eventDurationHours&gt;"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="39" symbol="two_point"/>
 <entry field="true" id="38" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="32" method="true" symbol="&lt;globals/MBOCountdownView/&lt;&gt;buildEvents&gt;"/>
-<entry field="true" id="44" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_repeatCount&gt;"/>
+<entry field="true" id="52" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_repeatCount&gt;"/>
 <entry id="18" object="true" symbol="MBOTimedEvent"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry id="34" method="true" symbol="&lt;globals/MBOCountdownView/&lt;&gt;checkEvents&gt;"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
-<entry id="46" method="true" symbol="timeForEvent"/>
+<entry id="54" method="true" symbol="timeForEvent"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry field="true" id="26" symbol="&lt;globals/MBOCountdownView/&lt;&gt;nextEvtIdx&gt;"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="39" symbol="event_duration_title"/>
+<entry field="true" id="40" symbol="event_duration_title"/>
 <entry field="true" id="21" symbol="minsPerHour"/>
 <entry field="true" id="15" symbol="TimedOut"/>
 <entry id="36" module="true" symbol="Layouts"/>
@@ -231,8 +239,16 @@
 </localVars>
 <annotations>
 <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="two_point"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="event_duration_title"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MBO_Score"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="event_duration_error"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="point_scoring_title"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="point_scoring_prompt"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="three_point"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="one_point"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="five_point"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="four_point"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
 </annotations>
 <dataEntryOffsetMappings>
@@ -246,7 +262,7 @@
 <dataEntry label="globals/Rez/Layouts" offset="672" parentId="Rez" symbolId="Layouts" type="module"/>
 <dataEntry label="globals/Rez/JsonData" offset="703" parentId="Rez" symbolId="JsonData" type="module"/>
 <dataEntry label="globals/Rez/Strings" offset="734" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/MBOTimedEvent" offset="789" parentId="globals" symbolId="MBOTimedEvent" type="class"/>
+<dataEntry label="globals/MBOTimedEvent" offset="853" parentId="globals" symbolId="MBOTimedEvent" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435478" name="initialize" parent="MBOCountdownApp" startPc="268435456">
