@@ -233,8 +233,8 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	    return result ;
     }
 
-	function getIntValueWithDefault(properyKey, defaultValue) {
-		var result = Properties.getValue("event_duration") ;
+	function getIntValueWithDefault(propertyKey, defaultValue) {
+		var result = Properties.getValue(propertyKey) ;
 		if (result == null) {
             result = defaultValue ;
         }
@@ -245,7 +245,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     function initialize() {
         SimpleDataField.initialize();
 		_mboLostPoints = Application.loadResource(Rez.JsonData.mboLostPoints) as Array<Number> ;
-		_eventDurationHours = getIntValueWithDefault("event_duration",3) ;
+		_eventDurationHours = getIntValueWithDefault("event_duration_prop",3) ;
         _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * secondsPerMinute)}) ;
 
         label = _eventDurationHours + " Hour Event";
