@@ -11,120 +11,12 @@ import Toybox.Application.Properties;
 import Toybox.WatchUi;
 import Toybox.Time ;
 import Toybox.Time.Gregorian ;
-import Toybox.Attention;
 import Toybox.System;
-
-// The different alerts that will be used by the app
-enum {
-	ThirtyMin, // Played N times to indicate the number of 30 minute durations left
-	FiveMin,   // Played N times to indicate the number of 5 minute durations left
-	OneMin,    // Played N times to indicate the number of 1 minute durations left
-	TimesUp,   // Played when time is up
-	PointLost, // Played when yet more points are lost
-	TimedOut   // All points lost - you've had a bad day!
-}
-
-// The tones associated with each alert type
-const AlertTones = {
-	ThirtyMin => Attention.TONE_INTERVAL_ALERT,
-    FiveMin   => Attention.TONE_ALERT_LO,
-    OneMin    => Attention.TONE_ALERT_HI,
-    TimesUp   => Attention.TONE_CANARY,
-    PointLost => Attention.TONE_LOUD_BEEP,
-    TimedOut  => Attention.TONE_FAILURE	 
-    } ;
-   
-// Single vibrate profile - used for all events
-const AlertVibe = [new Attention.VibeProfile(100, 500)];  // 0.5 Second Vibrate
-
-// Tone profile used when indicating the number of periods used
-const toneProfile as Array<Attention.ToneProfile> = [
-		new Attention.ToneProfile(5000,250),
-		new Attention.ToneProfile(0,250)
-	] as Array<Attention.ToneProfile> ;
-
-// The point schemes 
-enum {
-	mbo_score              = 0,
-	one_point_per_minute   = 1,
-	two_point_per_minute   = 2,
-	three_point_per_minute = 3,
-	four_point_per_minute  = 4,
-	five_point_per_minute  = 5
-}
-
-enum {
-	one_hour_event   = 1,
-	two_hour_event   = 2,
-	three_hour_event = 3,
-	four_hour_event  = 4,
-	five_hour_event  = 5,
-}
-
-// A class to hold an time event that we need to notify the user about.
-class MBOTimedEvent {
- 
-	private var m_eventWhen ;
-	private var m_eventType ;
-	private var m_repeatCount ;
-	private var m_eventHappened = false ;
-
-	// Constructor for the class
-	function initialize(eventWhen, eventType, repeatCount) {
-		me.m_eventWhen = eventWhen ;
-		me.m_eventType = eventType ;
-		me.m_repeatCount = repeatCount ;
-	}
-	
-	// Is it time for this event to be activated?
-	function timeForEvent(timeLeft) as Boolean {
-		if (me.m_eventWhen.compare(timeLeft) >= 0) {
-			return true ;
-		}
-		return false ;
-	}
-	
-	// Play the alert for this event
-	function playAlert() {
-		if (Attention has :playTone) {
-		    Attention.playTone(AlertTones[me.m_eventType]) ;
-		}
-	}
-
-	// Vibrate the watch to alert the user something has happened
-	function playVibrate() {
-		if (Attention has :vibrate) {
-			Attention.vibrate(AlertVibe);
-		}
-	}
-	
-	// Play the alert for the number of periods used so far
-    function playTimeUsedAlert() as Void 
-    {
-        if (Attention has :playTone) {
-            Attention.playTone({:toneProfile=>toneProfile, :repeatCount=>m_repeatCount - 1}) ;
-        }
-    }
-	
-	// Event checking and processing, returns true if
-	// the event in question has happened.
-	function checkEvent(timeLeft) {
-		var result = false ;
-		if (me.m_eventHappened == false) {
-			if (me.timeForEvent(timeLeft) == true) {
-				me.m_eventHappened = true ;
-				me.playAlert() ;
-				result = true ;
-			}
-		}
-		return result ;
-    }
-}
 
 // A simple data field that provides a count down for a three hour Mountain
 // Bike Orienteering event.
 class MBOCountdownView extends WatchUi.SimpleDataField {
-	
+
 	// Seconds per minute	
 	const secondsPerMinute = 60 ;
 
@@ -188,15 +80,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,1)) ;
     	
     }
-    
-    // PLay a tone and vibrate to let the user know
-    // they have lost yet more points.
-    private function playLostPointsAlerts()
-    {
-		if (Attention has :playTone) {
-			Attention.playTone(AlertTones[PointLost]) ;
-		}
-    }
 
 	//  Normal time has expired and now we need to report on the points being lost
 	private function overTimeEvents(timeLeft) {
@@ -217,7 +100,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				if (_eventPointsLost < _mboLostPoints[wholeMinutesLate])
 				{
 					_eventPointsLost = _mboLostPoints[wholeMinutesLate] ;
-					playLostPointsAlerts() ;
+					playMBOAlert(PointLost) ;
 				}
 				result = "-" + _eventPointsLost ;
 			}
@@ -225,7 +108,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				// So late that all of your points are lost!
 				if (!outOfTimePlayed) 
 				{
-					playLostPointsAlerts() ;
+					playMBOAlert(TimedOut) ;
 					outOfTimePlayed = true ;
 				}
 				result =  "Out of Time!" ;
@@ -235,17 +118,15 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 			_eventPointsLost = (wholeMinutesLate+1) * _eventPointScheme ;
 			result = "-" + _eventPointsLost ;
 			if (lastPointsLost < _eventPointsLost) {
-				playLostPointsAlerts() ;
+				playMBOAlert(PointLost) ;
 			}
 		} 
 
 		return result ;
 	}
-    
-    // The timer is running, determine what to show the client and what alerts to play
-    private function checkEvents(timeLeft, secondsLeft)
-    {
-    	var result = timeLeft ;
+
+	// Normal time - process the timed events
+	private function normalTimeEvents(timeLeft) {
     	
     	// If we just played an event then we need to play the repeat beeps for it
     	// in the next loop.
@@ -254,7 +135,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     			events[lastPlayedEvtIdx].playTimeUsedAlert() ;
     			lastPlayedEvtIdx = -1 ;
 			} else {
-				events[lastPlayedEvtIdx].playVibrate() ;
+				events[lastPlayedEvtIdx].playEventVibrate() ;
 				needToVibrate = false ;
 			}
     	} 
@@ -270,11 +151,21 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		        }
 		    } 
 		}	    
-		
+
+	    return  ;
+	}
+    
+    // The timer is running, determine what to show the client and what alerts to play
+    private function checkEvents(timeLeft, secondsLeft)
+    {
+		var result = timeLeft ;
+
 	    // When secondsLeft is less then zero then time is up and
 	    // we are into penalty points 
-		if (secondsLeft < 0) 
-		{
+		if (secondsLeft >= 0) {
+			normalTimeEvents(timeLeft) ;
+		}
+		else {
 			result = overTimeEvents(timeLeft) ;
 		}
 
