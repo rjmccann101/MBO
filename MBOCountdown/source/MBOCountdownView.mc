@@ -43,6 +43,24 @@ const toneProfile as Array<Attention.ToneProfile> = [
 		new Attention.ToneProfile(0,250)
 	] as Array<Attention.ToneProfile> ;
 
+// The point schemes 
+enum {
+	mbo_score              = 0,
+	one_point_per_minute   = 1,
+	two_point_per_minute   = 2,
+	three_point_per_minute = 3,
+	four_point_per_minute  = 4,
+	five_point_per_minute  = 5
+}
+
+enum {
+	one_hour_event   = 1,
+	two_hour_event   = 2,
+	three_hour_event = 3,
+	four_hour_event  = 4,
+	five_hour_event  = 5,
+}
+
 // A class to hold an time event that we need to notify the user about.
 class MBOTimedEvent {
  
@@ -119,6 +137,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	// The duration of the event in minutes
 	private var _eventDurationMins ;
 
+	// The point scheme to use for this event
+	private var _eventPointScheme ;
+
 	// The setting that controls the event duration
 	private var _eventDurationHours ;
 
@@ -130,7 +151,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     private var nextEvtIdx = 0 ;
     
     // The number of points that have been lost!
-    private var pointsLost = 0 ;
+    private var _eventPointsLost = 0 ;
     
     // Indicator that the Out of Time alert has been played
     private var outOfTimePlayed = false ;
@@ -176,6 +197,50 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 			Attention.playTone(AlertTones[PointLost]) ;
 		}
     }
+
+	//  Normal time has expired and now we need to report on the points being lost
+	private function overTimeEvents(timeLeft) {
+
+		// The number of whole minutes we are late.  This will be zero (0) when we are between
+		// 1 and 59 seconds late - which works as the index into the MBO score points lat array
+		var wholeMinutesLate = timeLeft.value().abs()/secondsPerMinute ;
+
+		// Value of _eventPointsLost, used to check if we have changed this value
+		var lastPointsLost = _eventPointsLost ;
+
+		var result = "" ;
+
+		if (_eventPointScheme == mbo_score) {
+			if (wholeMinutesLate < _mboLostPoints.size()) {
+				// There are penalties associated with the current wholeMinutesLate so
+				// not completely out of time yet!
+				if (_eventPointsLost < _mboLostPoints[wholeMinutesLate])
+				{
+					_eventPointsLost = _mboLostPoints[wholeMinutesLate] ;
+					playLostPointsAlerts() ;
+				}
+				result = "-" + _eventPointsLost ;
+			}
+			else {
+				// So late that all of your points are lost!
+				if (!outOfTimePlayed) 
+				{
+					playLostPointsAlerts() ;
+					outOfTimePlayed = true ;
+				}
+				result =  "Out of Time!" ;
+			}
+		}	 
+		else {
+			_eventPointsLost = (wholeMinutesLate+1) * _eventPointScheme ;
+			result = "-" + _eventPointsLost ;
+			if (lastPointsLost < _eventPointsLost) {
+				playLostPointsAlerts() ;
+			}
+		} 
+
+		return result ;
+	}
     
     // The timer is running, determine what to show the client and what alerts to play
     private function checkEvents(timeLeft, secondsLeft)
@@ -210,28 +275,8 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	    // we are into penalty points 
 		if (secondsLeft < 0) 
 		{
-			// The last event has fired, your out of time and losing points.
-			var pointIdx = timeLeft.value().abs()/secondsPerMinute ;  // Number of whole minutes late
-			if (pointIdx < _mboLostPoints.size()) {
-				// There are penalties associated with the current pointIdx so
-				// not completely out of time yet!
-				if (pointsLost < _mboLostPoints[pointIdx])
-				{
-					pointsLost = _mboLostPoints[pointIdx] ;
-					playLostPointsAlerts() ;
-				}
-				result = "-" + pointsLost ;
-			}
-			else {
-				// So late that all of your points are lost!
-				if (!outOfTimePlayed) 
-				{
-					playLostPointsAlerts() ;
-					outOfTimePlayed = true ;
-				}
-				result =  "Out of Time!" ;
-			}
-		}	    
+			result = overTimeEvents(timeLeft) ;
+		}
 
 	    return result ;
     }
@@ -247,8 +292,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-		_eventDurationHours = getIntValueWithDefault("event_duration_prop",3) ;
-        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour)}) ;
+		_eventDurationHours = getIntValueWithDefault("event_duration_prop", three_hour_event) ;
+        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour) - 59 }) ;
+		_eventPointScheme = getIntValueWithDefault("point_scoring_prop", mbo_score) ;
 
         label = _eventDurationHours + " Hour Event";
         buildEvents() ;
