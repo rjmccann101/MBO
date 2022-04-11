@@ -14,11 +14,16 @@ class MBOTimedEvent {
 	private var m_repeatCount ;
 	private var m_eventHappened = false ;
 
+    private var m_hasAlerted = false ;
+    private var m_hasPlayedPeriods = false ;
+    private var m_hasVibrated = false ;
+    
 	// Constructor for the class
 	function initialize(eventWhen, eventType, repeatCount) {
 		me.m_eventWhen = eventWhen ;
 		me.m_eventType = eventType ;
 		me.m_repeatCount = repeatCount ;
+
 	}
 	
 	// Is it time for this event to be activated?
@@ -28,34 +33,52 @@ class MBOTimedEvent {
 		}
 		return false ;
 	}
-
+  
 	// Play the alert for the number of periods used so far
     function playTimeUsedAlert() as Void 
     {
         playMBOTimeUsedAlert(m_repeatCount - 1) ;
+        me.m_hasPlayedPeriods = true ;
     }
 
     // Play the alert noise for this event
     function playEventAlert() as Void {
         playMBOAlert(me.m_eventType)  ; 
+        me.m_hasAlerted = true ;
     }
 
     // Play the vibration for this event
     function playEventVibrate() as Void {
         playMBOVibrate() ;
+        me.m_hasVibrated = true ;
+    }
+
+    // Have all of the event actions been completed?
+    function processEvent() as Boolean {
+        if (!m_hasAlerted) {
+            me.playEventAlert() ;
+        } else {
+            if (!m_hasVibrated) {
+                me.playEventVibrate() ;
+            }
+            else {
+                if (!m_hasPlayedPeriods) {
+                    me.playTimeUsedAlert() ;
+                }
+            }
+        }
+
+        return m_hasAlerted && m_hasVibrated && m_hasPlayedPeriods ;
     }
 	
 	// Event checking and processing, returns true if
 	// the event in question has happened.
 	function checkEvent(timeLeft) {
-		var result = false ;
 		if (me.m_eventHappened == false) {
 			if (me.timeForEvent(timeLeft) == true) {
 				me.m_eventHappened = true ;
-				playEventAlert()  ;
-				result = true ;
 			}
 		}
-		return result ;
+		return me.m_eventHappened ;
     }
 }

@@ -51,6 +51,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Index of the last event that was played
     private var lastPlayedEvtIdx = -1 ;
 
+	// Has all of the processing for the last event completed?
+	private var eventComplete = true ;
+
 	// Do we need to vibrate?
 	private var needToVibrate = false ;
     
@@ -126,33 +129,23 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	}
 
 	// Normal time - process the timed events
-	private function normalTimeEvents(timeLeft) {
-    	
-    	// If we just played an event then we need to play the repeat beeps for it
-    	// in the next loop.
-    	if (lastPlayedEvtIdx >= 0 ) {
-			if (needToVibrate == false) {
-    			events[lastPlayedEvtIdx].playTimeUsedAlert() ;
-    			lastPlayedEvtIdx = -1 ;
-			} else {
-				events[lastPlayedEvtIdx].playEventVibrate() ;
-				needToVibrate = false ;
-			}
-    	} 
-    	else { 
-	    	// If there are any more events to consume then see if they can be run
-		    if (nextEvtIdx < events.size()) {
-		    	// Test to see if the next event has happened
-		        if (events[nextEvtIdx].checkEvent(timeLeft) == true) {
-		        	// and when it does happen move onto the next event.
-		        	lastPlayedEvtIdx = nextEvtIdx ;
-					needToVibrate = true ;
-		        	nextEvtIdx++ ;
-		        }
-		    } 
-		}	    
+	private function normalTimeEvents(timeLeft) as Void {
 
-	    return  ;
+		// If there are any more events to consume then see if they can be run
+		if (nextEvtIdx < events.size()) {
+			// Test to see if the next event has happened
+			if (events[nextEvtIdx].checkEvent(timeLeft)) {
+				eventComplete = false ;
+			}
+		} 
+
+		// Process the actions if we have an uncompleted event
+		if (!eventComplete) {
+			eventComplete =  events[nextEvtIdx].processEvent() ;
+			if (eventComplete) {
+				nextEvtIdx++ ; // Move onto the next event
+			}
+		}
 	}
     
     // The timer is running, determine what to show the client and what alerts to play
