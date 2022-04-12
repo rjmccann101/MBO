@@ -48,15 +48,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Indicator that the Out of Time alert has been played
     private var outOfTimePlayed = false ;
     
-    // Index of the last event that was played
-    private var lastPlayedEvtIdx = -1 ;
-
 	// Has all of the processing for the last event completed?
 	private var eventComplete = true ;
 
-	// Do we need to vibrate?
-	private var needToVibrate = false ;
-    
     // Working in seconds or minutes?
     const timeType = :minutes ;
         
@@ -85,11 +79,11 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     }
 
 	//  Normal time has expired and now we need to report on the points being lost
-	private function overTimeEvents(timeLeft) {
+	private function overTimeEvents(secondsLeftNumber) as Lang.String {
 
 		// The number of whole minutes we are late.  This will be zero (0) when we are between
 		// 1 and 59 seconds late - which works as the index into the MBO score points lat array
-		var wholeMinutesLate = timeLeft.value().abs()/secondsPerMinute ;
+		var wholeMinutesLate = secondsLeftNumber.abs()/secondsPerMinute ;
 
 		// Value of _eventPointsLost, used to check if we have changed this value
 		var lastPointsLost = _eventPointsLost ;
@@ -129,15 +123,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	}
 
 	// Normal time - process the timed events
-	private function normalTimeEvents(timeLeft) as Void {
-
-		// If there are any more events to consume then see if they can be run
-		if (nextEvtIdx < events.size()) {
-			// Test to see if the next event has happened
-			if (events[nextEvtIdx].checkEvent(timeLeft)) {
-				eventComplete = false ;
-			}
-		} 
+	private function normalTimeEvents(timeLeftDuration) as Void {
 
 		// Process the actions if we have an uncompleted event
 		if (!eventComplete) {
@@ -146,25 +132,36 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				nextEvtIdx++ ; // Move onto the next event
 			}
 		}
+		else {
+			// If there are any more events to consume then see if they can be run
+			if (nextEvtIdx < events.size()) {
+				// Test to see if the next event has happened
+				if (events[nextEvtIdx].checkEvent(timeLeftDuration)) {
+					eventComplete = false ;
+				}
+			} 
+		}
 	}
     
     // The timer is running, determine what to show the client and what alerts to play
-    private function checkEvents(timeLeft, secondsLeft)
+    private function checkEvents(timeLeftDuration, secondsLeftNumber) as Lang.String
     {
-		var result = timeLeft ;
+		var result = timeLeftDuration ;
 
-	    // When secondsLeft is less then zero then time is up and
+	    // When secondsLeftNumber is less then zero then time is up and
 	    // we are into penalty points 
-		if (secondsLeft >= 0) {
-			normalTimeEvents(timeLeft) ;
+		if (secondsLeftNumber >= 0) {
+			normalTimeEvents(timeLeftDuration) ;
 		}
 		else {
-			result = overTimeEvents(timeLeft) ;
+			result = overTimeEvents(secondsLeftNumber) ;
 		}
 
 	    return result ;
     }
 
+	// Get a property value for the Data Control.  If no value can be found then the 
+	// defaultValue given will be used.
 	function getIntValueWithDefault(propertyKey, defaultValue) {
 		var result = Properties.getValue(propertyKey) ;
 		if (result == null) {
@@ -177,7 +174,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     function initialize() {
         SimpleDataField.initialize();
 		_eventDurationHours = getIntValueWithDefault("event_duration_prop", three_hour_event) ;
-        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour) - 59 }) ;
+        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour) - 58 }) ;
 		_eventPointScheme = getIntValueWithDefault("point_scoring_prop", mbo_score) ;
 
         label = _eventDurationHours + " Hour Event";
@@ -190,16 +187,17 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // guarantee that compute() will be called before onUpdate().
     // See Activity.Info in the documentation for available information.
     function compute(info) {
-        var timeUsed = new Time.Duration(info.elapsedTime/1000) ;
-        var timeLeft = _eventDurationMins.subtract(timeUsed) ;
-        var secondsLeft = _eventDurationMins.compare(timeUsed) ;
-        var result = "Error!" ;
+        var timeUsed    = new Time.Duration(info.elapsedTime/1000) ;
+        var timeLeftDuration    = _eventDurationMins.subtract(timeUsed) ;  // The time left as a Time.Duration object
+        var secondsLeftNumber = _eventDurationMins.compare(timeUsed) ;  // The number of seconds left as a Lang.Number, goes negative when we reach the end of normal time
+        
+		var result = "Error!" ;
                
 		// Decide what to do based on the timer state
         switch (info.timerState) {
         case 0: 
         	// Activity not yet started
-        	result = timeLeft ;
+        	result = timeLeftDuration ;
         	break ;
         case 1:
         	result = "Stopped" ;
@@ -208,7 +206,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
         	result = "Paused" ;
         	break ;
         case 3:
-        	result = checkEvents(timeLeft,secondsLeft) ;
+        	result = checkEvents(timeLeftDuration, secondsLeftNumber) ;
         	break ;
         }
         

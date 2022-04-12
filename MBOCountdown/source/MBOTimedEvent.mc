@@ -12,7 +12,6 @@ class MBOTimedEvent {
 	private var m_eventWhen ;
 	private var m_eventType ;
 	private var m_repeatCount ;
-	private var m_eventHappened = false ;
 
     private var m_hasAlerted = false ;
     private var m_hasPlayedPeriods = false ;
@@ -23,17 +22,8 @@ class MBOTimedEvent {
 		me.m_eventWhen = eventWhen ;
 		me.m_eventType = eventType ;
 		me.m_repeatCount = repeatCount ;
-
 	}
 	
-	// Is it time for this event to be activated?
-	function timeForEvent(timeLeft) as Boolean {
-		if (me.m_eventWhen.compare(timeLeft) >= 0) {
-			return true ;
-		}
-		return false ;
-	}
-  
 	// Play the alert for the number of periods used so far
     function playTimeUsedAlert() as Void 
     {
@@ -74,11 +64,6 @@ class MBOTimedEvent {
 	// Event checking and processing, returns true if
 	// the event in question has happened.
 	function checkEvent(timeLeft) {
-		if (me.m_eventHappened == false) {
-			if (me.timeForEvent(timeLeft) == true) {
-				me.m_eventHappened = true ;
-			}
-		}
-		return me.m_eventHappened ;
+        return me.m_eventWhen.compare(timeLeft) >= 0 ;
     }
 }
