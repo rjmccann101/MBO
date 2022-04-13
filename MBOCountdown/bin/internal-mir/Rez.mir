@@ -45,7 +45,37 @@ module Rez {
         [ @file = "Rez.mc"; @line = 15; ]
         import Toybox.Lang;
         [ @file = "Rez.mc"; @line = 16; initialized = true; ]
+        var two_point as Symbol;
+        [ @file = "Rez.mc"; @line = 17; initialized = true; ]
+        var event_duration_title as Symbol;
+        [ @file = "Rez.mc"; @line = 18; initialized = true; ]
+        var MBO_Score as Symbol;
+        [ @file = "Rez.mc"; @line = 19; initialized = true; ]
+        var one_hour as Symbol;
+        [ @file = "Rez.mc"; @line = 20; initialized = true; ]
+        var point_scoring_title as Symbol;
+        [ @file = "Rez.mc"; @line = 21; initialized = true; ]
+        var one_point as Symbol;
+        [ @file = "Rez.mc"; @line = 22; initialized = true; ]
+        var five_point as Symbol;
+        [ @file = "Rez.mc"; @line = 23; initialized = true; ]
+        var four_hour as Symbol;
+        [ @file = "Rez.mc"; @line = 24; initialized = true; ]
+        var four_point as Symbol;
+        [ @file = "Rez.mc"; @line = 25; initialized = true; ]
+        var event_duration_prompt as Symbol;
+        [ @file = "Rez.mc"; @line = 26; initialized = true; ]
         var AppName as Symbol;
+        [ @file = "Rez.mc"; @line = 27; initialized = true; ]
+        var three_hour as Symbol;
+        [ @file = "Rez.mc"; @line = 28; initialized = true; ]
+        var two_hour as Symbol;
+        [ @file = "Rez.mc"; @line = 29; initialized = true; ]
+        var five_hour as Symbol;
+        [ @file = "Rez.mc"; @line = 30; initialized = true; ]
+        var point_scoring_prompt as Symbol;
+        [ @file = "Rez.mc"; @line = 31; initialized = true; ]
+        var three_point as Symbol;
     }
 }
 <init> {

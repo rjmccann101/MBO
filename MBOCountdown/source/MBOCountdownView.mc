@@ -8,9 +8,11 @@
 
 import Toybox.Application;
 import Toybox.Application.Properties;
+import Toybox.Activity ;
 import Toybox.WatchUi;
 import Toybox.Time ;
 import Toybox.Time.Gregorian ;
+import Toybox.Lang ;
 
 // A simple data field that provides a count down for a three hour Mountain
 // Bike Orienteering event.
@@ -23,35 +25,35 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	const minsPerHour = 60 ;
 
 	// Penalty points, after 30 minutes you lose the lot!
-	const _mboLostPoints = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] ;
+	const _mboLostPoints as Array<Number> = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] as Array<Number>;
 
 	// The duration of the event in minutes
-	private var _eventDurationMins ;
+	private var _eventDurationMins as Duration;
 
 	// The point scheme to use for this event
-	private var _eventPointScheme ;
+	private var _eventPointScheme as Number ;
 
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
-	private var events = [] ;
+	private var events as Array<MBOTimedEvent> = [] as Array<MBOTimedEvent> ;
 				
     // Index into events, points to next unrun event	
-    private var nextEvtIdx = 0 ;
+    private var nextEvtIdx as Number = 0 ;
     
     // The number of points that have been lost!
-    private var _eventPointsLost = 0 ;
+    private var _eventPointsLost as Number = 0 ;
     
     // Indicator that the Out of Time alert has been played
-    private var outOfTimePlayed = false ;
+    private var outOfTimePlayed as Boolean = false ;
     
 	// Has all of the processing for the last event completed?
-	private var eventComplete = true ;
+	private var eventComplete as Boolean = true ;
 
     // Working in seconds or minutes?
     const timeType = :minutes ;
         
     // Populate the events array with the events that we want to alert the user to
-    private function buildEvents(mins) {
+    private function buildEvents(mins as Number) as Void {
 		var eventCnt = 1 ;
 		for (var i = mins - 30; i >= 30; i=i-30) {
 			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt ));
@@ -73,7 +75,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     }
 
 	//  Normal time has expired and now we need to report on the points being lost
-	private function overTimeEvents(secondsLeftNumber) as Lang.String {
+	private function overTimeEvents(secondsLeftNumber as Number) as Lang.String {
 
 		// The number of whole minutes we are late.  This will be zero (0) when we are between
 		// 1 and 59 seconds late - which works as the index into the MBO score points lat array
@@ -117,7 +119,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	}
 
 	// Normal time - process the timed events
-	private function normalTimeEvents(timeLeftDuration) as Void {
+	private function normalTimeEvents(timeLeftDuration as Duration) as Void {
 
 		// Process the actions if we have an uncompleted event
 		if (!eventComplete) {
@@ -138,7 +140,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	}
     
     // The timer is running, determine what to show the client and what alerts to play
-    private function checkEvents(timeLeftDuration, secondsLeftNumber) as Lang.String
+    private function checkEvents(timeLeftDuration as Duration, secondsLeftNumber as Number) as Lang.String
     {
 		var result = timeLeftDuration ;
 
@@ -156,7 +158,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// Get a property value for the Data Control.  If no value can be found then the 
 	// defaultValue given will be used.
-	function getIntValueWithDefault(propertyKey, defaultValue) {
+	function getIntValueWithDefault(propertyKey as String, defaultValue as Number) as Number {
 		var result = Properties.getValue(propertyKey) ;
 		if (result == null) {
             result = defaultValue ;
@@ -180,15 +182,18 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
     // See Activity.Info in the documentation for available information.
-    function compute(info) {
-        var timeUsed    = new Time.Duration(info.elapsedTime/1000) ;
+    function compute(info as Activity.Info) as Numeric or Duration or String or Null {
+
+		var elapsedTime = info.elapsedTime as Number;
+		var timerState  = info.timerState as Number ;
+        var timeUsed    = new Time.Duration(elapsedTime/1000) ;
         var timeLeftDuration    = _eventDurationMins.subtract(timeUsed) ;  // The time left as a Time.Duration object
         var secondsLeftNumber = _eventDurationMins.compare(timeUsed) ;  // The number of seconds left as a Lang.Number, goes negative when we reach the end of normal time
         
 		var result = "Error!" ;
                
 		// Decide what to do based on the timer state
-        switch (info.timerState) {
+        switch (timerState) {
         case 0: 
         	// Activity not yet started
         	result = timeLeftDuration ;

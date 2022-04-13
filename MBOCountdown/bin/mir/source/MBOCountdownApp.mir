@@ -17,15 +17,15 @@ class MBOCountdownApp extends Application.AppBase{
         invoke %tmp.2 %tmp.3();
     }
     [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 12; ]
-    function onStart(state) {
+    function onStart(state) as Void {
     }
     [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 16; ]
-    function onStop(state) {
+    function onStop(state) as Void {
     }
     [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc"; @line = 20; ]
-    function getInitialView() {
+    function getInitialView() as Array<Views or InputDelegates> or Null {
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownApp.mc" 21 ]
-        %tmp.1 = newa 1;
+        %tmp.1 = newa Array<Views or InputDelegates> 1;
         %tmp.5 = getv ? :MBOCountdownView;
         %tmp.2 = newc %tmp.5;
         %tmp.6 = dup %tmp.2;

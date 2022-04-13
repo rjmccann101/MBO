@@ -7,19 +7,10 @@
 //
 
 import Toybox.Attention;
-
-// The tones associated with each alert type
-const AlertTones = {
-	ThirtyMin => Attention.TONE_INTERVAL_ALERT,
-    FiveMin   => Attention.TONE_ALERT_LO,
-    OneMin    => Attention.TONE_ALERT_HI,
-    TimesUp   => Attention.TONE_CANARY,
-    PointLost => Attention.TONE_LOUD_BEEP,
-    TimedOut  => Attention.TONE_FAILURE	 
-} ;
+import Toybox.Lang ;
 
 // The different alerts that will be used by the app
-enum {
+enum AlertTypeEnum {
 	ThirtyMin, // Played N times to indicate the number of 30 minute durations left
 	FiveMin,   // Played N times to indicate the number of 5 minute durations left
 	OneMin,    // Played N times to indicate the number of 1 minute durations left
@@ -27,6 +18,16 @@ enum {
 	PointLost, // Played when yet more points are lost
 	TimedOut   // All points lost - you've had a bad day!
 }
+
+// The tones associated with each alert type
+const AlertToneDict as Dictionary<AlertTypeEnum, Attention.Tone> = {
+	ThirtyMin => Attention.TONE_INTERVAL_ALERT,
+    FiveMin   => Attention.TONE_ALERT_LO,
+    OneMin    => Attention.TONE_ALERT_HI,
+    TimesUp   => Attention.TONE_CANARY,
+    PointLost => Attention.TONE_LOUD_BEEP,
+    TimedOut  => Attention.TONE_FAILURE	 
+} as Dictionary<AlertTypeEnum, Attention.Tone> ;
 
 // The point schemes 
 enum {
@@ -48,7 +49,9 @@ enum {
 }
 
 // Single vibrate profile - used for all events
-const AlertVibe = [new Attention.VibeProfile(100, 500)];  // 0.5 Second Vibrate
+const AlertVibe as Array<Attention.VibeProfile>  = [
+		new Attention.VibeProfile(100, 500)
+	] as Array<Attention.VibeProfile>;
 
 // Tone profile used when indicating the number of periods used
 const toneProfile as Array<Attention.ToneProfile> = [
@@ -57,14 +60,15 @@ const toneProfile as Array<Attention.ToneProfile> = [
     ] as Array<Attention.ToneProfile> ;
 
 // Play the alert for this event
-function playMBOAlert(eventType) {
+function playMBOAlert(eventType as AlertTypeEnum) as Void {
     if (Attention has :playTone) {
-        Attention.playTone(AlertTones[eventType]) ;
+		var tone = AlertToneDict[eventType] as Attention.Tone;
+        Attention.playTone(tone) ;
     }
 }
 
 // Play the alert for the number of periods used so far
-function playMBOTimeUsedAlert(repeatCount) as Void 
+function playMBOTimeUsedAlert(repeatCount as Number) as Void 
 {
     if (Attention has :playTone) {
         Attention.playTone({:toneProfile=>toneProfile, :repeatCount=>repeatCount}) ;
@@ -72,7 +76,7 @@ function playMBOTimeUsedAlert(repeatCount) as Void
 }
 
 // Vibrate the watch to alert the user something has happened
-function playMBOVibrate() {
+function playMBOVibrate() as Void {
     if (Attention has :vibrate) {
         Attention.vibrate(AlertVibe);
     }
