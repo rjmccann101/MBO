@@ -11,7 +11,6 @@ import Toybox.Application.Properties;
 import Toybox.WatchUi;
 import Toybox.Time ;
 import Toybox.Time.Gregorian ;
-import Toybox.System;
 
 // A simple data field that provides a count down for a three hour Mountain
 // Bike Orienteering event.
@@ -31,9 +30,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 
 	// The point scheme to use for this event
 	private var _eventPointScheme ;
-
-	// The setting that controls the event duration
-	private var _eventDurationHours ;
 
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
@@ -55,9 +51,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     const timeType = :minutes ;
         
     // Populate the events array with the events that we want to alert the user to
-    private function buildEvents() {
-
-		var mins = _eventDurationHours * minsPerHour ;
+    private function buildEvents(mins) {
 		var eventCnt = 1 ;
 		for (var i = mins - 30; i >= 30; i=i-30) {
 			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt ));
@@ -173,12 +167,12 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-		_eventDurationHours = getIntValueWithDefault("event_duration_prop", three_hour_event) ;
-        _eventDurationMins = Gregorian.duration({:minutes => (_eventDurationHours * minsPerHour) - 58 }) ;
+		var eventDurationHours = getIntValueWithDefault("event_duration_prop", three_hour_event) ;
+        _eventDurationMins = Gregorian.duration({:minutes => (eventDurationHours * minsPerHour)}) ;
 		_eventPointScheme = getIntValueWithDefault("point_scoring_prop", mbo_score) ;
 
-        label = _eventDurationHours + " Hour Event";
-        buildEvents() ;
+        label = eventDurationHours + " Hour Event";
+        buildEvents(eventDurationHours * 60) ;
     }
 
     // The given info object contains all the current workout
