@@ -19,16 +19,6 @@ enum AlertTypeEnum {
 	TimedOut   // All points lost - you've had a bad day!
 }
 
-// The tones associated with each alert type
-const AlertToneDict as Dictionary<AlertTypeEnum, Attention.Tone> = {
-	ThirtyMin => Attention.TONE_INTERVAL_ALERT,
-    FiveMin   => Attention.TONE_ALERT_LO,
-    OneMin    => Attention.TONE_ALERT_HI,
-    TimesUp   => Attention.TONE_CANARY,
-    PointLost => Attention.TONE_LOUD_BEEP,
-    TimedOut  => Attention.TONE_FAILURE	 
-} as Dictionary<AlertTypeEnum, Attention.Tone> ;
-
 // The point schemes 
 enum {
 	mbo_score              = 0,
@@ -53,17 +43,23 @@ const AlertVibe as Array<Attention.VibeProfile>  = [
 		new Attention.VibeProfile(100, 500)
 	] as Array<Attention.VibeProfile>;
 
-// Tone profile used when indicating the number of periods used
-const toneProfile as Array<Attention.ToneProfile> = [
-        new Attention.ToneProfile(5000,250),
-        new Attention.ToneProfile(0,250)
-    ] as Array<Attention.ToneProfile> ;
-
 // Play the alert for this event
 function playMBOAlert(eventType as AlertTypeEnum) as Void {
     if (Attention has :playTone) {
-		var tone = AlertToneDict[eventType] as Attention.Tone;
-        Attention.playTone(tone) ;
+	   var tone = Attention.TONE_INTERVAL_ALERT ;
+	   switch (eventType) {
+		   	case FiveMin: tone = Attention.TONE_ALERT_LO ;
+		   				 break ;
+			case OneMin: tone = Attention.TONE_ALERT_HI ;
+		   				 break ;
+			case TimesUp: tone = Attention.TONE_CANARY ;
+		   				 break ;
+			case PointLost: tone = Attention.TONE_LOUD_BEEP ;
+		   				 break ;
+			case TimedOut: tone = Attention.TONE_FAILURE ;
+		   				 break ;
+	   }
+       Attention.playTone(tone) ;
     }
 }
 
@@ -71,6 +67,10 @@ function playMBOAlert(eventType as AlertTypeEnum) as Void {
 function playMBOTimeUsedAlert(repeatCount as Number) as Void 
 {
     if (Attention has :playTone) {
+		// Tone profile used when indicating the number of periods used
+		var toneProfile = [
+        new Attention.ToneProfile(5000,250),
+        new Attention.ToneProfile(0,250)] as Array<Attention.ToneProfile> ;
         Attention.playTone({:toneProfile=>toneProfile, :repeatCount=>repeatCount}) ;
     }
 }
