@@ -7,7 +7,6 @@
 //
 
 import Toybox.Lang ;
-import Toybox.Attention ;
 import Toybox.Time ;
 
 // A class to hold an time event that we need to notify the user about.

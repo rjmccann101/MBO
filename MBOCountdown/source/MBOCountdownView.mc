@@ -193,22 +193,22 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		var result = "Error!" ;
                
 		// Decide what to do based on the timer state
-        switch (timerState) {
-        case 0: 
-        	// Activity not yet started
-        	result = timeLeftDuration ;
-        	break ;
-        case 1:
-        	result = "Stopped" ;
-        	break ;
-        case 2:
-        	result = "Paused" ;
-        	break ;
-        case 3:
-        	result = checkEvents(timeLeftDuration, secondsLeftNumber) ;
-        	break ;
-        }
-        
+		if (timerState == 3) {
+			result = checkEvents(timeLeftDuration, secondsLeftNumber) ;
+		}
+		else {
+			if (timerState == 0) {
+				result = timeLeftDuration ;
+			}
+			else {
+				if (timerState == 2) {
+					result = "Paused" ;
+				}
+				else {
+					result = "Stopped" ;
+				}
+			}
+		}
         return result ;
     }
 }

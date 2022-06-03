@@ -25,6 +25,15 @@
         {
             "type": "monkeyc",
             "request": "launch",
+            "name": "Run VivoActive4",
+            "prg": "${workspaceFolder}${pathSeparator}bin${pathSeparator}${workspaceFolderBasename}.prg",
+            "prgDebugXml": "${workspaceFolder}${pathSeparator}bin${pathSeparator}${workspaceFolderBasename}.prg.debug.xml",
+            "stopAtLaunch": false,
+            "device": "vivoactive4"
+        },
+        {
+            "type": "monkeyc",
+            "request": "launch",
             "name": "Run Tests",
             "prg": "${workspaceFolder}${pathSeparator}bin${pathSeparator}test_${command:GetTargetDevice}_${workspaceFolderBasename}.prg",
             "prgDebugXml": "${workspaceFolder}${pathSeparator}bin${pathSeparator}test_${command:GetTargetDevice}_${workspaceFolderBasename}.prg.debug.xml",
