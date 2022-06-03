@@ -609,62 +609,50 @@ C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_163_2_end:
         lputv %result.6 %tmp.32;
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 196 ]
         %tmp.34 = lgetv %timerState.2;
-        push %tmp.34;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseBegin:
-        %tmp.35 = dup %tmp.34;
-        %tmp.36 = 0;
-        %tmp.37 = getv %tmp.35 :equals;
-        %tmp.38 = invoke %tmp.35 %tmp.37 (%tmp.36);
-        bt %tmp.38 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_197_8;
-        %tmp.39 = dup %tmp.34;
-        %tmp.40 = 1;
-        %tmp.41 = getv %tmp.39 :equals;
-        %tmp.42 = invoke %tmp.39 %tmp.41 (%tmp.40);
-        bt %tmp.42 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_201_8;
-        %tmp.43 = dup %tmp.34;
-        %tmp.44 = 2;
-        %tmp.45 = getv %tmp.43 :equals;
-        %tmp.46 = invoke %tmp.43 %tmp.45 (%tmp.44);
-        bt %tmp.46 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_8;
-        %tmp.47 = dup %tmp.34;
-        %tmp.48 = 3;
-        %tmp.49 = getv %tmp.47 :equals;
-        %tmp.50 = invoke %tmp.47 %tmp.49 (%tmp.48);
-        bt %tmp.50 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_207_8;
-        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_defaultCodeBegin;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_197_8:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 199 ]
-        %tmp.52 = lgetv %timeLeftDuration.4;
-        lputv %result.6 %tmp.52;
+        %tmp.35 = 3;
+        %tmp.36 = eq %tmp.34 %tmp.35;
+        bf %tmp.36 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 197 ]
+        %tmp.37 = self;
+        %tmp.38 = getv const %tmp.37 :checkEvents;
+        %tmp.40 = lgetv %timeLeftDuration.4;
+        %tmp.42 = lgetv %secondsLeftNumber.5;
+        %tmp.43 = invoke %tmp.37 %tmp.38(%tmp.40, %tmp.42);
+        lputv %result.6 %tmp.43;
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_else:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 200 ]
-        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_201_8:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 202 ]
-        %tmp.53 = "Stopped";
-        lputv %result.6 %tmp.53;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 203 ]
-        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_8:
+        %tmp.45 = lgetv %timerState.2;
+        %tmp.46 = 0;
+        %tmp.47 = eq %tmp.45 %tmp.46;
+        bf %tmp.47 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 201 ]
+        %tmp.49 = lgetv %timeLeftDuration.4;
+        lputv %result.6 %tmp.49;
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_else:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 204 ]
+        %tmp.51 = lgetv %timerState.2;
+        %tmp.52 = 2;
+        %tmp.53 = eq %tmp.51 %tmp.52;
+        bf %tmp.53 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_4_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_4_if:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 205 ]
         %tmp.54 = "Paused";
         lputv %result.6 %tmp.54;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 206 ]
-        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_207_8:
+        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_4_else:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 208 ]
-        %tmp.55 = self;
-        %tmp.56 = getv const %tmp.55 :checkEvents;
-        %tmp.58 = lgetv %timeLeftDuration.4;
-        %tmp.60 = lgetv %secondsLeftNumber.5;
-        %tmp.61 = invoke %tmp.55 %tmp.56(%tmp.58, %tmp.60);
-        lputv %result.6 %tmp.61;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 209 ]
-        goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_8_switchCaseEnd:
-        pop;
+        %tmp.55 = "Stopped";
+        lputv %result.6 %tmp.55;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_204_4_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_end:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownView.mc" 212 ]
-        %tmp.63 = lgetv %result.6;
-        ret %tmp.63;
+        %tmp.57 = lgetv %result.6;
+        ret %tmp.57;
     }
 }
 <init> {

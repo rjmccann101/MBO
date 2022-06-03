@@ -38,27 +38,36 @@ enum {
 	five_hour_event  = 5,
 }
 
-// Single vibrate profile - used for all events
-const AlertVibe as Array<Attention.VibeProfile>  = [
-		new Attention.VibeProfile(100, 500)
-	] as Array<Attention.VibeProfile>;
-
 // Play the alert for this event
 function playMBOAlert(eventType as AlertTypeEnum) as Void {
     if (Attention has :playTone) {
-	   var tone = Attention.TONE_INTERVAL_ALERT ;
-	   switch (eventType) {
-		   	case FiveMin: tone = Attention.TONE_ALERT_LO ;
-		   				 break ;
-			case OneMin: tone = Attention.TONE_ALERT_HI ;
-		   				 break ;
-			case TimesUp: tone = Attention.TONE_CANARY ;
-		   				 break ;
-			case PointLost: tone = Attention.TONE_LOUD_BEEP ;
-		   				 break ;
-			case TimedOut: tone = Attention.TONE_FAILURE ;
-		   				 break ;
-	   }
+		var tone ;
+		if (eventType == ThirtyMin) {
+			tone = Attention.TONE_INTERVAL_ALERT ;
+		}
+		else {
+			if (eventType == FiveMin) {
+				tone = Attention.TONE_ALERT_LO ;
+			}
+			else {
+				if (eventType == OneMin) {
+					tone = Attention.TONE_ALERT_HI ;
+				}
+				else {
+					if (eventType == TimesUp) {
+						tone = Attention.TONE_CANARY ;
+					}
+					else {
+						if (eventType == PointLost) {
+							tone = Attention.TONE_LOUD_BEEP ;
+						}
+						else {
+							tone = Attention.TONE_FAILURE ;
+						}
+					}
+				}
+			}
+		}
        Attention.playTone(tone) ;
     }
 }
@@ -66,11 +75,11 @@ function playMBOAlert(eventType as AlertTypeEnum) as Void {
 // Play the alert for the number of periods used so far
 function playMBOTimeUsedAlert(repeatCount as Number) as Void 
 {
-    if (Attention has :playTone) {
+    if (Attention has :playTone && Attention has :ToneProfile) {
 		// Tone profile used when indicating the number of periods used
 		var toneProfile = [
-        new Attention.ToneProfile(5000,250),
-        new Attention.ToneProfile(0,250)] as Array<Attention.ToneProfile> ;
+			new Attention.ToneProfile(5000,250),
+        	new Attention.ToneProfile(0,250)] as Array<Attention.ToneProfile> ;
         Attention.playTone({:toneProfile=>toneProfile, :repeatCount=>repeatCount}) ;
     }
 }
@@ -78,6 +87,8 @@ function playMBOTimeUsedAlert(repeatCount as Number) as Void
 // Vibrate the watch to alert the user something has happened
 function playMBOVibrate() as Void {
     if (Attention has :vibrate) {
+		// Single vibrate profile - used for all events
+		var AlertVibe = [new Attention.VibeProfile(100, 500)] as Array<Attention.VibeProfile>;
         Attention.vibrate(AlertVibe);
     }
 }

@@ -46,174 +46,183 @@ enum {
     five_hour_event = 5
 }
 [ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 42; ]
-const AlertVibe as Array<Attention.VibeProfile>;
-[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 47; ]
 function playMBOAlert(eventType as AlertTypeEnum) as Void {
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 48 ]
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 43 ]
     %tmp.2 = getv ? :Attention;
     %tmp.3 = :playTone;
     %tmp.4 = canhazplz %tmp.2 %tmp.3;
-    bf %tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_48_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_48_4_if:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 49 ]
+    bf %tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_43_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_43_4_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 44 ]
     %tone.1 = local;
-    %tmp.5 = getm $.Toybox.Attention;
-    %tmp.6 = getv %tmp.5 :TONE_INTERVAL_ALERT;
-    lputv %tone.1 %tmp.6;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 45 ]
+    %tmp.6 = lgetv %eventType;
+    %tmp.8 = getv ? :ThirtyMin;
+    %tmp.9 = eq %tmp.6 %tmp.8;
+    bf %tmp.9 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_45_2_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_45_2_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 46 ]
+    %tmp.10 = getm $.Toybox.Attention;
+    %tmp.11 = getv %tmp.10 :TONE_INTERVAL_ALERT;
+    lputv %tone.1 %tmp.11;
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_45_2_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_45_2_else:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 49 ]
+    %tmp.13 = lgetv %eventType;
+    %tmp.15 = getv ? :FiveMin;
+    %tmp.16 = eq %tmp.13 %tmp.15;
+    bf %tmp.16 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_49_3_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_49_3_if:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 50 ]
-    %tmp.8 = lgetv %eventType;
-    push %tmp.8;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseBegin:
-    %tmp.9 = dup %tmp.8;
-    %tmp.11 = getv ? :FiveMin;
-    %tmp.12 = getv %tmp.9 :equals;
-    %tmp.13 = invoke %tmp.9 %tmp.12 (%tmp.11);
-    bt %tmp.13 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_51_6;
-    %tmp.14 = dup %tmp.8;
-    %tmp.16 = getv ? :OneMin;
-    %tmp.17 = getv %tmp.14 :equals;
-    %tmp.18 = invoke %tmp.14 %tmp.17 (%tmp.16);
-    bt %tmp.18 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_3;
-    %tmp.19 = dup %tmp.8;
-    %tmp.21 = getv ? :TimesUp;
-    %tmp.22 = getv %tmp.19 :equals;
-    %tmp.23 = invoke %tmp.19 %tmp.22 (%tmp.21);
-    bt %tmp.23 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_55_3;
-    %tmp.24 = dup %tmp.8;
-    %tmp.26 = getv ? :PointLost;
-    %tmp.27 = getv %tmp.24 :equals;
-    %tmp.28 = invoke %tmp.24 %tmp.27 (%tmp.26);
-    bt %tmp.28 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_3;
-    %tmp.29 = dup %tmp.8;
-    %tmp.31 = getv ? :TimedOut;
-    %tmp.32 = getv %tmp.29 :equals;
-    %tmp.33 = invoke %tmp.29 %tmp.32 (%tmp.31);
-    bt %tmp.33 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_59_3;
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_defaultCodeBegin;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_51_6:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 51 ]
-    %tmp.34 = getm $.Toybox.Attention;
-    %tmp.35 = getv %tmp.34 :TONE_ALERT_LO;
-    lputv %tone.1 %tmp.35;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 52 ]
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_3:
+    %tmp.17 = getm $.Toybox.Attention;
+    %tmp.18 = getv %tmp.17 :TONE_ALERT_LO;
+    lputv %tone.1 %tmp.18;
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_49_3_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_49_3_else:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 53 ]
-    %tmp.36 = getm $.Toybox.Attention;
-    %tmp.37 = getv %tmp.36 :TONE_ALERT_HI;
-    lputv %tone.1 %tmp.37;
+    %tmp.20 = lgetv %eventType;
+    %tmp.22 = getv ? :OneMin;
+    %tmp.23 = eq %tmp.20 %tmp.22;
+    bf %tmp.23 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_4_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_4_if:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 54 ]
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_55_3:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 55 ]
-    %tmp.38 = getm $.Toybox.Attention;
-    %tmp.39 = getv %tmp.38 :TONE_CANARY;
-    lputv %tone.1 %tmp.39;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 56 ]
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_3:
+    %tmp.24 = getm $.Toybox.Attention;
+    %tmp.25 = getv %tmp.24 :TONE_ALERT_HI;
+    lputv %tone.1 %tmp.25;
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_4_else:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 57 ]
-    %tmp.40 = getm $.Toybox.Attention;
-    %tmp.41 = getv %tmp.40 :TONE_LOUD_BEEP;
-    lputv %tone.1 %tmp.41;
+    %tmp.27 = lgetv %eventType;
+    %tmp.29 = getv ? :TimesUp;
+    %tmp.30 = eq %tmp.27 %tmp.29;
+    bf %tmp.30 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_5_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_5_if:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 58 ]
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_59_3:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 59 ]
-    %tmp.42 = getm $.Toybox.Attention;
-    %tmp.43 = getv %tmp.42 :TONE_FAILURE;
-    lputv %tone.1 %tmp.43;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 60 ]
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_50_4_switchCaseEnd:
-    pop;
+    %tmp.31 = getm $.Toybox.Attention;
+    %tmp.32 = getv %tmp.31 :TONE_CANARY;
+    lputv %tone.1 %tmp.32;
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_5_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_5_else:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 61 ]
+    %tmp.34 = lgetv %eventType;
+    %tmp.36 = getv ? :PointLost;
+    %tmp.37 = eq %tmp.34 %tmp.36;
+    bf %tmp.37 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_61_6_else;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_61_6_if:
 [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 62 ]
-    %tmp.44 = getm $.Toybox.Attention;
-    %tmp.45 = getv const %tmp.44 :playTone;
-    %tmp.47 = lgetv %tone.1;
-    invoke %tmp.44 %tmp.45(%tmp.47);
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_48_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_48_4_end:
+    %tmp.38 = getm $.Toybox.Attention;
+    %tmp.39 = getv %tmp.38 :TONE_LOUD_BEEP;
+    lputv %tone.1 %tmp.39;
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_61_6_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_61_6_else:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 65 ]
+    %tmp.40 = getm $.Toybox.Attention;
+    %tmp.41 = getv %tmp.40 :TONE_FAILURE;
+    lputv %tone.1 %tmp.41;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_61_6_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_57_5_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_53_4_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_49_3_end:
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_45_2_end:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 71 ]
+    %tmp.42 = getm $.Toybox.Attention;
+    %tmp.43 = getv const %tmp.42 :playTone;
+    %tmp.45 = lgetv %tone.1;
+    invoke %tmp.42 %tmp.43(%tmp.45);
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_43_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_43_4_end:
 }
-[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 67; ]
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 76; ]
 function playMBOTimeUsedAlert(repeatCount as Number) as Void {
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 69 ]
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 78 ]
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_begin:
     %tmp.2 = getv ? :Attention;
     %tmp.3 = :playTone;
     %tmp.4 = canhazplz %tmp.2 %tmp.3;
-    bf %tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_69_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_69_4_if:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 71 ]
+    %tmp.5 = dup %tmp.4;
+    bf %tmp.5 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_true:
+    %tmp.7 = getv ? :Attention;
+    %tmp.8 = :ToneProfile;
+    %tmp.9 = canhazplz %tmp.7 %tmp.8;
+    %tmp.10 = and %tmp.4 %tmp.9;
+    push %tmp.10;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_end:
+    %tmp.11 = phi [%tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_begin] [%tmp.10 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_8_true];
+    bf %tmp.11 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_4_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 80 ]
     %toneProfile.1 = local;
-    %tmp.5 = newa Array<Attention.ToneProfile> 2;
+    %tmp.12 = newa Array<Attention.ToneProfile> 2;
+    %tmp.15 = getm $.Toybox.Attention;
+    %tmp.16 = getv %tmp.15 :ToneProfile;
+    %tmp.13 = newc %tmp.16;
+    %tmp.17 = dup %tmp.13;
+    %tmp.18 = getv const %tmp.17 :initialize;
+    %tmp.19 = dup %tmp.13;
+    %tmp.20 = 5000;
+    %tmp.21 = 250;
+    invoke %tmp.19 %tmp.18(%tmp.20, %tmp.21);
+    %tmp.22 = dup %tmp.12;
+    %tmp.23 = aputv %tmp.22 0 %tmp.13;
+    %tmp.26 = getm $.Toybox.Attention;
+    %tmp.27 = getv %tmp.26 :ToneProfile;
+    %tmp.24 = newc %tmp.27;
+    %tmp.28 = dup %tmp.24;
+    %tmp.29 = getv const %tmp.28 :initialize;
+    %tmp.30 = dup %tmp.24;
+    %tmp.31 = 0;
+    %tmp.32 = 250;
+    invoke %tmp.30 %tmp.29(%tmp.31, %tmp.32);
+    %tmp.33 = dup %tmp.23;
+    %tmp.34 = aputv %tmp.33 1 %tmp.24;
+    lputv %toneProfile.1 %tmp.34;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 83 ]
+    %tmp.35 = getm $.Toybox.Attention;
+    %tmp.36 = getv const %tmp.35 :playTone;
+    %tmp.37 = newd 2;
+    %tmp.38 = :toneProfile;
+    %tmp.40 = lgetv %toneProfile.1;
+    %tmp.41 = dup %tmp.37;
+    %tmp.42 = aputv %tmp.41 %tmp.38 %tmp.40;
+    %tmp.43 = :repeatCount;
+    %tmp.45 = lgetv %repeatCount;
+    %tmp.46 = dup %tmp.42;
+    %tmp.47 = aputv %tmp.46 %tmp.43 %tmp.45;
+    invoke %tmp.35 %tmp.36(%tmp.47);
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_78_4_end:
+}
+[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 88; ]
+function playMBOVibrate() as Void {
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 89 ]
+    %tmp.2 = getv ? :Attention;
+    %tmp.3 = :vibrate;
+    %tmp.4 = canhazplz %tmp.2 %tmp.3;
+    bf %tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_89_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_89_4_if:
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 91 ]
+    %AlertVibe.1 = local;
+    %tmp.5 = newa Array<Attention.VibeProfile> 1;
     %tmp.8 = getm $.Toybox.Attention;
-    %tmp.9 = getv %tmp.8 :ToneProfile;
+    %tmp.9 = getv %tmp.8 :VibeProfile;
     %tmp.6 = newc %tmp.9;
     %tmp.10 = dup %tmp.6;
     %tmp.11 = getv const %tmp.10 :initialize;
     %tmp.12 = dup %tmp.6;
-    %tmp.13 = 5000;
-    %tmp.14 = 250;
+    %tmp.13 = 100;
+    %tmp.14 = 500;
     invoke %tmp.12 %tmp.11(%tmp.13, %tmp.14);
     %tmp.15 = dup %tmp.5;
     %tmp.16 = aputv %tmp.15 0 %tmp.6;
-    %tmp.19 = getm $.Toybox.Attention;
-    %tmp.20 = getv %tmp.19 :ToneProfile;
-    %tmp.17 = newc %tmp.20;
-    %tmp.21 = dup %tmp.17;
-    %tmp.22 = getv const %tmp.21 :initialize;
-    %tmp.23 = dup %tmp.17;
-    %tmp.24 = 0;
-    %tmp.25 = 250;
-    invoke %tmp.23 %tmp.22(%tmp.24, %tmp.25);
-    %tmp.26 = dup %tmp.16;
-    %tmp.27 = aputv %tmp.26 1 %tmp.17;
-    lputv %toneProfile.1 %tmp.27;
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 74 ]
-    %tmp.28 = getm $.Toybox.Attention;
-    %tmp.29 = getv const %tmp.28 :playTone;
-    %tmp.30 = newd 2;
-    %tmp.31 = :toneProfile;
-    %tmp.33 = lgetv %toneProfile.1;
-    %tmp.34 = dup %tmp.30;
-    %tmp.35 = aputv %tmp.34 %tmp.31 %tmp.33;
-    %tmp.36 = :repeatCount;
-    %tmp.38 = lgetv %repeatCount;
-    %tmp.39 = dup %tmp.35;
-    %tmp.40 = aputv %tmp.39 %tmp.36 %tmp.38;
-    invoke %tmp.28 %tmp.29(%tmp.40);
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_69_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_69_4_end:
-}
-[ @file = "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc"; @line = 79; ]
-function playMBOVibrate() as Void {
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 80 ]
-    %tmp.2 = getv ? :Attention;
-    %tmp.3 = :vibrate;
-    %tmp.4 = canhazplz %tmp.2 %tmp.3;
-    bf %tmp.4 @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_80_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_80_4_if:
-[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 81 ]
-    %tmp.5 = getm $.Toybox.Attention;
-    %tmp.6 = getv const %tmp.5 :vibrate;
-    %tmp.8 = getv ? :AlertVibe;
-    invoke %tmp.5 %tmp.6(%tmp.8);
-    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_80_4_end;
-C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_80_4_end:
+    lputv %AlertVibe.1 %tmp.16;
+[ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 92 ]
+    %tmp.17 = getm $.Toybox.Attention;
+    %tmp.18 = getv const %tmp.17 :vibrate;
+    %tmp.20 = lgetv %AlertVibe.1;
+    invoke %tmp.17 %tmp.18(%tmp.20);
+    goto @C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_89_4_end;
+C_GarminDevelopment_repos_MBO_MBOCountdown_source_MBOCountdownCommon_mc_89_4_end:
 }
 <init> {
-    [ "C:\GarminDevelopment\repos\MBO\MBOCountdown\source\MBOCountdownCommon.mc" 42 ]
-    %tmp.9 = newa Array<Attention.VibeProfile> 1;
-    %tmp.12 = getm $.Toybox.Attention;
-    %tmp.13 = getv %tmp.12 :VibeProfile;
-    %tmp.10 = newc %tmp.13;
-    %tmp.14 = dup %tmp.10;
-    %tmp.15 = getv const %tmp.14 :initialize;
-    %tmp.16 = dup %tmp.10;
-    %tmp.17 = 100;
-    %tmp.18 = 500;
-    invoke %tmp.16 %tmp.15(%tmp.17, %tmp.18);
-    %tmp.19 = dup %tmp.9;
-    %tmp.20 = aputv %tmp.19 0 %tmp.10;
-    putv self :AlertVibe %tmp.20;
 }
