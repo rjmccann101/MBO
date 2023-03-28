@@ -142,7 +142,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // The timer is running, determine what to show the client and what alerts to play
     private function checkEvents(timeLeftDuration as Duration, secondsLeftNumber as Number) as Lang.String
     {
-		var result = timeLeftDuration ;
+		var result = timeLeftDuration as String ;
 
 	    // When secondsLeftNumber is less then zero then time is up and
 	    // we are into penalty points 
@@ -163,7 +163,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		if (result == null) {
             result = defaultValue ;
         }
-		return result ;
+		return result as Number ;
 	}
 
     // Set the label of the data field here.
