@@ -33,6 +33,12 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	// The point scheme to use for this event
 	private var _eventPointScheme as Number ;
 
+	// Should the data field play alerts
+	private var _playAlerts as Boolean = true ;
+
+	// Should the data field play beeps after the alerts
+	private var _playBeepsAfterAlerts as Boolean = true ;
+
 	// An array of MBOTimedEvent objects, when the time comes the alert actions
 	// associated with the event will be played.
 	private var events as Array<MBOTimedEvent> = [] as Array<MBOTimedEvent> ;
@@ -156,9 +162,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 	    return result ;
     }
 
-	// Get a property value for the Data Control.  If no value can be found then the 
+	// Get an Integer property value for the Data Control.  If no value can be found then the 
 	// defaultValue given will be used.
-	function getIntValueWithDefault(propertyKey as String, defaultValue as Number) as Number {
+	function getIntPropertyWithDefault(propertyKey as String, defaultValue as Number) as Number {
 		var result = Properties.getValue(propertyKey) ;
 		if (result == null) {
             result = defaultValue ;
@@ -166,12 +172,24 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 		return result as Number ;
 	}
 
+	// Get a Boolean property value for the Data Control.  If no value can be found then the 
+	// defaultValue given will be used.
+	function getBooleanPropertyWIthDefault(propertyKey as String, defaultValue as Boolean) as Boolean {
+		var result = Properties.getValue(propertyKey) ;
+		if (result == null) {
+            result = defaultValue ;
+        }
+		return result as Boolean ;
+	}
+
     // Set the label of the data field here.
     function initialize() {
         SimpleDataField.initialize();
-		var eventDurationHours = getIntValueWithDefault("event_duration_prop", three_hour_event) ;
+		var eventDurationHours = getIntPropertyWithDefault("event_duration_prop", three_hour_event) ;
         _eventDurationMins = Gregorian.duration({:minutes => (eventDurationHours * minsPerHour)}) ;
-		_eventPointScheme = getIntValueWithDefault("point_scoring_prop", mbo_score) ;
+		_eventPointScheme = getIntPropertyWithDefault("point_scoring_prop", mbo_score) ;
+		_playAlerts = getBooleanPropertyWIthDefault("alerts_prop", true) ;
+		_playBeepsAfterAlerts = getBooleanPropertyWIthDefault("beeps_prop", true) ;
 
         label = eventDurationHours + " Hour Event";
         buildEvents(eventDurationHours * 60) ;

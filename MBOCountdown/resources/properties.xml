@@ -2,6 +2,8 @@
     <properties>
         <property id="event_duration_prop" type="number">3</property>
         <property id="point_scoring_prop" type="number">0</property>
+        <property id="alerts_prop" type="boolean">true</property>
+        <property id="beeps_prop" type="boolean">true</property>
     </properties>
 
     <strings>
@@ -22,6 +24,10 @@
         <string id="three_point">3 Points per minute</string>
         <string id="four_point">4 Points per minute</string>
         <string id="five_point">5 Points per minute</string>
+
+        <string id="AlertsTitle">Play alerts?</string>
+        <string id="BeepsTitle">Play beeps after an alert?</string>
+
     </strings>
 
     <settings>
@@ -46,5 +52,14 @@
                 <listEntry value="5">@Strings.five_point</listEntry>
             </settingConfig>
         </setting>
+
+        <setting propertyKey="@Properties.alerts_prop" title="@Strings.AlertsTitle">
+            <settingConfig type="boolean" />
+        </setting>
+
+        <setting propertyKey="@Properties.beeps_prop" title="@Strings.BeepsTitle">
+            <settingConfig type="boolean" />
+        </setting>
+
     </settings>
 </resources>
