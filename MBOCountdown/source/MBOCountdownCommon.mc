@@ -34,7 +34,7 @@ enum {
 	one_hour_event   = 1,
 	two_hour_event   = 2,
 	three_hour_event = 3,
-	four_hour_event  = 4,
+	four_hour_event  = 4, 
 	five_hour_event  = 5,
 	six_hour_event   = 6
 }

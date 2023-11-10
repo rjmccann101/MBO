@@ -1,1320 +1,1320 @@
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 1; ]
 import Toybox.Lang;
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 2; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 2; ]
 using Toybox.WatchUi;
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 3; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 3; ]
 using Toybox.WatchUi as :Ui;
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 4; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 4; ]
 using Toybox.Graphics;
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 5; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 5; ]
 using Toybox.Graphics as :Gfx;
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 7; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 7; ]
 module Rez {
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 7; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 7; ]
     <init> {
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 8; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 8; ]
     module Drawables {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 8; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 8; ]
         <init> {
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 12; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 12; ]
     module Fonts {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 12; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 12; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 15; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 15; ]
     module JsonData {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 15; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 15; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 18; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 18; ]
     module Layouts {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 18; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 18; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 21; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 21; ]
     module Menus {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 21; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 21; ]
         <init> {
         }
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 24; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 24; ]
     module Strings {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 24; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 24; ]
         <init> {
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
         var two_point as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 26; @position = 27; initialized = true; ]
         var event_duration_title as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 27; @position = 27; initialized = true; ]
         var MBO_Score as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
         var six_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; ]
         var one_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; ]
         var point_scoring_title as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; ]
         var one_point as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; ]
         var five_point as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; ]
         var four_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; ]
         var four_point as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; ]
         var event_duration_prompt as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; ]
         var AppName as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; ]
         var three_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; ]
         var two_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 39; @position = 27; initialized = true; ]
         var five_hour as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 40; @position = 27; initialized = true; ]
         var AlertsTitle as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 41; @position = 27; initialized = true; ]
         var point_scoring_prompt as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
         var three_point as Symbol;
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 43; @position = 27; initialized = true; ]
         var BeepsTitle as Symbol;
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 46; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 46; ]
     module Styles {
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 46; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 46; ]
         <init> {
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 47; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 47; ]
         module prompt_font_enhanced_readability__body_with_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 47; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 47; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 48; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 48; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 51; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 51; ]
         module system_size__menu_header {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 51; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 51; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 52; @position = 18; ]
-            const width as Number = 260;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 53; @position = 18; ]
-            const height as Number = 81;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 52; @position = 18; ]
+            const width as Number = 240;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 53; @position = 18; ]
+            const height as Number = 75;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 56; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 56; ]
         module system_loc__hint_button_left_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 56; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 56; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 57; @position = 18; ]
-            const x as Number = 10;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 58; @position = 18; ]
-            const y as Number = 173;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 57; @position = 18; ]
+            const x as Number = 9;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 58; @position = 18; ]
+            const y as Number = 159;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 61; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 61; ]
         module prompt_font_enhanced_readability__body_no_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 61; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 61; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 62; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 62; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 65; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 65; ]
         module prompt_loc__body_no_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 65; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 65; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 66; @position = 18; ]
-            const x as Number = 26;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 67; @position = 18; ]
-            const y as Number = 26;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 66; @position = 18; ]
+            const x as Number = 24;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 67; @position = 18; ]
+            const y as Number = 24;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 70; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 70; ]
         module system_icon_dark__about {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 70; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 70; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 71; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__about.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 72; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 71; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__about.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 72; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 73; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 73; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 74; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 74; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 77; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 77; ]
         module system_icon_light__question {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 77; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 77; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 78; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__question.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 79; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 78; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__question.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 79; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 82; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 82; ]
         module system_loc__hint_button_left_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 82; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 82; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 83; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 83; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 86; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 86; ]
         module prompt_font__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 86; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 86; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 87 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 87 18 ]
                 %tmp.1 = getm $.Toybox.Graphics;
                 %tmp.2 = getv %tmp.1 :TEXT_JUSTIFY_CENTER;
                 %tmp.3 = getm $.Toybox.Graphics;
                 %tmp.4 = getv %tmp.3 :TEXT_JUSTIFY_VCENTER;
                 %tmp.5 = bitor %tmp.2 %tmp.4;
                 putv self :justification %tmp.5;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 88 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 88 18 ]
                 %tmp.6 = getm $.Toybox.Graphics;
                 %tmp.7 = getv %tmp.6 :FONT_XTINY;
                 putv self :font %tmp.7;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 87; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 87; @position = 18; ]
             const justification;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 88; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 88; @position = 18; ]
             const font;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 91; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 91; ]
         module system_icon_dark__discard {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 91; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 91; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 92; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__discard.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 93; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 92; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__discard.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 93; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 94; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 94; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 95; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 95; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 98; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 98; ]
         module system_size__menu_item {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 98; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 98; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 99; @position = 18; ]
-            const width as Number = 260;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 100; @position = 18; ]
-            const height as Number = 68;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 99; @position = 18; ]
+            const width as Number = 240;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 100; @position = 18; ]
+            const height as Number = 63;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 103; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 103; ]
         module system_color_dark__text {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 103; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 103; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 105 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 105 18 ]
                 %tmp.8 = getm $.Toybox.Graphics;
                 %tmp.9 = getv %tmp.8 :COLOR_TRANSPARENT;
                 putv self :background %tmp.9;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 104; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 104; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 105; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 105; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 108; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 108; ]
         module system_icon_destructive__discard {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 108; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 108; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 109; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__discard.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 110; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 109; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_destructive__discard.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 110; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 113; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 113; ]
         module system_icon_dark__hint_action_menu {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 113; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 113; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 114; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 115; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 114; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 115; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 118; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 118; ]
         module prompt_size__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 118; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 118; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 119; @position = 18; ]
-            const width as Number = 208;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 120; @position = 18; ]
-            const height as Number = 48;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 119; @position = 18; ]
+            const width as Number = 192;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 120; @position = 18; ]
+            const height as Number = 36;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 123; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 123; ]
         module confirmation_font__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 123; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 123; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 124 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 124 18 ]
                 %tmp.10 = getm $.Toybox.Graphics;
                 %tmp.11 = getv %tmp.10 :TEXT_JUSTIFY_CENTER;
                 %tmp.12 = getm $.Toybox.Graphics;
                 %tmp.13 = getv %tmp.12 :TEXT_JUSTIFY_VCENTER;
                 %tmp.14 = bitor %tmp.11 %tmp.13;
                 putv self :justification %tmp.14;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 125 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 125 18 ]
                 %tmp.15 = getm $.Toybox.Graphics;
                 %tmp.16 = getv %tmp.15 :FONT_TINY;
                 putv self :font %tmp.16;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 124; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 124; @position = 18; ]
             const justification;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 125; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 125; @position = 18; ]
             const font;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 128; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 128; ]
         module system_color_dark__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 128; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 128; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 129; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 129; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 130; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 130; @position = 18; ]
             const background as Number = 0x000000;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 133; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 133; ]
         module system_icon_destructive__hint_button_left_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 133; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 133; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 134; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 134; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 137; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 137; ]
         module system_size__launch_icon {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 137; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 137; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 138; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 138; @position = 18; ]
             const scaleX as Number = 40;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 139; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 139; @position = 18; ]
             const scaleY as Number = 40;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 140; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 140; @position = 18; ]
             const scaleRelativeTo as String = "screen";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 143; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 143; ]
         module confirmation_input__confirm {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 143; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 143; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 144 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 144 18 ]
                 %tmp.17 = getm $.Toybox.WatchUi;
                 %tmp.18 = getv %tmp.17 :KEY_ENTER;
                 putv self :button %tmp.18;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 144; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 144; @position = 18; ]
             const button;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 147; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 147; ]
         module prompt_font__body_with_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 147; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 147; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 148 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 148 18 ]
                 %tmp.19 = getm $.Toybox.Graphics;
                 %tmp.20 = getv %tmp.19 :TEXT_JUSTIFY_CENTER;
                 putv self :justification %tmp.20;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 149 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 149 18 ]
                 %tmp.21 = getm $.Toybox.Graphics;
                 %tmp.22 = getv %tmp.21 :FONT_TINY;
                 putv self :font %tmp.22;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 148; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 148; @position = 18; ]
             const justification;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 149; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 149; @position = 18; ]
             const font;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 152; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 152; ]
         module confirmation_loc__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 152; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 152; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 153; @position = 18; ]
-            const x as Number = 52;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 154; @position = 18; ]
-            const y as Number = 52;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 153; @position = 18; ]
+            const x as Number = 48;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 154; @position = 18; ]
+            const y as Number = 48;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 157; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 157; ]
         module system_icon_destructive__hint_button_left_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 157; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 157; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 158; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 158; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 161; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 161; ]
         module prompt_color_dark__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 161; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 161; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 162; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 162; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 163; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 163; @position = 18; ]
             const background as Number = 0x000000;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 166; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 166; ]
         module system_loc__hint_action_menu {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 166; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 166; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 167; @position = 18; ]
-            const x as Number = 227;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 168; @position = 18; ]
-            const y as Number = 53;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 167; @position = 18; ]
+            const x as Number = 207;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 168; @position = 18; ]
+            const y as Number = 44;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 171; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 171; ]
         module confirmation_icon__hint_confirm {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 171; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 171; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 172; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_completion.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 173; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 172; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\confirmation_icon__hint_completion.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 173; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 176; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 176; ]
         module system_loc__hint_button_left_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 176; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 176; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 177; @position = 18; ]
-            const x as Number = 1;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 178; @position = 18; ]
-            const y as Number = 109;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 177; @position = 18; ]
+            const x as Number = 2;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 178; @position = 18; ]
+            const y as Number = 100;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 181; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 181; ]
         module prompt_size__body_no_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 181; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 181; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 182; @position = 18; ]
-            const width as Number = 208;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 183; @position = 18; ]
-            const height as Number = 208;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 182; @position = 18; ]
+            const width as Number = 192;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 183; @position = 18; ]
+            const height as Number = 192;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 186; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 186; ]
         module system_icon_light__hint_button_left_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 186; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 186; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 187; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 188; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 187; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_left_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 188; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 191; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 191; ]
         module prompt_color_light__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 191; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 191; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 192; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 192; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 193; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 193; @position = 18; ]
             const background as Number = 0xFFFFFF;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 196; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 196; ]
         module confirmation_input__delete {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 196; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 196; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 197 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 197 18 ]
                 %tmp.23 = getm $.Toybox.WatchUi;
                 %tmp.24 = getv %tmp.23 :KEY_ENTER;
                 putv self :button %tmp.24;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 197; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 197; @position = 18; ]
             const button;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 200; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 200; ]
         module system_icon_dark__hint_button_left_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 200; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 200; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 201; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 202; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 201; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_left_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 202; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 205; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 205; ]
         module system_input__action_menu {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 205; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 205; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 206 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 206 18 ]
                 %tmp.25 = getm $.Toybox.WatchUi;
                 %tmp.26 = getv %tmp.25 :KEY_ENTER;
                 putv self :button %tmp.26;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 206; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 206; @position = 18; ]
             const button;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 209; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 209; ]
         module system_icon_light__save {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 209; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 209; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 210; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__save.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 211; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 210; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__save.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 211; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 214; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 214; ]
         module prompt_color_light__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 214; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 214; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 216 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 216 18 ]
                 %tmp.27 = getm $.Toybox.Graphics;
                 %tmp.28 = getv %tmp.27 :COLOR_TRANSPARENT;
                 putv self :background %tmp.28;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 215; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 215; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 216; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 216; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 219; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 219; ]
         module system_loc__subwindow {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 219; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 219; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 220; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 220; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 223; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 223; ]
         module system_icon_light__warning {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 223; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 223; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 224; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__warning.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 225; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 224; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__warning.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 225; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 228; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 228; ]
         module confirmation_color_light__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 228; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 228; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 230 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 230 18 ]
                 %tmp.29 = getm $.Toybox.Graphics;
                 %tmp.30 = getv %tmp.29 :COLOR_TRANSPARENT;
                 putv self :background %tmp.30;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 229; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 229; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 230; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 230; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 233; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 233; ]
         module activity_color_light__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 233; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 233; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 234; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 234; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 235; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 235; @position = 18; ]
             const background as Number = 0xFFFFFF;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 238; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 238; ]
         module system_icon_positive__hint_button_right_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 238; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 238; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 239; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 239; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 242; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 242; ]
         module system_size__screen {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 242; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 242; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 243; @position = 18; ]
-            const width as Number = 260;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 244; @position = 18; ]
-            const height as Number = 260;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 243; @position = 18; ]
+            const width as Number = 240;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 244; @position = 18; ]
+            const height as Number = 240;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 247; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 247; ]
         module system_icon_destructive__hint_button_right_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 247; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 247; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 248; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 248; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 251; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 251; ]
         module system_color_light__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 251; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 251; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 252; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 252; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 253; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 253; @position = 18; ]
             const background as Number = 0xFFFFFF;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 256; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 256; ]
         module system_icon_destructive__hint_button_right_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 256; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 256; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 257; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 257; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 260; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 260; ]
         module confirmation_loc__hint_confirm {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 260; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 260; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 261; @position = 18; ]
-            const x as Number = 205;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 262; @position = 18; ]
-            const y as Number = 50;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 261; @position = 18; ]
+            const x as Number = 193;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 262; @position = 18; ]
+            const y as Number = 44;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 265; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 265; ]
         module activity_color_dark__text {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 265; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 265; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 267 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 267 18 ]
                 %tmp.31 = getm $.Toybox.Graphics;
                 %tmp.32 = getv %tmp.31 :COLOR_TRANSPARENT;
                 putv self :background %tmp.32;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 266; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 266; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 267; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 267; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 270; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 270; ]
         module confirmation_input__keep {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 270; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 270; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 271 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 271 18 ]
                 %tmp.33 = getm $.Toybox.WatchUi;
                 %tmp.34 = getv %tmp.33 :KEY_DOWN;
                 putv self :button %tmp.34;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 271; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 271; @position = 18; ]
             const button;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 274; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 274; ]
         module prompt_loc__body_with_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 274; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 274; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 275; @position = 18; ]
-            const x as Number = 26;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 276; @position = 18; ]
-            const y as Number = 78;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 275; @position = 18; ]
+            const x as Number = 24;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 276; @position = 18; ]
+            const y as Number = 72;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 279; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 279; ]
         module system_icon_dark__search {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 279; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 279; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 280; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__search.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 281; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 280; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__search.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 281; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 282; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 282; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 283; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 283; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 286; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 286; ]
         module activity_color_light__text {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 286; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 286; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 288 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 288 18 ]
                 %tmp.35 = getm $.Toybox.Graphics;
                 %tmp.36 = getv %tmp.35 :COLOR_TRANSPARENT;
                 putv self :background %tmp.36;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 287; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 287; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 288; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 288; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 291; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 291; ]
         module confirmation_icon__hint_keep {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 291; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 291; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 292; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_keep.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 293; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 292; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\confirmation_icon__hint_keep.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 293; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 296; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 296; ]
         module system_icon_dark__save {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 296; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 296; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 297; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__save.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 298; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 297; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__save.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 298; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 299; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 299; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 300; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 300; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 303; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 303; ]
         module system_icon_destructive__hint_button_left_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 303; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 303; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 304; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 304; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 307; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 307; ]
         module system_icon_light__search {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 307; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 307; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 308; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__search.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 309; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 308; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__search.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 309; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 312; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 312; ]
         module system_icon_dark__hint_button_left_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 312; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 312; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 313; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_bottom.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 314; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 313; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 314; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 317; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 317; ]
         module system_icon_positive__hint_button_left_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 317; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 317; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 318; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 318; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 321; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 321; ]
         module system_loc__hint_button_right_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 321; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 321; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 322; @position = 18; ]
-            const x as Number = 224;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 323; @position = 18; ]
-            const y as Number = 172;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 322; @position = 18; ]
+            const x as Number = 206;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 323; @position = 18; ]
+            const y as Number = 159;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 326; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 326; ]
         module confirmation_color_dark__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 326; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 326; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 328 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 328 18 ]
                 %tmp.37 = getm $.Toybox.Graphics;
                 %tmp.38 = getv %tmp.37 :COLOR_TRANSPARENT;
                 putv self :background %tmp.38;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 327; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 327; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 328; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 328; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 331; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 331; ]
         module prompt_color_dark__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 331; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 331; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 333 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 333 18 ]
                 %tmp.39 = getm $.Toybox.Graphics;
                 %tmp.40 = getv %tmp.39 :COLOR_TRANSPARENT;
                 putv self :background %tmp.40;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 332; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 332; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 333; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 333; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 336; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 336; ]
         module system_icon_destructive__cancel {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 336; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 336; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 337; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__cancel.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 338; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 337; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_destructive__cancel.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 338; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 341; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 341; ]
         module system_icon_light__hint_button_right_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 341; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 341; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 342; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_bottom.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 343; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 342; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 343; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 346; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 346; ]
         module prompt_loc__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 346; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 346; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 347; @position = 18; ]
-            const x as Number = 26;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 348; @position = 18; ]
-            const y as Number = 19;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 347; @position = 18; ]
+            const x as Number = 24;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 348; @position = 18; ]
+            const y as Number = 18;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 351; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 351; ]
         module confirmation_font_enhanced_readability__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 351; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 351; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 352; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 352; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 355; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 355; ]
         module prompt_color_light__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 355; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 355; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 357 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 357 18 ]
                 %tmp.41 = getm $.Toybox.Graphics;
                 %tmp.42 = getv %tmp.41 :COLOR_TRANSPARENT;
                 putv self :background %tmp.42;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 356; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 356; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 357; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 357; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 360; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 360; ]
         module system_icon_dark__hint_button_right_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 360; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 360; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 361; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 362; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 361; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 362; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 365; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 365; ]
         module system_icon_dark__hint_button_left_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 365; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 365; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 366; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_left_middle.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 367; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 366; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 367; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 370; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 370; ]
         module system_icon_light__cancel {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 370; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 370; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 371; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__cancel.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 372; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 371; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__cancel.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 372; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 375; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 375; ]
         module system_icon_light__about {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 375; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 375; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 376; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__about.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 377; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 376; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__about.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 377; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 380; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 380; ]
         module system_size__toast_icon {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 380; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 380; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 381; @position = 18; ]
-            const scaleX as Number = 21;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 382; @position = 18; ]
-            const scaleY as Number = 21;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 383; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 381; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 382; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 383; @position = 18; ]
             const scaleRelativeTo as String = "screen";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 386; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 386; ]
         module system_icon_dark__hint_button_right_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 386; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 386; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 387; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 387; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 390; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 390; ]
         module confirmation_icon__hint_reject {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 390; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 390; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 391; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_reject.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 392; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 391; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\confirmation_icon__hint_reject.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 392; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 395; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 395; ]
         module system_icon_light__hint_action_menu {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 395; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 395; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 396; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 397; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 396; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 397; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 400; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 400; ]
         module system_icon_light__hint_button_right_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 400; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 400; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 401; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 401; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 404; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 404; ]
         module system_icon_destructive__hint_button_right_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 404; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 404; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 405; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 405; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 408; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 408; ]
         module confirmation_loc__hint_reject {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 408; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 408; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 409; @position = 18; ]
-            const x as Number = 13;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 410; @position = 18; ]
-            const y as Number = 174;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 411; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 409; @position = 18; ]
+            const x as Number = 9;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 410; @position = 18; ]
+            const y as Number = 159;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 411; @position = 18; ]
             const horizontalJustification as String = "left";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 414; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 414; ]
         module activity_color_dark__background {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 414; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 414; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 415; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 415; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 416; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 416; @position = 18; ]
             const background as Number = 0x000000;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 419; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 419; ]
         module system_icon_light__hint_button_left_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 419; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 419; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 420; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_bottom.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 421; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 420; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 421; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 424; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 424; ]
         module system_icon_positive__hint_button_left_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 424; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 424; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 425; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 425; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 428; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 428; ]
         module system_size__menu_icon {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 428; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 428; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 429; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 429; @position = 18; ]
             const scaleX as Number = 40;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 430; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 430; @position = 18; ]
             const scaleY as Number = 40;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 431; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 431; @position = 18; ]
             const scaleRelativeTo as String = "screen";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 434; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 434; ]
         module system_icon_destructive__warning {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 434; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 434; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 435; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_destructive__warning.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 436; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 435; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_destructive__warning.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 436; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 439; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 439; ]
         module system_loc__hint_button_right_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 439; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 439; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 440; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 440; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 443; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 443; ]
         module system_icon_dark__cancel {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 443; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 443; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 444; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__cancel.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 445; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 444; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__cancel.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 445; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 446; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 446; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 447; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 447; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 450; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 450; ]
         module prompt_size__body_with_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 450; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 450; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 451; @position = 18; ]
-            const width as Number = 208;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 452; @position = 18; ]
-            const height as Number = 156;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 451; @position = 18; ]
+            const width as Number = 192;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 452; @position = 18; ]
+            const height as Number = 144;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 455; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 455; ]
         module system_loc__hint_button_right_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 455; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 455; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 456; @position = 18; ]
-            const x as Number = 224;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 457; @position = 18; ]
-            const y as Number = 50;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 456; @position = 18; ]
+            const x as Number = 207;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 457; @position = 18; ]
+            const y as Number = 44;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 460; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 460; ]
         module system_color_light__text {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 460; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 460; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 462 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 462 18 ]
                 %tmp.43 = getm $.Toybox.Graphics;
                 %tmp.44 = getv %tmp.43 :COLOR_TRANSPARENT;
                 putv self :background %tmp.44;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 461; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 461; @position = 18; ]
             const color as Number = 0x000000;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 462; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 462; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 465; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 465; ]
         module system_icon_light__check {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 465; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 465; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 466; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__check.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 467; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 466; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__check.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 467; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 470; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 470; ]
         module confirmation_input__reject {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 470; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 470; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 471 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 471 18 ]
                 %tmp.45 = getm $.Toybox.WatchUi;
                 %tmp.46 = getv %tmp.45 :KEY_DOWN;
                 putv self :button %tmp.46;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 471; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 471; @position = 18; ]
             const button;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 474; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 474; ]
         module system_icon_light__revert {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 474; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 474; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 475; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__revert.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 476; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 475; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__revert.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 476; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 479; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 479; ]
         module system_size__subwindow {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 479; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 479; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 480; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 480; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 483; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 483; ]
         module system_icon_positive__hint_button_left_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 483; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 483; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 484; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 484; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 487; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 487; ]
         module system_icon_dark__check {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 487; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 487; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 488; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__check.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 489; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 488; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__check.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 489; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 490; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 490; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 491; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 491; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 494; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 494; ]
         module confirmation_loc__hint_keep {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 494; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 494; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 495; @position = 18; ]
-            const x as Number = 13;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 496; @position = 18; ]
-            const y as Number = 174;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 497; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 495; @position = 18; ]
+            const x as Number = 9;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 496; @position = 18; ]
+            const y as Number = 159;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 497; @position = 18; ]
             const horizontalJustification as String = "left";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 500; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 500; ]
         module confirmation_loc__hint_delete {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 500; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 500; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 501; @position = 18; ]
-            const x as Number = 208;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 502; @position = 18; ]
-            const y as Number = 50;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 501; @position = 18; ]
+            const x as Number = 193;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 502; @position = 18; ]
+            const y as Number = 44;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 505; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 505; ]
         module system_icon_positive__hint_button_right_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 505; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 505; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 506; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 506; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 509; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 509; ]
         module system_icon_light__hint_button_left_middle {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 509; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 509; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 510; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_left_middle.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 511; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 510; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_left_middle.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 511; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 514; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 514; ]
         module system_icon_dark__hint_button_right_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 514; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 514; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 515; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__hint_button_right_bottom.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 516; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 515; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 516; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 519; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 519; ]
         module system_icon_positive__hint_button_right_bottom {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 519; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 519; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 520; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 520; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 523; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 523; ]
         module system_icon_dark__revert {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 523; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 523; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 524; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__revert.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 525; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 524; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__revert.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 525; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 526; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 526; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 527; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 527; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 530; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 530; ]
         module system_icon_dark__question {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 530; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 530; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 531; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__question.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 532; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 531; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__question.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 532; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 533; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 533; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 534; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 534; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 537; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 537; ]
         module system_icon_light__discard {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 537; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 537; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 538; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__discard.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 539; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 538; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__discard.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 539; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 542; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 542; ]
         module device_info {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 542; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 542; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 544 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 544 18 ]
                 %tmp.47 = getm $.Toybox.System;
                 %tmp.48 = getv %tmp.47 :SCREEN_SHAPE_ROUND;
                 putv self :screenShape %tmp.48;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 543; @position = 18; ]
-            const screenWidth as Number = 260;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 544; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 543; @position = 18; ]
+            const screenWidth as Number = 240;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 544; @position = 18; ]
             const screenShape;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 545; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 545; @position = 18; ]
             const hasNightMode as Boolean = false;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 546; @position = 18; ]
-            const screenHeight as Number = 260;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 547; @position = 18; ]
-            const hasTouchScreen as Boolean = true;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 548; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 546; @position = 18; ]
+            const screenHeight as Number = 240;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 547; @position = 18; ]
+            const hasTouchScreen as Boolean = false;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 548; @position = 18; ]
             const hasEnhancedReadabilityMode as Boolean = false;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 551; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 551; ]
         module prompt_font__body_no_title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 551; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 551; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 552 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 552 18 ]
                 %tmp.49 = getm $.Toybox.Graphics;
                 %tmp.50 = getv %tmp.49 :TEXT_JUSTIFY_CENTER;
                 %tmp.51 = getm $.Toybox.Graphics;
                 %tmp.52 = getv %tmp.51 :TEXT_JUSTIFY_VCENTER;
                 %tmp.53 = bitor %tmp.50 %tmp.52;
                 putv self :justification %tmp.53;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 553 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 553 18 ]
                 %tmp.54 = getm $.Toybox.Graphics;
                 %tmp.55 = getv %tmp.54 :FONT_TINY;
                 putv self :font %tmp.55;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 552; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 552; @position = 18; ]
             const justification;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 553; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 553; @position = 18; ]
             const font;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 556; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 556; ]
         module prompt_size__title_icon {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 556; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 556; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 557; @position = 18; ]
-            const scaleX as Float = 0.1539;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 558; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 557; @position = 18; ]
+            const scaleX as Float = 0.15;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 558; @position = 18; ]
             const scaleRelativeTo as String = "screen";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 561; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 561; ]
         module system_icon_dark__warning {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 561; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 561; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 562; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_dark__warning.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 563; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 562; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_dark__warning.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 563; @position = 18; ]
             const compress as String = "true";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 564; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 564; @position = 18; ]
             const dithering as String = "none";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 565; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 565; @position = 18; ]
             const automaticPalette as String = "true";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 568; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 568; ]
         module prompt_loc__title_icon {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 568; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 568; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 569; @position = 18; ]
-            const x as Number = 130;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 570; @position = 18; ]
-            const y as Number = 39;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 571; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 569; @position = 18; ]
+            const x as Number = 120;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 570; @position = 18; ]
+            const y as Number = 36;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 571; @position = 18; ]
             const horizontalJustification as String = "center";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 572; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 572; @position = 18; ]
             const verticalJustification as String = "center";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 575; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 575; ]
         module prompt_font_enhanced_readability__title {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 575; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 575; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 576; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 576; @position = 18; ]
             const exclude as Boolean = true;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 579; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 579; ]
         module prompt_color_dark__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 579; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 579; ]
             <init> {
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen" 581 18 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen" 581 18 ]
                 %tmp.56 = getm $.Toybox.Graphics;
                 %tmp.57 = getv %tmp.56 :COLOR_TRANSPARENT;
                 putv self :background %tmp.57;
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 580; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 580; @position = 18; ]
             const color as Number = 0xFFFFFF;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 581; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 581; @position = 18; ]
             const background;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 584; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 584; ]
         module confirmation_icon__hint_delete {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 584; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 584; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 585; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\confirmation_icon__hint_delete.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 586; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 585; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\confirmation_icon__hint_delete.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 586; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 589; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 589; ]
         module system_icon_light__hint_button_right_top {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 589; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 589; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 590; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_light__hint_button_right_top.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 591; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 590; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 591; @position = 18; ]
             const dithering as String = "none";
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 594; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 594; ]
         module confirmation_size__body {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 594; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 594; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 595; @position = 18; ]
-            const width as Number = 156;
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 596; @position = 18; ]
-            const height as Number = 156;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 595; @position = 18; ]
+            const width as Number = 144;
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 596; @position = 18; ]
+            const height as Number = 144;
         }
-        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 599; ]
+        [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 599; ]
         module system_icon_positive__check {
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 599; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 599; ]
             <init> {
             }
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 600; @position = 18; ]
-            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr955\\system_icon_positive__check.svg";
-            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 601; @position = 18; ]
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 600; @position = 18; ]
+            const filename as String = "C:\\Users\\rjmcc\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fenix6spro\\system_icon_positive__check.svg";
+            [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 601; @position = 18; ]
             const dithering as String = "none";
         }
     }
 }
-[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B4024-00\source\Rez.mcgen"; @line = 1; ]
+[ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\bin\gen\006-B3288-00\source\Rez.mcgen"; @line = 1; ]
 <init> {
 }

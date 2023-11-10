@@ -62,21 +62,21 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     private function buildEvents(mins as Number) as Void {
 		var eventCnt = 1 ;
 		for (var i = mins - 30; i >= 30; i=i-30) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt, _playAlerts, _playBeepsAfterAlerts ));
 			eventCnt++ ;
 		}
 		eventCnt = 1 ;
 		for (var i = 25; i >= 5; i=i-5) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, eventCnt ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, eventCnt, _playAlerts, _playBeepsAfterAlerts ));
 			eventCnt++ ;
 		}
 		eventCnt = 1 ;
     	for (var i = 4; i >= 1; i--) {
-			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, eventCnt ));
+			events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, eventCnt,  _playAlerts, _playBeepsAfterAlerts ));
 			eventCnt++ ;
 		}
 
-    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,1)) ;
+    	events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,1, _playAlerts, _playBeepsAfterAlerts)) ;
     	
     }
 
@@ -99,7 +99,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				if (_eventPointsLost < _mboLostPoints[wholeMinutesLate])
 				{
 					_eventPointsLost = _mboLostPoints[wholeMinutesLate] ;
-					playMBOAlert(PointLost) ;
+					if ( _playAlerts ) {
+						playMBOAlert(PointLost) ;
+					}
 				}
 				result = "-" + _eventPointsLost ;
 			}
@@ -107,7 +109,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				// So late that all of your points are lost!
 				if (!outOfTimePlayed) 
 				{
-					playMBOAlert(TimedOut) ;
+					if (_playAlerts) {
+						playMBOAlert(TimedOut) ;
+					}
 					outOfTimePlayed = true ;
 				}
 				result =  "Out of Time!" ;
@@ -117,7 +121,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 			_eventPointsLost = (wholeMinutesLate+1) * _eventPointScheme ;
 			result = "-" + _eventPointsLost ;
 			if (lastPointsLost < _eventPointsLost) {
-				playMBOAlert(PointLost) ;
+				if ( _playAlerts) {
+					playMBOAlert(PointLost) ;
+				}
 			}
 		} 
 
