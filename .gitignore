@@ -5,3 +5,5 @@ MBOCountdown/bin/internal-mir/Rez.mir
 MBOCountdown/bin/MBOCountdown-settings.json
 MBOCountdown/bin/mir/source/MBOCountdownView.mir
 MBOCountdown/bin/mir/source/MBOCountdownCommon.mir
+MBOCountdown/bin/mir/source/MBOCountdownView.mir
+MBOCountdown/bin/mir/source/MBOTimedEvent.mir

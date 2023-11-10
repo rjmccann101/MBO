@@ -12,8 +12,8 @@ import Toybox.Time ;
 // A class to hold an time event that we need to notify the user about.
 class MBOTimedEvent {
  
-	private var m_eventWhen as Time.Duration ; 
-	private var m_eventType as AlertTypeEnum ;
+    private var m_eventWhen as Time.Duration ; 
+    private var m_eventType as AlertTypeEnum ;
     private var m_repeatCount as Number ;
 
     private var m_hasAlerted as Boolean = false ;
@@ -22,16 +22,16 @@ class MBOTimedEvent {
     private var m_playAlerts as Boolean = true ;
     private var m_playBeeps as Boolean = true ;
     
-	// Constructor for the class
-	function initialize(eventWhen as Time.Duration, eventType as AlertTypeEnum, repeatCount as Lang.Number, playAlerts as Boolean, playBeeps as Boolean) {
-		m_eventWhen = eventWhen ;
-		m_eventType = eventType ;
-		m_repeatCount = repeatCount ;
+    // Constructor for the class
+    function initialize(eventWhen as Time.Duration, eventType as AlertTypeEnum, repeatCount as Lang.Number, playAlerts as Boolean, playBeeps as Boolean) {
+        m_eventWhen = eventWhen ;
+        m_eventType = eventType ;
+        m_repeatCount = repeatCount ;
         m_playAlerts = playAlerts ;
         m_playBeeps = playBeeps ;
-	}
-	
-	// Play the alert for the number of periods used so far
+    }
+    
+    // Play the alert for the number of periods used so far
     function playTimeUsedAlert() as Void 
     {
         if (m_playBeeps) {
@@ -73,10 +73,10 @@ class MBOTimedEvent {
 
         return m_hasAlerted && m_hasVibrated && m_hasPlayedPeriods ;
     }
-	
-	// Event checking and processing, returns true if
-	// the event in question has happened.
-	function checkEvent(timeLeft as Time.Duration) as Boolean {
+    
+    // Event checking and processing, returns true if
+    // the event in question has happened.
+    function checkEvent(timeLeft as Time.Duration) as Boolean {
         return me.m_eventWhen.compare(timeLeft) >= 0 ;
     }
 }
