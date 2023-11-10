@@ -2,7 +2,7 @@
 <debugInfo>
 <manifest filename="C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\manifest.xml"/>
 <pcToLineNum>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\bin\\gen\\006-B3288-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\bin\\gen\\006-B4024-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435460" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="44" parent="globals/MBOTimedEvent" pc="268435484" symbol="playEventVibrate"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="45" parent="globals/MBOTimedEvent" pc="268435486" symbol="playEventVibrate"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="46" parent="globals/MBOTimedEvent" pc="268435498" symbol="playEventVibrate"/>
