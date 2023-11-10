@@ -11,10 +11,10 @@ class MBOTimedEvent{
     static
     <init> {
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 15; @position = 13; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 15; @position = 16; ]
     private
     var m_eventWhen as Time.Duration;
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 16; @position = 13; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 16; @position = 16; ]
     private
     var m_eventType as AlertTypeEnum;
     [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 17; @position = 16; ]
@@ -29,139 +29,178 @@ class MBOTimedEvent{
     [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 21; @position = 16; ]
     private
     var m_hasVibrated as Boolean = false;
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 24; ]
-    function initialize(eventWhen as Time.Duration, eventType as AlertTypeEnum, repeatCount as Lang.Number) as Void {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_24_105_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 25 2 ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 22; @position = 16; ]
+    private
+    var m_playAlerts as Boolean = true;
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 23; @position = 16; ]
+    private
+    var m_playBeeps as Boolean = true;
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 26; ]
+    function initialize(eventWhen as Time.Duration, eventType as AlertTypeEnum, repeatCount as Lang.Number, playAlerts as Boolean, playBeeps as Boolean) as Void {
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_26_153_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 27 8 ]
         %tmp.2 = lgetv %eventWhen;
         putv self :m_eventWhen %tmp.2;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 26 2 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 28 8 ]
         %tmp.4 = lgetv %eventType;
         putv self :m_eventType %tmp.4;
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 27 2 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 29 8 ]
         %tmp.6 = lgetv %repeatCount;
         putv self :m_repeatCount %tmp.6;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_24_105_stop:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 30 8 ]
+        %tmp.8 = lgetv %playAlerts;
+        putv self :m_playAlerts %tmp.8;
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 31 8 ]
+        %tmp.10 = lgetv %playBeeps;
+        putv self :m_playBeeps %tmp.10;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_26_153_stop:
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 31; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 35; ]
     function playTimeUsedAlert() as Void {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_32_4_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 33 8 ]
-        %tmp.1 = self;
-        %tmp.2 = getv function %tmp.1 :playMBOTimeUsedAlert;
-        %tmp.4 = getv ? :m_repeatCount;
-        %tmp.5 = 1;
-        %tmp.6 = sub %tmp.4 %tmp.5;
-        invoke %tmp.1 %tmp.2(%tmp.6);
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 34 8 ]
-        %tmp.7 = true;
-        putv self :m_hasPlayedPeriods %tmp.7;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_32_4_stop:
-    }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 38; ]
-    function playEventAlert() as Void {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_38_38_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 39 8 ]
-        %tmp.1 = self;
-        %tmp.2 = getv function %tmp.1 :playMBOAlert;
-        %tmp.3 = lgetv %self;
-        %tmp.4 = getv %tmp.3 :m_eventType;
-        invoke %tmp.1 %tmp.2(%tmp.4);
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_36_4_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 37 8 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_8_if_stmt:
+        %tmp.2 = getv ? :m_playBeeps;
+        bf %tmp.2 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_8_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_25_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 38 12 ]
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :playMBOTimeUsedAlert;
+        %tmp.6 = getv ? :m_repeatCount;
+        %tmp.7 = 1;
+        %tmp.8 = sub %tmp.6 %tmp.7;
+        invoke %tmp.3 %tmp.4(%tmp.8);
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_25_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_37_8_if_end:
 [ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 40 8 ]
-        %tmp.5 = true;
-        putv self :m_hasAlerted %tmp.5;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_38_38_stop:
+        %tmp.9 = true;
+        putv self :m_hasPlayedPeriods %tmp.9;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_36_4_stop:
     }
     [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 44; ]
-    function playEventVibrate() as Void {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_44_40_start:
+    function playEventAlert() as Void {
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_44_38_start:
 [ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 45 8 ]
-        %tmp.1 = self;
-        %tmp.2 = getv function %tmp.1 :playMBOVibrate;
-        invoke %tmp.1 %tmp.2();
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 46 8 ]
-        %tmp.3 = true;
-        putv self :m_hasVibrated %tmp.3;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_44_40_stop:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_8_if_stmt:
+        %tmp.2 = getv ? :m_playAlerts;
+        bf %tmp.2 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_8_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_26_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 46 12 ]
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :playMBOAlert;
+        %tmp.5 = lgetv %self;
+        %tmp.6 = getv %tmp.5 :m_eventType;
+        invoke %tmp.3 %tmp.4(%tmp.6);
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_26_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_45_8_if_end:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 48 8 ]
+        %tmp.7 = true;
+        putv self :m_hasAlerted %tmp.7;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_44_38_stop:
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 50; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 52; ]
+    function playEventVibrate() as Void {
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_52_40_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 53 8 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_8_if_stmt:
+        %tmp.2 = getv ? :m_playAlerts;
+        bf %tmp.2 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_8_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_26_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 54 12 ]
+        %tmp.3 = self;
+        %tmp.4 = getv function %tmp.3 :playMBOVibrate;
+        invoke %tmp.3 %tmp.4();
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_26_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_8_if_end:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 56 8 ]
+        %tmp.5 = true;
+        putv self :m_hasVibrated %tmp.5;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_52_40_stop:
+    }
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 60; ]
     function processEvent() as Boolean {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_50_39_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 51 8 ]
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_stmt:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_60_39_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 61 8 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_stmt:
         %tmp.2 = getv ? :m_hasAlerted;
         %tmp.3 = not %tmp.2;
-        bf %tmp.3 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_false;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_true:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_27_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 52 12 ]
+        bf %tmp.3 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_false;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_27_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 62 12 ]
         %tmp.4 = lgetv %self;
         %tmp.5 = getv function %tmp.4 :playEventAlert;
         invoke %tmp.4 %tmp.5();
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_27_stop:
-        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_false:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_15_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 54 12 ]
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_stmt:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_27_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_false:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_63_15_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 64 12 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_stmt:
         %tmp.7 = getv ? :m_hasVibrated;
         %tmp.8 = not %tmp.7;
-        bf %tmp.8 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_false;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_true:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_32_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 55 16 ]
+        bf %tmp.8 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_false;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_32_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 65 16 ]
         %tmp.9 = lgetv %self;
         %tmp.10 = getv function %tmp.9 :playEventVibrate;
         invoke %tmp.9 %tmp.10();
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_32_stop:
-        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_false:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_57_17_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 58 16 ]
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_16_if_stmt:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_32_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_false:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_67_17_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 68 16 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_16_if_stmt:
         %tmp.12 = getv ? :m_hasPlayedPeriods;
         %tmp.13 = not %tmp.12;
-        bf %tmp.13 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_16_if_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_16_if_true:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_41_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 59 20 ]
+        bf %tmp.13 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_16_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_16_if_true:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_41_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 69 20 ]
         %tmp.14 = lgetv %self;
         %tmp.15 = getv function %tmp.14 :playTimeUsedAlert;
         invoke %tmp.14 %tmp.15();
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_41_stop:
-        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_16_if_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_58_16_if_end:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_57_17_stop:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_54_12_if_end:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_53_15_stop:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_51_8_if_end:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 64 8 ]
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_15_begin:
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_15_begin:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_41_stop:
+        goto @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_16_if_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_68_16_if_end:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_67_17_stop:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_12_if_end:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_63_15_stop:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_61_8_if_end:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 74 8 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_15_begin:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_15_begin:
         %tmp.17 = getv ? :m_hasAlerted;
         %tmp.18 = dup %tmp.17;
-        bf %tmp.18 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_31_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_31_true:
+        bf %tmp.18 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_31_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_31_true:
         %tmp.20 = getv ? :m_hasVibrated;
         %tmp.21 = and %tmp.17 %tmp.20;
         push %tmp.21;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_31_end:
-        %tmp.22 = phi [%tmp.18 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_15_begin] [%tmp.21 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_31_true] [%tmp.22 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_31_end];
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_31_end:
+        %tmp.22 = phi [%tmp.18 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_15_begin] [%tmp.21 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_31_true] [%tmp.22 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_31_end];
         %tmp.23 = dup %tmp.22;
-        bf %tmp.23 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_48_end;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_48_true:
+        bf %tmp.23 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_48_end;
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_48_true:
         %tmp.25 = getv ? :m_hasPlayedPeriods;
         %tmp.26 = and %tmp.22 %tmp.25;
         push %tmp.26;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_48_end:
-        %tmp.27 = phi [%tmp.23 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_15_begin] [%tmp.26 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_48_true] [%tmp.27 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_64_48_end];
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_48_end:
+        %tmp.27 = phi [%tmp.23 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_15_begin] [%tmp.26 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_48_true] [%tmp.27 @C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_74_48_end];
         ret %tmp.27;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_50_39_stop:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_60_39_stop:
     }
-    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 69; ]
+    [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 79; ]
     function checkEvent(timeLeft as Time.Duration) as Boolean {
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_69_59_start:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 70 8 ]
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_79_62_start:
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc" 80 8 ]
         %tmp.1 = lgetv %self;
         %tmp.2 = getv %tmp.1 :m_eventWhen;
         %tmp.3 = getv function %tmp.2 :compare;
@@ -170,7 +209,7 @@ C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_69_59_star
         %tmp.7 = 0;
         %tmp.8 = gte %tmp.6 %tmp.7;
         ret %tmp.8;
-C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_69_59_stop:
+C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOTimedEvent_mc_79_62_stop:
     }
 }
 [ @file = "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOTimedEvent.mc"; @line = 9; ]

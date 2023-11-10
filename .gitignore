@@ -2,3 +2,8 @@ MBOCountdown/bin/MBOCountdown.prg
 MBOCountdown/bin/MBOCountdown.prg.debug.xml
 MBOCountdown/bin/gen/006-B4024-00/source/Rez.mcgen
 MBOCountdown/bin/internal-mir/Rez.mir
+MBOCountdown/bin/MBOCountdown-settings.json
+MBOCountdown/bin/mir/source/MBOCountdownView.mir
+MBOCountdown/bin/mir/source/MBOCountdownCommon.mir
+MBOCountdown/bin/mir/source/MBOCountdownView.mir
+MBOCountdown/bin/mir/source/MBOTimedEvent.mir

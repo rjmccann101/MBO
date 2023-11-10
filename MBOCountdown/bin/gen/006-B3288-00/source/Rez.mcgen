@@ -37,8 +37,10 @@ module Rez {
         (:initialized) var three_hour as Symbol;
         (:initialized) var two_hour as Symbol;
         (:initialized) var five_hour as Symbol;
+        (:initialized) var AlertsTitle as Symbol;
         (:initialized) var point_scoring_prompt as Symbol;
         (:initialized) var three_point as Symbol;
+        (:initialized) var BeepsTitle as Symbol;
     } // Strings
 
     module Styles {
