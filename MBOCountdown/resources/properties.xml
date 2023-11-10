@@ -12,6 +12,7 @@
         <string id="three_hour">Three Hour Event</string>
         <string id="four_hour">Four Hour Event</string>
         <string id="five_hour">Five Hour Event</string>
+        <string id="six_hour">Six Hour Event</string>
 
         <string id="point_scoring_title">Overtime Point Scheme</string>
         <string id="point_scoring_prompt">Select the overtime points scheme</string>
@@ -31,6 +32,7 @@
                 <listEntry value="3">@Strings.three_hour</listEntry>
                 <listEntry value="4">@Strings.four_hour</listEntry>
                 <listEntry value="5">@Strings.five_hour</listEntry>
+                <listEntry value="6">@Strings.six_hour</listEntry>
             </settingConfig>
         </setting>
 

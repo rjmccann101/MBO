@@ -2,7 +2,7 @@
 <debugInfo>
 <manifest filename="C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\manifest.xml"/>
 <pcToLineNum>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\bin\\gen\\006-B3943-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435460" symbol="&lt;init&gt;"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\bin\\gen\\006-B3288-00\\source\\Rez.mcgen" id="1" lineNum="7" parent="globals/Rez" pc="268435460" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="44" parent="globals/MBOTimedEvent" pc="268435484" symbol="playEventVibrate"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="45" parent="globals/MBOTimedEvent" pc="268435486" symbol="playEventVibrate"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="2" lineNum="46" parent="globals/MBOTimedEvent" pc="268435498" symbol="playEventVibrate"/>
@@ -26,27 +26,27 @@
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="6" lineNum="40" parent="globals/MBOTimedEvent" pc="268435723" symbol="playEventAlert"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="7" lineNum="69" parent="globals/MBOTimedEvent" pc="268435734" symbol="checkEvent"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOTimedEvent.mc" id="7" lineNum="70" parent="globals/MBOTimedEvent" pc="268435736" symbol="checkEvent"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="42" parent="globals" pc="268435762" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="43" parent="globals" pc="268435774" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="44" parent="globals" pc="268435789" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="43" parent="globals" pc="268435762" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="44" parent="globals" pc="268435774" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="46" parent="globals" pc="268435789" symbol="playMBOAlert"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="45" parent="globals" pc="268435789" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="46" parent="globals" pc="268435800" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="49" parent="globals" pc="268435810" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="50" parent="globals" pc="268435821" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="53" parent="globals" pc="268435831" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="54" parent="globals" pc="268435842" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="57" parent="globals" pc="268435852" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="58" parent="globals" pc="268435863" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="61" parent="globals" pc="268435873" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="62" parent="globals" pc="268435884" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="65" parent="globals" pc="268435894" symbol="playMBOAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="71" parent="globals" pc="268435901" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="47" parent="globals" pc="268435800" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="50" parent="globals" pc="268435810" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="51" parent="globals" pc="268435821" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="54" parent="globals" pc="268435831" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="55" parent="globals" pc="268435842" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="58" parent="globals" pc="268435852" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="59" parent="globals" pc="268435863" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="62" parent="globals" pc="268435873" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="63" parent="globals" pc="268435884" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="66" parent="globals" pc="268435894" symbol="playMBOAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="8" lineNum="72" parent="globals" pc="268435901" symbol="playMBOAlert"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="9" lineNum="26" parent="globals" pc="268435923" symbol="getApp"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="9" lineNum="27" parent="globals" pc="268435933" symbol="getApp"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="88" parent="globals" pc="268435949" symbol="playMBOVibrate"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="89" parent="globals" pc="268435961" symbol="playMBOVibrate"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="91" parent="globals" pc="268435976" symbol="playMBOVibrate"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="92" parent="globals" pc="268436028" symbol="playMBOVibrate"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="89" parent="globals" pc="268435949" symbol="playMBOVibrate"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="90" parent="globals" pc="268435961" symbol="playMBOVibrate"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="92" parent="globals" pc="268435976" symbol="playMBOVibrate"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="10" lineNum="93" parent="globals" pc="268436028" symbol="playMBOVibrate"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="19" parent="globals/MBOCountdownView" pc="268436050" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="28" parent="globals/MBOCountdownView" pc="268436068" symbol="&lt;init&gt;"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownView.mc" id="11" lineNum="38" parent="globals/MBOCountdownView" pc="268436472" symbol="&lt;init&gt;"/>
@@ -131,10 +131,10 @@
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="22" lineNum="7" parent="globals/MBOCountdownApp" pc="268437929" symbol="initialize"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="22" lineNum="8" parent="globals/MBOCountdownApp" pc="268437931" symbol="initialize"/>
 <entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownApp.mc" id="23" lineNum="16" parent="globals/MBOCountdownApp" pc="268437950" symbol="onStop"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="76" parent="globals" pc="268437953" symbol="playMBOTimeUsedAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="78" parent="globals" pc="268437965" symbol="playMBOTimeUsedAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="80" parent="globals" pc="268437998" symbol="playMBOTimeUsedAlert"/>
-<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="83" parent="globals" pc="268438094" symbol="playMBOTimeUsedAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="77" parent="globals" pc="268437953" symbol="playMBOTimeUsedAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="79" parent="globals" pc="268437965" symbol="playMBOTimeUsedAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="81" parent="globals" pc="268437998" symbol="playMBOTimeUsedAlert"/>
+<entry filename="C:\\Users\\rjmcc\\GarminDev\\repo\\MBO\\MBOCountdown\\source\\MBOCountdownCommon.mc" id="24" lineNum="84" parent="globals" pc="268438094" symbol="playMBOTimeUsedAlert"/>
 </pcToLineNum>
 <symbolTable>
 <entry id="8388639" module="true" symbol="Graphics"/>
@@ -151,7 +151,8 @@
 <entry id="8388924" module="true" symbol="Gregorian"/>
 <entry field="true" id="31" symbol="_mboLostPoints"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry field="true" id="56" symbol="two_hour"/>
+<entry field="true" id="57" symbol="two_hour"/>
+<entry field="true" id="54" symbol="six_hour"/>
 <entry id="25" method="true" symbol="playEventVibrate"/>
 <entry field="true" id="35" symbol="&lt;globals/MBOCountdownView/&lt;&gt;events&gt;"/>
 <entry field="true" id="18" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_eventType&gt;"/>
@@ -193,18 +194,18 @@
 <entry id="9" object="true" symbol="MBOCountdownApp"/>
 <entry field="true" id="28" symbol="&lt;globals/MBOCountdownView/&lt;&gt;_eventDurationMins&gt;"/>
 <entry id="8388985" method="true" symbol="playTone"/>
-<entry field="true" id="55" symbol="three_point"/>
+<entry field="true" id="56" symbol="three_point"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
 <entry id="8388640" module="true" symbol="Lang"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry field="true" id="57" symbol="two_point"/>
+<entry field="true" id="58" symbol="two_point"/>
 <entry field="true" id="41" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry field="true" id="22" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_hasVibrated&gt;"/>
 <entry id="32" method="true" symbol="&lt;globals/MBOCountdownView/&lt;&gt;buildEvents&gt;"/>
 <entry field="true" id="23" symbol="&lt;globals/MBOTimedEvent/&lt;&gt;m_repeatCount&gt;"/>
-<entry field="true" id="54" symbol="three_hour"/>
+<entry field="true" id="55" symbol="three_hour"/>
 <entry id="11" object="true" symbol="MBOTimedEvent"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry id="33" method="true" symbol="&lt;globals/MBOCountdownView/&lt;&gt;checkEvents&gt;"/>
@@ -275,6 +276,7 @@
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="event_duration_prompt"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="one_point"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="three_point"/>
+<annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="six_hour"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="four_point"/>
 <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="five_point"/>
 </annotations>
@@ -289,7 +291,7 @@
 <dataEntry label="globals/Rez/Menus" offset="704" parentId="Rez" symbolId="Menus" type="module"/>
 <dataEntry label="globals/Rez/Fonts" offset="735" parentId="Rez" symbolId="Fonts" type="module"/>
 <dataEntry label="globals/Rez/Strings" offset="766" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry label="globals/Rez/JsonData" offset="925" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry label="globals/Rez/JsonData" offset="933" parentId="Rez" symbolId="JsonData" type="module"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" endPc="268435483" name="&lt;init&gt;" parent="Rez" startPc="268435460">

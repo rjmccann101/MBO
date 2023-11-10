@@ -739,7 +739,7 @@ C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOCountdownView_mc_203_8_s
 C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOCountdownView_mc_200_3_if_end:
 C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOCountdownView_mc_199_7_stop:
 C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOCountdownView_mc_196_2_if_end:
-[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOCountdownView.mc" 212 8 ]
+[ "C:\Users\rjmcc\GarminDev\repo\MBO\MBOCountdown\source\MBOCountdownView.mc" 212 2 ]
         %tmp.52 = lgetv %result.6;
         ret %tmp.52;
 C_Users_rjmcc_GarminDev_repo_MBO_MBOCountdown_source_MBOCountdownView_mc_185_85_stop:

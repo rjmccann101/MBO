@@ -209,6 +209,6 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 				}
 			}
 		}
-        return result ;
+		return result ;
     }
 }

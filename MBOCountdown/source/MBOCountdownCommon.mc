@@ -36,6 +36,7 @@ enum {
 	three_hour_event = 3,
 	four_hour_event  = 4,
 	five_hour_event  = 5,
+	six_hour_event   = 6
 }
 
 // Play the alert for this event
