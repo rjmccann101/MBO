@@ -25,6 +25,7 @@ module Rez {
         (:initialized) var two_point as Symbol;
         (:initialized) var event_duration_title as Symbol;
         (:initialized) var MBO_Score as Symbol;
+        (:initialized) var six_hour as Symbol;
         (:initialized) var one_hour as Symbol;
         (:initialized) var point_scoring_title as Symbol;
         (:initialized) var one_point as Symbol;
@@ -36,8 +37,10 @@ module Rez {
         (:initialized) var three_hour as Symbol;
         (:initialized) var two_hour as Symbol;
         (:initialized) var five_hour as Symbol;
+        (:initialized) var AlertsTitle as Symbol;
         (:initialized) var point_scoring_prompt as Symbol;
         (:initialized) var three_point as Symbol;
+        (:initialized) var BeepsTitle as Symbol;
     } // Strings
 
     module Styles {

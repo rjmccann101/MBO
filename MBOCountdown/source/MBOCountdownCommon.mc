@@ -9,26 +9,6 @@
 import Toybox.Attention;
 import Toybox.Lang ;
 
-// The different alerts that will be used by the app
-enum AlertTypeEnum {
-    ThirtyMin, // Played N times to indicate the number of 30 minute durations left
-    FiveMin,   // Played N times to indicate the number of 5 minute durations left
-    OneMin,    // Played N times to indicate the number of 1 minute durations left
-    TimesUp,   // Played when time is up
-    PointLost, // Played when yet more points are lost
-    TimedOut   // All points lost - you've had a bad day!
-}
-
-// The point schemes 
-enum {
-    mbo_score              = 0,
-    one_point_per_minute   = 1,
-    two_point_per_minute   = 2,
-    three_point_per_minute = 3,
-    four_point_per_minute  = 4,
-    five_point_per_minute  = 5
-}
-
 // The diferent event lengths that are supported
 enum {
     one_hour_event   = 1,
@@ -40,36 +20,9 @@ enum {
 }
 
 // Play the alert for this event
-function playMBOAlert(eventType as AlertTypeEnum) as Void {
+function playMBOAlert(alertToneNumber as Tone) as Void {
     if (Attention has :playTone) {
-        var tone ;
-        if (eventType == ThirtyMin) {
-            tone = Attention.TONE_INTERVAL_ALERT ;
-        }
-        else {
-            if (eventType == FiveMin) {
-                tone = Attention.TONE_ALERT_LO ;
-            }
-            else {
-                if (eventType == OneMin) {
-                    tone = Attention.TONE_ALERT_HI ;
-                }
-                else {
-                    if (eventType == TimesUp) {
-                        tone = Attention.TONE_CANARY ;
-                    }
-                    else {
-                        if (eventType == PointLost) {
-                            tone = Attention.TONE_LOUD_BEEP ;
-                        }
-                        else {
-                            tone = Attention.TONE_FAILURE ;
-                        }
-                    }
-                }
-            }
-        }
-       Attention.playTone(tone) ;
+        Attention.playTone(alertToneNumber) ;
     }
 }
 

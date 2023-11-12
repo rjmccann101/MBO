@@ -13,7 +13,7 @@ import Toybox.Time ;
 class MBOTimedEvent {
  
     private var m_eventWhen as Time.Duration ; 
-    private var m_eventType as AlertTypeEnum ;
+    private var m_eventType as Toybox.Attention.Tone ;
     private var m_repeatCount as Number ;
 
     private var m_hasAlerted as Boolean = false ;
@@ -23,7 +23,7 @@ class MBOTimedEvent {
     private var m_playBeeps as Boolean = true ;
     
     // Constructor for the class
-    function initialize(eventWhen as Time.Duration, eventType as AlertTypeEnum, repeatCount as Lang.Number, playAlerts as Boolean, playBeeps as Boolean) {
+    function initialize(eventWhen as Duration, eventType as Toybox.Attention.Tone, repeatCount as Number, playAlerts as Boolean, playBeeps as Boolean) {
         m_eventWhen = eventWhen ;
         m_eventType = eventType ;
         m_repeatCount = repeatCount ;
@@ -35,7 +35,7 @@ class MBOTimedEvent {
     function playTimeUsedAlert() as Void 
     {
         if (m_playBeeps) {
-            playMBOTimeUsedAlert(m_repeatCount - 1) ;
+            $.playMBOTimeUsedAlert(m_repeatCount - 1) ;
         }
         m_hasPlayedPeriods = true ;
     }
@@ -43,7 +43,7 @@ class MBOTimedEvent {
     // Play the alert noise for this event
     function playEventAlert() as Void {
         if (m_playAlerts) {
-            playMBOAlert(me.m_eventType)  ; 
+            $.playMBOAlert(me.m_eventType)  ; 
         }
         m_hasAlerted = true ;
     }
@@ -51,7 +51,7 @@ class MBOTimedEvent {
     // Play the vibration for this event
     function playEventVibrate() as Void {
         if (m_playAlerts) {
-            playMBOVibrate() ;
+            $.playMBOVibrate() ;
         }
         m_hasVibrated = true ;
     }

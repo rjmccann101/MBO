@@ -2,9 +2,9 @@
 // See https://github.com/rjmccann101/MBO for the full license and source code
 //
 // MBO Countdown
-// This Garmin simple data field is intended to be used by competetors in three
-// hour Mountain Bike Orienteering events.
-//
+// This Garmin simple data field is intended to be used by competetors in 
+// Mountain Bike Orienteering events.  It can be configured for events 
+// of 1,2,3,4,5 or 6 hours duration.
 
 import Toybox.Application;
 import Toybox.Application.Properties;
@@ -18,65 +18,75 @@ import Toybox.Lang ;
 // Bike Orienteering event.
 class MBOCountdownView extends WatchUi.SimpleDataField {
 
-    // Seconds per minute	
-    const secondsPerMinute = 60 ;
 
+    //*****************************************************************
+    // Constants:
     // Seconds per minute	
-    const minsPerHour = 60 ;
-
+    const secondsPerMinute as Number = 60 ;
+    // Seconds per minute	
+    const minsPerHour as Number = 60 ;
+    // Working in seconds or minutes?
+    const timeType as Symbol = :minutes ;
     // Penalty points, after 30 minutes you lose the lot!
     const _mboLostPoints as Array<Number> = [1,2,3,4,5, 7,9,11,13,15, 20,25,30,35,40, 50,60,70,80,90, 100,110,120,130,140, 150,160,170,180,190] as Array<Number>;
+    // Property value for MBO Scoring (the default)
+    const _mbo_score as Number = 0 ;
+    //*****************************************************************
 
+    //******************************************************************
+    //  Properties.  The following values are set based on the property
+    //               values selected by the user of the Data COntrol 
     // The duration of the event in minutes
     private var _eventDurationMins as Duration;
-
     // The point scheme to use for this event
     private var _eventPointScheme as Number ;
-
     // Should the data field play alerts
     private var _playAlerts as Boolean = true ;
-
     // Should the data field play beeps after the alerts
     private var _playBeepsAfterAlerts as Boolean = true ;
+    //*****************************************************************
 
+    //*****************************************************************
+    // Class Private Variables
     // An array of MBOTimedEvent objects, when the time comes the alert actions
     // associated with the event will be played.
-    private var events as Array<MBOTimedEvent> = [] as Array<MBOTimedEvent> ;
-                
+    private var _events as Array<MBOTimedEvent> = [] as Array<MBOTimedEvent> ;
     // Index into events, points to next unrun event	
-    private var nextEvtIdx as Number = 0 ;
-    
+    private var _nextEvtIdx as Number = 0 ;
     // The number of points that have been lost!
     private var _eventPointsLost as Number = 0 ;
-    
     // Indicator that the Out of Time alert has been played
-    private var outOfTimePlayed as Boolean = false ;
-    
+    private var _outOfTimePlayed as Boolean = false ;
     // Has all of the processing for the last event completed?
-    private var eventComplete as Boolean = true ;
-
-    // Working in seconds or minutes?
-    const timeType = :minutes ;
+    private var _eventComplete as Boolean = true ;
         
     // Populate the events array with the events that we want to alert the user to
     private function buildEvents(mins as Number) as Void {
-        var eventCnt = 1 ;
+        var beepRepeatCount = 1 ;  // Number of beeps to play after the event alert
         for (var i = mins - 30; i >= 30; i=i-30) {
-            events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),ThirtyMin, eventCnt, _playAlerts, _playBeepsAfterAlerts ));
-            eventCnt++ ;
+            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+                            Attention.TONE_INTERVAL_ALERT, 
+                            beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
+            beepRepeatCount++ ;
         }
-        eventCnt = 1 ;
+        beepRepeatCount = 1 ;
         for (var i = 25; i >= 5; i=i-5) {
-            events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),FiveMin, eventCnt, _playAlerts, _playBeepsAfterAlerts ));
-            eventCnt++ ;
+            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+                            Attention.TONE_ALERT_LO, 
+                            beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
+            beepRepeatCount++ ;
         }
-        eventCnt = 1 ;
+        beepRepeatCount = 1 ;
         for (var i = 4; i >= 1; i--) {
-            events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),OneMin, eventCnt,  _playAlerts, _playBeepsAfterAlerts ));
-            eventCnt++ ;
+            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+                            Attention.TONE_ALERT_HI,
+                            beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
+            beepRepeatCount++ ;
         }
 
-        events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),TimesUp,1, _playAlerts, _playBeepsAfterAlerts)) ;
+        _events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),
+            Attention.TONE_CANARY,1, 
+            _playAlerts, _playBeepsAfterAlerts)) ;
         
     }
 
@@ -92,7 +102,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
 
         var result = "" ;
 
-        if (_eventPointScheme == mbo_score) {
+        if (_eventPointScheme == _mbo_score) {
             if (wholeMinutesLate < _mboLostPoints.size()) {
                 // There are penalties associated with the current wholeMinutesLate so
                 // not completely out of time yet!
@@ -100,19 +110,19 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
                 {
                     _eventPointsLost = _mboLostPoints[wholeMinutesLate] ;
                     if ( _playAlerts ) {
-                        playMBOAlert(PointLost) ;
+                        $.playMBOAlert(Attention.TONE_LOUD_BEEP) ;
                     }
                 }
                 result = "-" + _eventPointsLost ;
             }
             else {
                 // So late that all of your points are lost!
-                if (!outOfTimePlayed) 
+                if (!_outOfTimePlayed) 
                 {
                     if (_playAlerts) {
-                        playMBOAlert(TimedOut) ;
+                        $.playMBOAlert(Attention.TONE_FAILURE) ;
                     }
-                    outOfTimePlayed = true ;
+                    _outOfTimePlayed = true ;
                 }
                 result =  "Out of Time!" ;
             }
@@ -122,7 +132,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
             result = "-" + _eventPointsLost ;
             if (lastPointsLost < _eventPointsLost) {
                 if ( _playAlerts) {
-                    playMBOAlert(PointLost) ;
+                    $.playMBOAlert(Attention.TONE_LOUD_BEEP) ;
                 }
             }
         } 
@@ -134,18 +144,18 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     private function normalTimeEvents(timeLeftDuration as Duration) as Void {
 
         // Process the actions if we have an uncompleted event
-        if (!eventComplete) {
-            eventComplete =  events[nextEvtIdx].processEvent() ;
-            if (eventComplete) {
-                nextEvtIdx++ ; // Move onto the next event
+        if (!_eventComplete) {
+            _eventComplete =  _events[_nextEvtIdx].processEvent() ;
+            if (_eventComplete) {
+                _nextEvtIdx++ ; // Move onto the next event
             }
         }
         else {
             // If there are any more events to consume then see if they can be run
-            if (nextEvtIdx < events.size()) {
+            if (_nextEvtIdx < _events.size()) {
                 // Test to see if the next event has happened
-                if (events[nextEvtIdx].checkEvent(timeLeftDuration)) {
-                    eventComplete = false ;
+                if (_events[_nextEvtIdx].checkEvent(timeLeftDuration)) {
+                    _eventComplete = false ;
                 }
             } 
         }
@@ -193,7 +203,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
         SimpleDataField.initialize();
         var eventDurationHours = getIntPropertyWithDefault("event_duration_prop", three_hour_event) ;
         _eventDurationMins = Gregorian.duration({:minutes => (eventDurationHours * minsPerHour)}) ;
-        _eventPointScheme = getIntPropertyWithDefault("point_scoring_prop", mbo_score) ;
+        _eventPointScheme = getIntPropertyWithDefault("point_scoring_prop", _mbo_score) ;
         _playAlerts = getBooleanPropertyWIthDefault("alerts_prop", true) ;
         _playBeepsAfterAlerts = getBooleanPropertyWIthDefault("beeps_prop", true) ;
 
