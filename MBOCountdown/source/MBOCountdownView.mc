@@ -10,9 +10,8 @@ import Toybox.Application;
 import Toybox.Application.Properties;
 import Toybox.Activity ;
 import Toybox.WatchUi;
-import Toybox.Time ;
-import Toybox.Time.Gregorian ;
 import Toybox.Lang ;
+import Toybox.Time ;
 
 // A simple data field that provides a count down for a three hour Mountain
 // Bike Orienteering event.
@@ -36,8 +35,9 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     //******************************************************************
     //  Properties.  The following values are set based on the property
     //               values selected by the user of the Data COntrol 
-    // The duration of the event in minutes
-    private var _eventDurationMins as Duration;
+    // The duration of the event in minutes and in seconds
+    private var _eventDurationMinutes as Number;
+    private var _eventDurationSeconds as Number;
     // The point scheme to use for this event
     private var _eventPointScheme as Number ;
     // Should the data field play alerts
@@ -63,30 +63,28 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // Populate the events array with the events that we want to alert the user to
     private function buildEvents(mins as Number) as Void {
         var beepRepeatCount = 1 ;  // Number of beeps to play after the event alert
-        for (var i = mins - 30; i >= 30; i=i-30) {
-            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+        for (var i = _eventDurationMinutes - 30; i >= 30; i=i-30) {
+            _events.add(new MBOTimedEvent(i * 60,
                             Attention.TONE_INTERVAL_ALERT, 
                             beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
             beepRepeatCount++ ;
         }
         beepRepeatCount = 1 ;
         for (var i = 25; i >= 5; i=i-5) {
-            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+            _events.add(new MBOTimedEvent(i*60,
                             Attention.TONE_ALERT_LO, 
                             beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
             beepRepeatCount++ ;
         }
         beepRepeatCount = 1 ;
         for (var i = 4; i >= 1; i--) {
-            _events.add(new MBOTimedEvent(Gregorian.duration({timeType => i}),
+            _events.add(new MBOTimedEvent(i*60,
                             Attention.TONE_ALERT_HI,
                             beepRepeatCount, _playAlerts, _playBeepsAfterAlerts ));
             beepRepeatCount++ ;
         }
 
-        _events.add(new MBOTimedEvent(Gregorian.duration({timeType => 0}),
-            Attention.TONE_CANARY,1, 
-            _playAlerts, _playBeepsAfterAlerts)) ;
+        _events.add(new MBOTimedEvent(0, Attention.TONE_CANARY,1, _playAlerts, _playBeepsAfterAlerts)) ;
         
     }
 
@@ -141,7 +139,7 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     }
 
     // Normal time - process the timed events
-    private function normalTimeEvents(timeLeftDuration as Duration) as Void {
+    private function normalTimeEvents(timeLeftSeconds as Number) as Void {
 
         // Process the actions if we have an uncompleted event
         if (!_eventComplete) {
@@ -154,25 +152,43 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
             // If there are any more events to consume then see if they can be run
             if (_nextEvtIdx < _events.size()) {
                 // Test to see if the next event has happened
-                if (_events[_nextEvtIdx].checkEvent(timeLeftDuration)) {
+                if (_events[_nextEvtIdx].checkEvent(timeLeftSeconds)) {
                     _eventComplete = false ;
                 }
             } 
         }
     }
+
+    // Turn a number of seconds into a string in HH:MM:SS format
+    private function secondsToStringTime(timeSeconds as Number) as String
+    {
+        var result ;
+        var hours   = timeSeconds / 3600 ;
+        var minutes = (timeSeconds - (hours * 3600)) / 60 ;
+        var seconds = (timeSeconds - (hours * 3600) - (minutes * 60)) ;
+        if (hours > 0) {
+            result  = Lang.format("$1$:$2$:$3$",
+                        [hours.format("%1d"), minutes.format("%02d"), seconds.format("%02d")]) ;
+        } else {
+             result  = Lang.format("$1$:$2$",
+                        [minutes.format("%02d"), seconds.format("%02d")]) ;
+        }
+        return result ;
+    }
     
     // The timer is running, determine what to show the client and what alerts to play
-    private function checkEvents(timeLeftDuration as Duration, secondsLeftNumber as Number) as Lang.String
+    private function checkEvents(timeLeftSeconds as Number) as Lang.String
     {
-        var result = timeLeftDuration as String ;
+        var result ;
 
         // When secondsLeftNumber is less then zero then time is up and
         // we are into penalty points 
-        if (secondsLeftNumber >= 0) {
-            normalTimeEvents(timeLeftDuration) ;
+        if (timeLeftSeconds >= 0) {
+            normalTimeEvents(timeLeftSeconds) ;
+            result = secondsToStringTime(timeLeftSeconds) ;
         }
         else {
-            result = overTimeEvents(secondsLeftNumber) ;
+            result = overTimeEvents(timeLeftSeconds) ;
         }
 
         return result ;
@@ -202,13 +218,16 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     function initialize() {
         SimpleDataField.initialize();
         var eventDurationHours = getIntPropertyWithDefault("event_duration_prop", three_hour_event) ;
-        _eventDurationMins = Gregorian.duration({:minutes => (eventDurationHours * minsPerHour)}) ;
+        _eventDurationMinutes = eventDurationHours * 60 ;
+        _eventDurationSeconds = _eventDurationMinutes * 60 ;
         _eventPointScheme = getIntPropertyWithDefault("point_scoring_prop", _mbo_score) ;
         _playAlerts = getBooleanPropertyWIthDefault("alerts_prop", true) ;
         _playBeepsAfterAlerts = getBooleanPropertyWIthDefault("beeps_prop", true) ;
 
         label = eventDurationHours + " Hour Event";
-        buildEvents(eventDurationHours * 60) ;
+        buildEvents(_eventDurationMinutes) ;
+
+        _eventDurationSeconds = 31 * 60 ;
     }
 
     // The given info object contains all the current workout
@@ -217,22 +236,19 @@ class MBOCountdownView extends WatchUi.SimpleDataField {
     // guarantee that compute() will be called before onUpdate().
     // See Activity.Info in the documentation for available information.
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-
-        var elapsedTime = info.elapsedTime as Number;
         var timerState  = info.timerState as Number ;
-        var timeUsed    = new Time.Duration(elapsedTime/1000) ;
-        var timeLeftDuration    = _eventDurationMins.subtract(timeUsed) ;  // The time left as a Time.Duration object
-        var secondsLeftNumber = _eventDurationMins.compare(timeUsed) ;  // The number of seconds left as a Lang.Number, goes negative when we reach the end of normal time
+        var timeUsedSeconds = info.elapsedTime as Number /1000 ;
+        var timeLeftSeconds = _eventDurationSeconds - timeUsedSeconds ;  // The time left as a Time.Duration object
         
         var result = "Error!" ;
                
         // Decide what to do based on the timer state
         if (timerState == 3) {
-            result = checkEvents(timeLeftDuration, secondsLeftNumber) ;
+            result = checkEvents(timeLeftSeconds) ;
         }
         else {
             if (timerState == 0) {
-                result = timeLeftDuration ;
+                result = secondsToStringTime(timeLeftSeconds) ;
             }
             else {
                 if (timerState == 2) {

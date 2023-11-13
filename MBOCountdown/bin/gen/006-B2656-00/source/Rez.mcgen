@@ -1,0 +1,45 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as Symbol;
+    } // Drawables
+
+    module Fonts {
+    } // Fonts
+
+    module JsonData {
+    } // JsonData
+
+    module Layouts {
+    } // Layouts
+
+    module Menus {
+    } // Menus
+
+    module Strings {
+        (:initialized) var two_point as Symbol;
+        (:initialized) var event_duration_title as Symbol;
+        (:initialized) var MBO_Score as Symbol;
+        (:initialized) var six_hour as Symbol;
+        (:initialized) var one_hour as Symbol;
+        (:initialized) var point_scoring_title as Symbol;
+        (:initialized) var one_point as Symbol;
+        (:initialized) var five_point as Symbol;
+        (:initialized) var four_hour as Symbol;
+        (:initialized) var four_point as Symbol;
+        (:initialized) var event_duration_prompt as Symbol;
+        (:initialized) var AppName as Symbol;
+        (:initialized) var three_hour as Symbol;
+        (:initialized) var two_hour as Symbol;
+        (:initialized) var five_hour as Symbol;
+        (:initialized) var AlertsTitle as Symbol;
+        (:initialized) var point_scoring_prompt as Symbol;
+        (:initialized) var three_point as Symbol;
+        (:initialized) var BeepsTitle as Symbol;
+    } // Strings
+} // Rez

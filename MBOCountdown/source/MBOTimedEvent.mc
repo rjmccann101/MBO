@@ -7,12 +7,11 @@
 //
 
 import Toybox.Lang ;
-import Toybox.Time ;
 
 // A class to hold an time event that we need to notify the user about.
 class MBOTimedEvent {
  
-    private var m_eventWhen as Time.Duration ; 
+    private var m_eventWhen as Number ; 
     private var m_eventType as Toybox.Attention.Tone ;
     private var m_repeatCount as Number ;
 
@@ -23,7 +22,7 @@ class MBOTimedEvent {
     private var m_playBeeps as Boolean = true ;
     
     // Constructor for the class
-    function initialize(eventWhen as Duration, eventType as Toybox.Attention.Tone, repeatCount as Number, playAlerts as Boolean, playBeeps as Boolean) {
+    function initialize(eventWhen as Number, eventType as Toybox.Attention.Tone, repeatCount as Number, playAlerts as Boolean, playBeeps as Boolean) {
         m_eventWhen = eventWhen ;
         m_eventType = eventType ;
         m_repeatCount = repeatCount ;
@@ -76,7 +75,7 @@ class MBOTimedEvent {
     
     // Event checking and processing, returns true if
     // the event in question has happened.
-    function checkEvent(timeLeft as Time.Duration) as Boolean {
-        return me.m_eventWhen.compare(timeLeft) >= 0 ;
+    function checkEvent(timeLeftSeconds as Number) as Boolean {
+        return me.m_eventWhen >= timeLeftSeconds ;
     }
 }
